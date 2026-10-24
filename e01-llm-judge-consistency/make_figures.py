@@ -363,7 +363,8 @@ def f3():
 
 
 def f5():
-    ids = [i for i, it in items.items() if it["kind"] == "contested"]
+    # Borderline pass/fail items only: the borderline summaries are already in the summary grid (f3).
+    ids = [i for i, it in items.items() if it["kind"] == "contested" and it["task"] != "summary_score"]
     h = [
         '<div class="e1-wrap"><table class="e1-grid"><thead><tr><th>Borderline item</th><th>My mark</th>'
         + "".join(f"<th>{escape(j)}</th>" for j in JUDGE_NAMES)
@@ -389,9 +390,11 @@ def f5():
         f"All four judges agreed on {agree} of these {len(ids)} items.</p>"
     )
     save("f5-borderline-grid.html", "".join(h))
+    contested = [i for i, it in items.items() if it["kind"] == "contested"]
+    agree = sum(len({cell(j, i)[0] for j in JUDGE_NAMES}) == 1 for i in contested)
     clear = [i for i, it in items.items() if it["kind"] == "clear"]
     clear_agree = sum(len({cell(j, i)[0] for j in JUDGE_NAMES}) == 1 for i in clear)
-    return agree, len(ids), clear_agree, len(clear)
+    return agree, len(contested), clear_agree, len(clear)
 
 
 if __name__ == "__main__":
