@@ -1,0 +1,1549 @@
+{
+  "items": "items_v1.jsonl",
+  "repeats": 13,
+  "prices_checked": "2026-10-24",
+  "agreement_between_judges": {
+    "borderline": {
+      "items": 10,
+      "all_agree": 10
+    },
+    "clear": {
+      "items": 20,
+      "all_agree": 20
+    }
+  },
+  "unsupported": {
+    "openai_gpt-6-luna__temp0": {
+      "provider": "openai",
+      "model": "gpt-6-luna",
+      "arm": "temp0",
+      "error": "{\n  \"error\": {\n    \"message\": \"Unsupported value: 'temperature' does not support 0 with this model. Only the default (1) value is supported.\",\n    \"type\": \"invalid_request_error\",\n    \"param\": \"temperature\",\n    \"code\": \"unsupported_value\"\n  }\n}"
+    }
+  },
+  "runs": {
+    "groq_openai-gpt-oss-120b__default": {
+      "model": "openai/gpt-oss-120b",
+      "calls": 390,
+      "unparsed": 0,
+      "cut_off": 0,
+      "complete_runs": 13,
+      "consistency": {
+        "all": {
+          "items": 30,
+          "same_every_run": 30,
+          "pairwise_disagree": 0.0
+        },
+        "reference": {
+          "items": 30,
+          "same_every_run": 30,
+          "pairwise_disagree": 0.0
+        },
+        "borderline": {
+          "items": 10,
+          "same_every_run": 10,
+          "pairwise_disagree": 0.0
+        },
+        "clear": {
+          "items": 20,
+          "same_every_run": 20,
+          "pairwise_disagree": 0.0
+        }
+      },
+      "right_on_clear_pass_fail": {
+        "of": 20,
+        "mean": 20,
+        "min": 20,
+        "max": 20
+      },
+      "passed": {
+        "of": 30,
+        "answer_key": 15,
+        "mean": 15,
+        "min": 15,
+        "max": 15
+      },
+      "tokens_in": 77181,
+      "tokens_out": 20256,
+      "tokens_reasoning": 0,
+      "cost_usd": 0.02373075,
+      "cost_per_1000": 0.06084807692307692,
+      "latency_median_s": 0.44,
+      "latency_p90_s": 0.52,
+      "per_item": {
+        "b01": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b02": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b03": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b04": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b05": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b06": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b07": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b08": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b09": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b10": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c01": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c02": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c03": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c04": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c05": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c06": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c07": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c08": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c09": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c10": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w01": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w02": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w03": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w04": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w05": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w06": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w07": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w08": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w09": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w10": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        }
+      }
+    },
+    "groq_openai-gpt-oss-120b__temp0": {
+      "model": "openai/gpt-oss-120b",
+      "calls": 390,
+      "unparsed": 0,
+      "cut_off": 0,
+      "complete_runs": 13,
+      "consistency": {
+        "all": {
+          "items": 30,
+          "same_every_run": 30,
+          "pairwise_disagree": 0.0
+        },
+        "reference": {
+          "items": 30,
+          "same_every_run": 30,
+          "pairwise_disagree": 0.0
+        },
+        "borderline": {
+          "items": 10,
+          "same_every_run": 10,
+          "pairwise_disagree": 0.0
+        },
+        "clear": {
+          "items": 20,
+          "same_every_run": 20,
+          "pairwise_disagree": 0.0
+        }
+      },
+      "right_on_clear_pass_fail": {
+        "of": 20,
+        "mean": 20,
+        "min": 20,
+        "max": 20
+      },
+      "passed": {
+        "of": 30,
+        "answer_key": 15,
+        "mean": 15,
+        "min": 15,
+        "max": 15
+      },
+      "tokens_in": 77181,
+      "tokens_out": 20300,
+      "tokens_reasoning": 0,
+      "cost_usd": 0.02375715,
+      "cost_per_1000": 0.06091576923076923,
+      "latency_median_s": 0.42,
+      "latency_p90_s": 0.53,
+      "per_item": {
+        "b01": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b02": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b03": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b04": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b05": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b06": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b07": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b08": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b09": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b10": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c01": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c02": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c03": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c04": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c05": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c06": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c07": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c08": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c09": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c10": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w01": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w02": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w03": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w04": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w05": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w06": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w07": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w08": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w09": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w10": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        }
+      }
+    },
+    "openai_gpt-6-luna__default": {
+      "model": "gpt-6-luna",
+      "calls": 390,
+      "unparsed": 0,
+      "cut_off": 0,
+      "complete_runs": 13,
+      "consistency": {
+        "all": {
+          "items": 30,
+          "same_every_run": 30,
+          "pairwise_disagree": 0.0
+        },
+        "reference": {
+          "items": 30,
+          "same_every_run": 30,
+          "pairwise_disagree": 0.0
+        },
+        "borderline": {
+          "items": 10,
+          "same_every_run": 10,
+          "pairwise_disagree": 0.0
+        },
+        "clear": {
+          "items": 20,
+          "same_every_run": 20,
+          "pairwise_disagree": 0.0
+        }
+      },
+      "right_on_clear_pass_fail": {
+        "of": 20,
+        "mean": 20,
+        "min": 20,
+        "max": 20
+      },
+      "passed": {
+        "of": 30,
+        "answer_key": 15,
+        "mean": 15,
+        "min": 15,
+        "max": 15
+      },
+      "tokens_in": 52221,
+      "tokens_out": 16680,
+      "tokens_reasoning": 4630,
+      "cost_usd": 0.0135621,
+      "cost_per_1000": 0.03477461538461538,
+      "latency_median_s": 1.15,
+      "latency_p90_s": 1.83,
+      "per_item": {
+        "b01": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b02": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b03": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b04": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b05": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b06": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b07": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b08": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b09": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b10": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c01": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c02": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c03": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c04": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c05": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c06": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c07": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c08": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c09": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c10": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w01": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w02": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w03": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w04": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w05": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w06": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w07": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w08": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w09": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w10": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        }
+      }
+    },
+    "openai_gpt-6.1-sol__default": {
+      "model": "gpt-6.1-sol",
+      "calls": 390,
+      "unparsed": 0,
+      "cut_off": 0,
+      "complete_runs": 13,
+      "consistency": {
+        "all": {
+          "items": 30,
+          "same_every_run": 30,
+          "pairwise_disagree": 0.0
+        },
+        "reference": {
+          "items": 30,
+          "same_every_run": 30,
+          "pairwise_disagree": 0.0
+        },
+        "borderline": {
+          "items": 10,
+          "same_every_run": 10,
+          "pairwise_disagree": 0.0
+        },
+        "clear": {
+          "items": 20,
+          "same_every_run": 20,
+          "pairwise_disagree": 0.0
+        }
+      },
+      "right_on_clear_pass_fail": {
+        "of": 20,
+        "mean": 20,
+        "min": 20,
+        "max": 20
+      },
+      "passed": {
+        "of": 30,
+        "answer_key": 15,
+        "mean": 15,
+        "min": 15,
+        "max": 15
+      },
+      "tokens_in": 52221,
+      "tokens_out": 11574,
+      "tokens_reasoning": 614,
+      "cost_usd": 0.220182,
+      "cost_per_1000": 0.5645692307692308,
+      "latency_median_s": 1.53,
+      "latency_p90_s": 2.07,
+      "per_item": {
+        "b01": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b02": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b03": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b04": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b05": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b06": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b07": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b08": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b09": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "b10": {
+          "task": "reference",
+          "kind": "borderline",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c01": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c02": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c03": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c04": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c05": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c06": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c07": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c08": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c09": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "c10": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w01": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w02": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w03": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w04": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w05": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w06": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w07": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w08": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w09": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "w10": {
+          "task": "reference",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        }
+      }
+    }
+  }
+}

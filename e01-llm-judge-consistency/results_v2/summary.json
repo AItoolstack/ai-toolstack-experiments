@@ -1,0 +1,1613 @@
+{
+  "items": "items_v2.jsonl",
+  "repeats": 13,
+  "prices_checked": "2026-10-24",
+  "agreement_between_judges": {
+    "clear": {
+      "items": 18,
+      "all_agree": 12
+    },
+    "contested": {
+      "items": 12,
+      "all_agree": 3
+    }
+  },
+  "unsupported": {},
+  "runs": {
+    "openai_gpt-6-luna__default": {
+      "model": "gpt-6-luna",
+      "calls": 390,
+      "unparsed": 0,
+      "cut_off": 0,
+      "complete_runs": 13,
+      "consistency": {
+        "all": {
+          "items": 30,
+          "same_every_run": 22,
+          "pairwise_disagree": 0.09102564102564102
+        },
+        "faithfulness": {
+          "items": 10,
+          "same_every_run": 8,
+          "pairwise_disagree": 0.06666666666666667
+        },
+        "policy": {
+          "items": 10,
+          "same_every_run": 9,
+          "pairwise_disagree": 0.028205128205128206
+        },
+        "summary_score": {
+          "items": 10,
+          "same_every_run": 5,
+          "pairwise_disagree": 0.1782051282051282
+        },
+        "clear": {
+          "items": 18,
+          "same_every_run": 13,
+          "pairwise_disagree": 0.10612535612535612
+        },
+        "contested": {
+          "items": 12,
+          "same_every_run": 9,
+          "pairwise_disagree": 0.06837606837606837
+        }
+      },
+      "right_on_clear_pass_fail": {
+        "of": 12,
+        "mean": 11.076923076923077,
+        "min": 10,
+        "max": 12
+      },
+      "passed": {
+        "of": 20,
+        "answer_key": 11,
+        "mean": 8.461538461538462,
+        "min": 8,
+        "max": 10
+      },
+      "tokens_in": 144924,
+      "tokens_out": 40228,
+      "tokens_reasoning": 23969,
+      "cost_usd": 0.0346064,
+      "cost_per_1000": 0.08873435897435898,
+      "latency_median_s": 1.9,
+      "latency_p90_s": 2.68,
+      "per_item": {
+        "f01": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 12,
+            "FAIL": 1
+          },
+          "most_common": "PASS",
+          "changed": true,
+          "pairwise_disagree": 0.15384615384615385
+        },
+        "f02": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f03": {
+          "task": "faithfulness",
+          "kind": "contested",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f04": {
+          "task": "faithfulness",
+          "kind": "contested",
+          "label": "PASS",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f05": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f06": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "FAIL": 8,
+            "PASS": 5
+          },
+          "most_common": "FAIL",
+          "changed": true,
+          "pairwise_disagree": 0.5128205128205128
+        },
+        "f07": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f08": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f09": {
+          "task": "faithfulness",
+          "kind": "contested",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f10": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p01": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p02": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p03": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "FAIL": 11,
+            "PASS": 2
+          },
+          "most_common": "FAIL",
+          "changed": true,
+          "pairwise_disagree": 0.28205128205128205
+        },
+        "p04": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p05": {
+          "task": "policy",
+          "kind": "contested",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p06": {
+          "task": "policy",
+          "kind": "contested",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p07": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p08": {
+          "task": "policy",
+          "kind": "contested",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p09": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p10": {
+          "task": "policy",
+          "kind": "contested",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s01": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "5",
+          "counts": {
+            "4": 13
+          },
+          "most_common": "4",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s02": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "3",
+          "counts": {
+            "3": 9,
+            "2": 1,
+            "4": 3
+          },
+          "most_common": "3",
+          "changed": true,
+          "pairwise_disagree": 0.5
+        },
+        "s03": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "4",
+          "counts": {
+            "4": 10,
+            "5": 3
+          },
+          "most_common": "4",
+          "changed": true,
+          "pairwise_disagree": 0.3846153846153846
+        },
+        "s04": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "3",
+          "counts": {
+            "2": 13
+          },
+          "most_common": "2",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s05": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "2",
+          "counts": {
+            "2": 13
+          },
+          "most_common": "2",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s06": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "2",
+          "counts": {
+            "2": 13
+          },
+          "most_common": "2",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s07": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "4",
+          "counts": {
+            "2": 11,
+            "3": 2
+          },
+          "most_common": "2",
+          "changed": true,
+          "pairwise_disagree": 0.28205128205128205
+        },
+        "s08": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "5",
+          "counts": {
+            "4": 9,
+            "5": 4
+          },
+          "most_common": "4",
+          "changed": true,
+          "pairwise_disagree": 0.46153846153846156
+        },
+        "s09": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "3",
+          "counts": {
+            "2": 12,
+            "3": 1
+          },
+          "most_common": "2",
+          "changed": true,
+          "pairwise_disagree": 0.15384615384615385
+        },
+        "s10": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "2",
+          "counts": {
+            "2": 13
+          },
+          "most_common": "2",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        }
+      }
+    },
+    "openai_gpt-6.1-sol__default": {
+      "model": "gpt-6.1-sol",
+      "calls": 390,
+      "unparsed": 0,
+      "cut_off": 0,
+      "complete_runs": 13,
+      "consistency": {
+        "all": {
+          "items": 30,
+          "same_every_run": 27,
+          "pairwise_disagree": 0.035897435897435895
+        },
+        "faithfulness": {
+          "items": 10,
+          "same_every_run": 10,
+          "pairwise_disagree": 0.0
+        },
+        "policy": {
+          "items": 10,
+          "same_every_run": 9,
+          "pairwise_disagree": 0.028205128205128206
+        },
+        "summary_score": {
+          "items": 10,
+          "same_every_run": 8,
+          "pairwise_disagree": 0.07948717948717948
+        },
+        "clear": {
+          "items": 18,
+          "same_every_run": 17,
+          "pairwise_disagree": 0.01566951566951567
+        },
+        "contested": {
+          "items": 12,
+          "same_every_run": 10,
+          "pairwise_disagree": 0.06623931623931624
+        }
+      },
+      "right_on_clear_pass_fail": {
+        "of": 12,
+        "mean": 12,
+        "min": 12,
+        "max": 12
+      },
+      "passed": {
+        "of": 20,
+        "answer_key": 11,
+        "mean": 10.846153846153847,
+        "min": 10,
+        "max": 11
+      },
+      "tokens_in": 144924,
+      "tokens_out": 17336,
+      "tokens_reasoning": 3265,
+      "cost_usd": 0.463208,
+      "cost_per_1000": 1.1877128205128205,
+      "latency_median_s": 2.27,
+      "latency_p90_s": 3.87,
+      "per_item": {
+        "f01": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f02": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f03": {
+          "task": "faithfulness",
+          "kind": "contested",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f04": {
+          "task": "faithfulness",
+          "kind": "contested",
+          "label": "PASS",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f05": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f06": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f07": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f08": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f09": {
+          "task": "faithfulness",
+          "kind": "contested",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f10": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p01": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p02": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p03": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p04": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p05": {
+          "task": "policy",
+          "kind": "contested",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p06": {
+          "task": "policy",
+          "kind": "contested",
+          "label": "FAIL",
+          "counts": {
+            "PASS": 11,
+            "FAIL": 2
+          },
+          "most_common": "PASS",
+          "changed": true,
+          "pairwise_disagree": 0.28205128205128205
+        },
+        "p07": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p08": {
+          "task": "policy",
+          "kind": "contested",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p09": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p10": {
+          "task": "policy",
+          "kind": "contested",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s01": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "5",
+          "counts": {
+            "4": 13
+          },
+          "most_common": "4",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s02": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "3",
+          "counts": {
+            "3": 11,
+            "2": 2
+          },
+          "most_common": "3",
+          "changed": true,
+          "pairwise_disagree": 0.28205128205128205
+        },
+        "s03": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "4",
+          "counts": {
+            "4": 13
+          },
+          "most_common": "4",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s04": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "3",
+          "counts": {
+            "2": 13
+          },
+          "most_common": "2",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s05": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "2",
+          "counts": {
+            "2": 13
+          },
+          "most_common": "2",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s06": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "2",
+          "counts": {
+            "2": 13
+          },
+          "most_common": "2",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s07": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "4",
+          "counts": {
+            "2": 13
+          },
+          "most_common": "2",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s08": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "5",
+          "counts": {
+            "4": 13
+          },
+          "most_common": "4",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s09": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "3",
+          "counts": {
+            "2": 8,
+            "3": 5
+          },
+          "most_common": "2",
+          "changed": true,
+          "pairwise_disagree": 0.5128205128205128
+        },
+        "s10": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "2",
+          "counts": {
+            "2": 13
+          },
+          "most_common": "2",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        }
+      }
+    },
+    "openrouter-groq_openai-gpt-oss-120b__default": {
+      "model": "openai/gpt-oss-120b",
+      "calls": 390,
+      "unparsed": 0,
+      "cut_off": 0,
+      "complete_runs": 13,
+      "consistency": {
+        "all": {
+          "items": 30,
+          "same_every_run": 18,
+          "pairwise_disagree": 0.1581196581196581
+        },
+        "faithfulness": {
+          "items": 10,
+          "same_every_run": 7,
+          "pairwise_disagree": 0.0923076923076923
+        },
+        "policy": {
+          "items": 10,
+          "same_every_run": 9,
+          "pairwise_disagree": 0.028205128205128206
+        },
+        "summary_score": {
+          "items": 10,
+          "same_every_run": 2,
+          "pairwise_disagree": 0.3538461538461538
+        },
+        "clear": {
+          "items": 18,
+          "same_every_run": 14,
+          "pairwise_disagree": 0.10256410256410256
+        },
+        "contested": {
+          "items": 12,
+          "same_every_run": 4,
+          "pairwise_disagree": 0.24145299145299146
+        }
+      },
+      "right_on_clear_pass_fail": {
+        "of": 12,
+        "mean": 11.23076923076923,
+        "min": 11,
+        "max": 12
+      },
+      "passed": {
+        "of": 20,
+        "answer_key": 11,
+        "mean": 13.307692307692308,
+        "min": 12,
+        "max": 14
+      },
+      "tokens_in": 180380,
+      "tokens_out": 34939,
+      "tokens_reasoning": 21702,
+      "cost_usd": 0.04802039999999999,
+      "cost_per_1000": 0.12312923076923074,
+      "latency_median_s": 0.36,
+      "latency_p90_s": 0.6,
+      "per_item": {
+        "f01": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f02": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f03": {
+          "task": "faithfulness",
+          "kind": "contested",
+          "label": "FAIL",
+          "counts": {
+            "PASS": 10,
+            "FAIL": 3
+          },
+          "most_common": "PASS",
+          "changed": true,
+          "pairwise_disagree": 0.3846153846153846
+        },
+        "f04": {
+          "task": "faithfulness",
+          "kind": "contested",
+          "label": "PASS",
+          "counts": {
+            "PASS": 12,
+            "FAIL": 1
+          },
+          "most_common": "PASS",
+          "changed": true,
+          "pairwise_disagree": 0.15384615384615385
+        },
+        "f05": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f06": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f07": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "PASS": 10,
+            "FAIL": 3
+          },
+          "most_common": "PASS",
+          "changed": true,
+          "pairwise_disagree": 0.3846153846153846
+        },
+        "f08": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f09": {
+          "task": "faithfulness",
+          "kind": "contested",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f10": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p01": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p02": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p03": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p04": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p05": {
+          "task": "policy",
+          "kind": "contested",
+          "label": "FAIL",
+          "counts": {
+            "PASS": 11,
+            "FAIL": 2
+          },
+          "most_common": "PASS",
+          "changed": true,
+          "pairwise_disagree": 0.28205128205128205
+        },
+        "p06": {
+          "task": "policy",
+          "kind": "contested",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p07": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p08": {
+          "task": "policy",
+          "kind": "contested",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p09": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p10": {
+          "task": "policy",
+          "kind": "contested",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s01": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "5",
+          "counts": {
+            "5": 13
+          },
+          "most_common": "5",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s02": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "3",
+          "counts": {
+            "4": 8,
+            "3": 5
+          },
+          "most_common": "4",
+          "changed": true,
+          "pairwise_disagree": 0.5128205128205128
+        },
+        "s03": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "4",
+          "counts": {
+            "5": 7,
+            "4": 6
+          },
+          "most_common": "5",
+          "changed": true,
+          "pairwise_disagree": 0.5384615384615384
+        },
+        "s04": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "3",
+          "counts": {
+            "3": 8,
+            "2": 4,
+            "4": 1
+          },
+          "most_common": "3",
+          "changed": true,
+          "pairwise_disagree": 0.5641025641025641
+        },
+        "s05": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "2",
+          "counts": {
+            "2": 13
+          },
+          "most_common": "2",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s06": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "2",
+          "counts": {
+            "2": 10,
+            "4": 2,
+            "1": 1
+          },
+          "most_common": "2",
+          "changed": true,
+          "pairwise_disagree": 0.41025641025641024
+        },
+        "s07": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "4",
+          "counts": {
+            "3": 7,
+            "2": 6
+          },
+          "most_common": "3",
+          "changed": true,
+          "pairwise_disagree": 0.5384615384615384
+        },
+        "s08": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "5",
+          "counts": {
+            "4": 7,
+            "5": 6
+          },
+          "most_common": "4",
+          "changed": true,
+          "pairwise_disagree": 0.5384615384615384
+        },
+        "s09": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "3",
+          "counts": {
+            "2": 11,
+            "3": 2
+          },
+          "most_common": "2",
+          "changed": true,
+          "pairwise_disagree": 0.28205128205128205
+        },
+        "s10": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "2",
+          "counts": {
+            "1": 12,
+            "2": 1
+          },
+          "most_common": "1",
+          "changed": true,
+          "pairwise_disagree": 0.15384615384615385
+        }
+      }
+    },
+    "openrouter-groq_openai-gpt-oss-120b__temp0": {
+      "model": "openai/gpt-oss-120b",
+      "calls": 390,
+      "unparsed": 0,
+      "cut_off": 0,
+      "complete_runs": 13,
+      "consistency": {
+        "all": {
+          "items": 30,
+          "same_every_run": 25,
+          "pairwise_disagree": 0.037606837606837605
+        },
+        "faithfulness": {
+          "items": 10,
+          "same_every_run": 9,
+          "pairwise_disagree": 0.015384615384615385
+        },
+        "policy": {
+          "items": 10,
+          "same_every_run": 10,
+          "pairwise_disagree": 0.0
+        },
+        "summary_score": {
+          "items": 10,
+          "same_every_run": 6,
+          "pairwise_disagree": 0.09743589743589744
+        },
+        "clear": {
+          "items": 18,
+          "same_every_run": 14,
+          "pairwise_disagree": 0.041310541310541314
+        },
+        "contested": {
+          "items": 12,
+          "same_every_run": 11,
+          "pairwise_disagree": 0.03205128205128205
+        }
+      },
+      "right_on_clear_pass_fail": {
+        "of": 12,
+        "mean": 11.076923076923077,
+        "min": 11,
+        "max": 12
+      },
+      "passed": {
+        "of": 20,
+        "answer_key": 11,
+        "mean": 13.923076923076923,
+        "min": 13,
+        "max": 14
+      },
+      "tokens_in": 184732,
+      "tokens_out": 35804,
+      "tokens_reasoning": 22535,
+      "cost_usd": 0.0491922,
+      "cost_per_1000": 0.12613384615384615,
+      "latency_median_s": 0.34,
+      "latency_p90_s": 0.52,
+      "per_item": {
+        "f01": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f02": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f03": {
+          "task": "faithfulness",
+          "kind": "contested",
+          "label": "FAIL",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f04": {
+          "task": "faithfulness",
+          "kind": "contested",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f05": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f06": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f07": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "PASS": 12,
+            "FAIL": 1
+          },
+          "most_common": "PASS",
+          "changed": true,
+          "pairwise_disagree": 0.15384615384615385
+        },
+        "f08": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f09": {
+          "task": "faithfulness",
+          "kind": "contested",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "f10": {
+          "task": "faithfulness",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p01": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p02": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p03": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p04": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p05": {
+          "task": "policy",
+          "kind": "contested",
+          "label": "FAIL",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p06": {
+          "task": "policy",
+          "kind": "contested",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p07": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p08": {
+          "task": "policy",
+          "kind": "contested",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p09": {
+          "task": "policy",
+          "kind": "clear",
+          "label": "FAIL",
+          "counts": {
+            "FAIL": 13
+          },
+          "most_common": "FAIL",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "p10": {
+          "task": "policy",
+          "kind": "contested",
+          "label": "PASS",
+          "counts": {
+            "PASS": 13
+          },
+          "most_common": "PASS",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s01": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "5",
+          "counts": {
+            "5": 13
+          },
+          "most_common": "5",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s02": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "3",
+          "counts": {
+            "3": 12,
+            "4": 1
+          },
+          "most_common": "3",
+          "changed": true,
+          "pairwise_disagree": 0.15384615384615385
+        },
+        "s03": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "4",
+          "counts": {
+            "5": 13
+          },
+          "most_common": "5",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s04": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "3",
+          "counts": {
+            "3": 13
+          },
+          "most_common": "3",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s05": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "2",
+          "counts": {
+            "2": 13
+          },
+          "most_common": "2",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s06": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "2",
+          "counts": {
+            "3": 2,
+            "2": 11
+          },
+          "most_common": "2",
+          "changed": true,
+          "pairwise_disagree": 0.28205128205128205
+        },
+        "s07": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "4",
+          "counts": {
+            "3": 13
+          },
+          "most_common": "3",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        },
+        "s08": {
+          "task": "summary_score",
+          "kind": "clear",
+          "label": "5",
+          "counts": {
+            "5": 12,
+            "4": 1
+          },
+          "most_common": "5",
+          "changed": true,
+          "pairwise_disagree": 0.15384615384615385
+        },
+        "s09": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "3",
+          "counts": {
+            "3": 10,
+            "2": 3
+          },
+          "most_common": "3",
+          "changed": true,
+          "pairwise_disagree": 0.3846153846153846
+        },
+        "s10": {
+          "task": "summary_score",
+          "kind": "contested",
+          "label": "2",
+          "counts": {
+            "1": 13
+          },
+          "most_common": "1",
+          "changed": false,
+          "pairwise_disagree": 0.0
+        }
+      }
+    }
+  }
+}

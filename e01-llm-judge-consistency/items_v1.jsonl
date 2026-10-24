@@ -1,0 +1,30 @@
+{"id": "c01", "kind": "clear", "label": "pass", "question": "At what temperature does pure water boil at sea level, in Celsius?", "reference": "100 °C", "answer": "Pure water boils at 100 °C at sea-level pressure."}
+{"id": "c02", "kind": "clear", "label": "pass", "question": "Who wrote 'Pride and Prejudice'?", "reference": "Jane Austen", "answer": "Jane Austen wrote it; it was published in 1813."}
+{"id": "c03", "kind": "clear", "label": "pass", "question": "What is the chemical symbol for sodium?", "reference": "Na", "answer": "Na"}
+{"id": "c04", "kind": "clear", "label": "pass", "question": "How many sides does a hexagon have?", "reference": "6", "answer": "A hexagon has six sides."}
+{"id": "c05", "kind": "clear", "label": "pass", "question": "In which city is the Brandenburg Gate?", "reference": "Berlin", "answer": "It's in Berlin, Germany."}
+{"id": "c06", "kind": "clear", "label": "pass", "question": "What is 15% of 200?", "reference": "30", "answer": "15% of 200 is 30."}
+{"id": "c07", "kind": "clear", "label": "pass", "question": "Which planet is closest to the Sun?", "reference": "Mercury", "answer": "Mercury is the closest planet to the Sun."}
+{"id": "c08", "kind": "clear", "label": "pass", "question": "What does HTTP status code 404 mean?", "reference": "Not Found: the server can't find the requested resource.", "answer": "404 means Not Found: the server couldn't find the resource you asked for."}
+{"id": "c09", "kind": "clear", "label": "pass", "question": "What is the largest ocean on Earth?", "reference": "The Pacific Ocean", "answer": "The Pacific."}
+{"id": "c10", "kind": "clear", "label": "pass", "question": "In Python, what does len([1, 2, 3]) return?", "reference": "3", "answer": "It returns 3."}
+{"id": "w01", "kind": "clear", "label": "fail", "question": "At what temperature does pure water freeze at sea level, in Celsius?", "reference": "0 °C", "answer": "Pure water freezes at -4 °C at sea level."}
+{"id": "w02", "kind": "clear", "label": "fail", "question": "Who painted the Mona Lisa?", "reference": "Leonardo da Vinci", "answer": "Michelangelo painted the Mona Lisa in the early 1500s."}
+{"id": "w03", "kind": "clear", "label": "fail", "question": "What is the chemical symbol for potassium?", "reference": "K", "answer": "P"}
+{"id": "w04", "kind": "clear", "label": "fail", "question": "How many minutes are there in 3 hours?", "reference": "180", "answer": "There are 160 minutes in 3 hours."}
+{"id": "w05", "kind": "clear", "label": "fail", "question": "What is the capital of Australia?", "reference": "Canberra", "answer": "Sydney is the capital of Australia."}
+{"id": "w06", "kind": "clear", "label": "fail", "question": "What is 12 × 12?", "reference": "144", "answer": "12 × 12 = 124."}
+{"id": "w07", "kind": "clear", "label": "fail", "question": "Which gas do plants mainly absorb for photosynthesis?", "reference": "Carbon dioxide", "answer": "Plants mainly absorb oxygen for photosynthesis."}
+{"id": "w08", "kind": "clear", "label": "fail", "question": "What does HTTP status code 500 mean?", "reference": "Internal Server Error: the server hit an unexpected condition.", "answer": "500 means the request was successful and the response has no body."}
+{"id": "w09", "kind": "clear", "label": "fail", "question": "In which year did the Second World War end?", "reference": "1945", "answer": "It ended in 1939."}
+{"id": "w10", "kind": "clear", "label": "fail", "question": "In Python, what does 7 // 2 return?", "reference": "3", "answer": "It returns 3.5."}
+{"id": "b01", "kind": "borderline", "label": "pass", "question": "What is the boiling point of water at sea level, in Fahrenheit?", "reference": "212 °F", "answer": "About 212 °F, give or take, depending on conditions."}
+{"id": "b02", "kind": "borderline", "label": "fail", "question": "Name the three primary colours of light.", "reference": "Red, green and blue", "answer": "Red, green and blue — the same three primaries used for mixing paint."}
+{"id": "b03", "kind": "borderline", "label": "pass", "question": "Who was the first person to walk on the Moon?", "reference": "Neil Armstrong", "answer": "Neil Armstrong, in 1969, with Buzz Aldrin following him onto the surface shortly after. Michael Collins stayed in orbit."}
+{"id": "b04", "kind": "borderline", "label": "fail", "question": "What is the speed of light in a vacuum, approximately?", "reference": "About 300,000 km per second (299,792 km/s)", "answer": "About 300,000 km per second, or roughly 186,000 miles per hour."}
+{"id": "b05", "kind": "borderline", "label": "pass", "question": "How many bones are in the adult human body?", "reference": "206", "answer": "Usually 206, though the exact count varies slightly between people."}
+{"id": "b06", "kind": "borderline", "label": "fail", "question": "List the first five prime numbers.", "reference": "2, 3, 5, 7, 11", "answer": "2, 3, 5, 7 and 11. Some textbooks also count 1 as the first prime."}
+{"id": "b07", "kind": "borderline", "label": "pass", "question": "What does 'idempotent' mean for an HTTP method?", "reference": "Making the same request several times has the same effect on the server as making it once.", "answer": "Calling it repeatedly leaves the server in the same state as calling it once, so a retry is safe. GET, PUT and DELETE are meant to be idempotent."}
+{"id": "b08", "kind": "borderline", "label": "fail", "question": "What is the time complexity of binary search on a sorted array?", "reference": "O(log n)", "answer": "O(log n) on average, but O(n) in the worst case."}
+{"id": "b09", "kind": "borderline", "label": "fail", "question": "Which country has the largest population in the world as of 2024?", "reference": "India", "answer": "China, although India was expected to overtake it within a few years."}
+{"id": "b10", "kind": "borderline", "label": "pass", "question": "What is the main function of red blood cells?", "reference": "To carry oxygen from the lungs to the body's tissues.", "answer": "They carry oxygen around the body, bound to haemoglobin, and bring some carbon dioxide back."}

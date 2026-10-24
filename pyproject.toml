@@ -1,0 +1,11 @@
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "UP", "I"]
+
+[tool.ruff.lint.per-file-ignores]
+# Long lines here are item text and SVG markup, not logic.
+"*/build_items_*.py" = ["E501"]
+"*/make_figures.py" = ["E501"]
+"*.ipynb" = ["E741"]
