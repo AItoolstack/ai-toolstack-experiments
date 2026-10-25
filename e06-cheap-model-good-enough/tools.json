@@ -1,0 +1,229 @@
+[
+  {
+    "name": "get_order",
+    "description": "Fetch one order by its order ID (format FR-######).",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "order_id"
+      ]
+    }
+  },
+  {
+    "name": "search_orders",
+    "description": "Search orders by customer email, optionally filtered by status.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "customer_email": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "placed",
+            "dispatched",
+            "delivered",
+            "returned",
+            "cancelled"
+          ]
+        }
+      },
+      "required": [
+        "customer_email"
+      ]
+    }
+  },
+  {
+    "name": "issue_refund",
+    "description": "Refund a customer. Amount in pounds, up to \u00a3100.00.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "type": "string"
+        },
+        "amount_gbp": {
+          "type": "number"
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "order_id",
+        "amount_gbp",
+        "reason"
+      ]
+    }
+  },
+  {
+    "name": "create_ticket",
+    "description": "Raise an internal ticket for a team.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "priority": {
+          "type": "string",
+          "enum": [
+            "P1",
+            "P2",
+            "P3",
+            "P4"
+          ],
+          "description": "P1 urgent, P2 high, P3 normal, P4 low"
+        },
+        "team": {
+          "type": "string",
+          "enum": [
+            "finance",
+            "warehouse",
+            "it",
+            "customer_support"
+          ]
+        },
+        "details": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "priority",
+        "team"
+      ]
+    }
+  },
+  {
+    "name": "lookup_employee",
+    "description": "Find a colleague's work email, team and manager by name.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  {
+    "name": "find_free_slots",
+    "description": "Find times when all attendees are free on a date.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "attendee_emails": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "date": {
+          "type": "string",
+          "description": "YYYY-MM-DD"
+        },
+        "duration_minutes": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "attendee_emails",
+        "date",
+        "duration_minutes"
+      ]
+    }
+  },
+  {
+    "name": "create_calendar_event",
+    "description": "Create a calendar event. Attendees are work email addresses.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "start": {
+          "type": "string",
+          "description": "ISO 8601 with offset"
+        },
+        "end": {
+          "type": "string",
+          "description": "ISO 8601 with offset"
+        },
+        "attendee_emails": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "title",
+        "start",
+        "end",
+        "attendee_emails"
+      ]
+    }
+  },
+  {
+    "name": "send_email",
+    "description": "Send an email from the user's mailbox.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "to": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "subject": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "to",
+        "subject",
+        "body"
+      ]
+    }
+  },
+  {
+    "name": "convert_currency",
+    "description": "Convert an amount between currencies at today's rate.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number"
+        },
+        "from_currency": {
+          "type": "string",
+          "description": "ISO 4217 code"
+        },
+        "to_currency": {
+          "type": "string",
+          "description": "ISO 4217 code"
+        }
+      },
+      "required": [
+        "amount",
+        "from_currency",
+        "to_currency"
+      ]
+    }
+  }
+]
