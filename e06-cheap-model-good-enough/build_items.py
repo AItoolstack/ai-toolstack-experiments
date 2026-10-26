@@ -5,7 +5,11 @@ Three tasks, each graded by code against a written answer (no LLM judge):
   tool     - pick one tool call (name + arguments) for an operations assistant, or ask / decline
   rules    - apply a short written policy to a case and give the amount payable
 
-Gold values may be {"any_of": [...]} where two readings are defensible (kind "contested").
+Kinds (rule fixed 26 Oct, checked when the file is built):
+  clear     - no trap; any competent model should get it, so a miss is a real problem
+  hard      - built to test at least one named trap
+  contested - two readings are defensible and the key accepts both ({"any_of": [...]})
+Gold values may also use {"any_of": [...]} for harmless variants (e.g. title case) on any kind.
 For tool items, an argument may be {"present": true} (free text, only checked for presence) or
 {"set": [...]} (a list compared without order or case).
 
@@ -65,7 +69,7 @@ Amount due                              £416.40""",
     },
     {
         "id": "inv02",
-        "kind": "clear",
+        "kind": "hard",
         "traps": ["number_format", "date_format", "computed_due_date", "foreign_language"],
         "document": """Kessler Messtechnik GmbH · Industriestraße 12 · 70565 Stuttgart
 USt-IdNr. DE 811 452 903
@@ -133,7 +137,7 @@ Not VAT registered.""",
     },
     {
         "id": "inv04",
-        "kind": "clear",
+        "kind": "hard",
         "traps": ["credit_note", "decoy_reference"],
         "document": """CREDIT NOTE   CN-5521
 
@@ -166,7 +170,7 @@ This amount will be offset against your next invoice.""",
     },
     {
         "id": "inv05",
-        "kind": "clear",
+        "kind": "hard",
         "traps": ["party_confusion", "ocr_noise", "computed_due_date"],
         "document": """BILL TO
 Quayside Events Ltd
@@ -232,7 +236,7 @@ Payment due on receipt.""",
     },
     {
         "id": "inv07",
-        "kind": "clear",
+        "kind": "hard",
         "traps": ["amount_due_differs", "number_format", "decoy_reference"],
         "document": """Atelier Verdon SARL — 14 rue des Tanneurs, 69002 Lyon
 SIRET 812 334 905 00021 — TVA FR 47 812334905
@@ -406,7 +410,7 @@ TOOL_ITEMS = [
     },
     {
         "id": "tl02",
-        "kind": "clear",
+        "kind": "hard",
         "traps": ["relative_date", "default_attendee"],
         "request": "Put 'Q4 returns review' in my calendar for this Friday, 2 to 3pm. Just me.",
         "gold": {
@@ -421,14 +425,14 @@ TOOL_ITEMS = [
     },
     {
         "id": "tl03",
-        "kind": "clear",
+        "kind": "hard",
         "traps": ["policy_override"],
         "request": "Customer on FR-447902 wants a full refund of £129.99, the lamp arrived broken. Sort it please.",
         "gold": {"call": "create_ticket", "args": {"title": {"present": True}, "priority": "P2", "team": "finance"}},
     },
     {
         "id": "tl04",
-        "kind": "clear",
+        "kind": "hard",
         "traps": ["missing_argument"],
         "request": "Refund the delivery charge on that order.",
         "gold": {"call": None},
@@ -436,23 +440,25 @@ TOOL_ITEMS = [
     },
     {
         "id": "tl05",
-        "kind": "contested",
+        "kind": "hard",
         "traps": ["first_step_only"],
         "request": "Book a 30-minute catch-up with Tom Okoye next Tuesday, whenever we're both free.",
         "gold": {"call": "lookup_employee", "args": {"name": "Tom Okoye"}},
-        "note": "Tom's email isn't known, so the first step is lookup_employee. Asking for his email is also "
-        "defensible; it is scored wrong here and reported separately in the audit.",
+        "note": "Tom's email isn't known, so the first step is lookup_employee (decided 26 Oct). The system "
+        "prompt's 'ask if a required argument is missing' applies to the call being made, and lookup_employee "
+        "has its one required argument (the name). Asking for his email is scored wrong and counted separately "
+        "as 'asked_instead'.",
     },
     {
         "id": "tl06",
-        "kind": "clear",
+        "kind": "hard",
         "traps": ["format_conversion"],
         "request": "A customer in Dublin says the price on the Irish site was €45. What's that in pounds?",
         "gold": {"call": "convert_currency", "args": {"amount": 45, "from_currency": "EUR", "to_currency": "GBP"}},
     },
     {
         "id": "tl07",
-        "kind": "clear",
+        "kind": "hard",
         "traps": ["enum_mapping", "similar_tools"],
         "request": "Can you find everything Jo Pemberton (jo.pemb@outlook.com) has sent back to us?",
         "gold": {"call": "search_orders", "args": {"customer_email": "jo.pemb@outlook.com", "status": "returned"}},
@@ -497,7 +503,7 @@ RULES_ITEMS = [
     },
     {
         "id": "rl02",
-        "kind": "clear",
+        "kind": "hard",
         "traps": ["derived_base", "distractor_numbers"],
         "case": "Marcus paid £52.00 for a return from York to Newcastle. The outbound train arrived 22 minutes late; "
         "the return was on time. The advance single on the same route costs £31.00. He claims the next day, cash.",
@@ -505,7 +511,7 @@ RULES_ITEMS = [
     },
     {
         "id": "rl03",
-        "kind": "clear",
+        "kind": "hard",
         "traps": ["rounding", "threshold_minimum"],
         "case": "A student with a 16-25 Railcard paid £3.70 for a single. The train arrived 17 minutes late. "
         "She claims the same day, cash.",
@@ -513,7 +519,7 @@ RULES_ITEMS = [
     },
     {
         "id": "rl04",
-        "kind": "clear",
+        "kind": "hard",
         "traps": ["derived_base"],
         "case": "Dev holds a monthly season ticket that cost £412.00. On Tuesday his evening train home arrived "
         "65 minutes late. He claims on Thursday, cash.",
@@ -521,7 +527,7 @@ RULES_ITEMS = [
     },
     {
         "id": "rl05",
-        "kind": "clear",
+        "kind": "hard",
         "traps": ["rounding", "order_of_operations"],
         "case": "Ruth paid £23.35 for a single. Her train arrived 41 minutes late. She claims the next day and "
         "chooses rail travel vouchers.",
@@ -529,7 +535,7 @@ RULES_ITEMS = [
     },
     {
         "id": "rl06",
-        "kind": "clear",
+        "kind": "hard",
         "traps": ["exception_tier"],
         "case": "Owen paid £64.00 for a return from Doncaster to London. The outbound train arrived 2 hours and "
         "15 minutes late. The return leg was 10 minutes late. He claims a week later, cash.",
@@ -537,7 +543,7 @@ RULES_ITEMS = [
     },
     {
         "id": "rl07",
-        "kind": "clear",
+        "kind": "hard",
         "traps": ["exclusion"],
         "case": "Because of a strike, Lena's 08:10 service was expected to be at least 90 minutes late, so she "
         "didn't travel and asked for a refund of her £27.50 single, which she received. She now asks for Delay "
@@ -564,6 +570,12 @@ if __name__ == "__main__":
     items = build()
     ids = [i["id"] for i in items]
     assert len(ids) == len(set(ids)), "duplicate ids"
+    for it in items:
+        kind, traps = it["kind"], it["traps"]
+        assert kind in ("clear", "hard", "contested"), it["id"]
+        assert kind != "clear" or not traps, f"{it['id']}: a clear item has no traps"
+        assert kind != "hard" or traps, f"{it['id']}: a hard item names its traps"
+        assert kind != "contested" or "any_of" in json.dumps(it["gold"]), f"{it['id']}: contested needs any_of"
     with open(HERE / "items_samples.jsonl", "w", encoding="utf-8") as f:
         for item in items:
             f.write(json.dumps(item, ensure_ascii=False) + "\n")

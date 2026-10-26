@@ -10,31 +10,46 @@ from build_items import INVOICE_FIELDS, RAIL_POLICY, RULES_QUESTION, TOOL_SYSTEM
 HERE = Path(__file__).resolve().parent
 REPEATS = 3
 
-# Short name -> how to call it. "reasoning": send reasoning effort (the 8B model has none).
+# Short name -> how to call it, in price order. "reasoning": send reasoning effort.
 # gpt-oss models go through OpenRouter pinned to Groq, as in E01, so both sizes share one host.
+# GLM-5.3-Flash is pinned to Z.ai (its maker) because cheaper hosts don't state their quantisation.
+# "repeats": calls per item (default REPEATS). Sol runs once: it is the top rung and the cascade
+# fallback, and E01 already covered run-to-run consistency (decided 26 Oct).
+# "control": a side measurement, left out of the cascades. glm-flash-t0 is the same model at
+# temperature 0, to show how much of the cheap model's variation comes from sampling.
 MODELS = {
-    "llama-8b": {
-        "provider": "openrouter",
-        "model": "meta-llama/llama-3.1-8b-instruct",
-        "route": "groq",
-        "reasoning": False,
-    },
     "oss-20b": {"provider": "openrouter", "model": "openai/gpt-oss-20b", "route": "groq", "reasoning": True},
     "luna": {"provider": "openai", "model": "gpt-6-luna", "route": None, "reasoning": True},
+    "glm-flash": {"provider": "openrouter", "model": "z-ai/glm-5.3-flash", "route": "z-ai", "reasoning": True},
     "oss-120b": {"provider": "openrouter", "model": "openai/gpt-oss-120b", "route": "groq", "reasoning": True},
-    "sol": {"provider": "openai", "model": "gpt-6.1-sol", "route": None, "reasoning": True},
+    "sol": {"provider": "openai", "model": "gpt-6.1-sol", "route": None, "reasoning": True, "repeats": 1},
+    "glm-flash-t0": {
+        "provider": "openrouter",
+        "model": "z-ai/glm-5.3-flash",
+        "route": "z-ai",
+        "reasoning": True,
+        "temperature": 0,
+        "repeats": 1,
+        "control": True,
+    },
 }
 REASONING_EFFORT = "low"
 
 # USD per million tokens (input, output), list prices for the host used. Reasoning tokens bill as output.
-PRICES_CHECKED = "2026-10-25"
+PRICES_CHECKED = "2026-10-26"
 PRICES = {
-    "llama-8b": (0.05, 0.08),  # Groq via OpenRouter
-    "oss-20b": (0.075, 0.30),  # Groq via OpenRouter
-    "luna": (0.10, 0.50),
-    "oss-120b": (0.15, 0.60),  # Groq via OpenRouter
-    "sol": (2.00, 10.00),
+    "oss-20b": (0.075, 0.30),  # Groq via OpenRouter (checked 25 Oct)
+    "luna": (0.10, 0.50),  # OpenAI
+    "glm-flash": (0.15, 0.50),  # Z.ai via OpenRouter (checked 26 Oct)
+    "oss-120b": (0.15, 0.60),  # Groq via OpenRouter (checked 25 Oct)
+    "sol": (2.00, 10.00),  # OpenAI
+    "glm-flash-t0": (0.15, 0.50),
 }
+
+
+def repeats_for(name: str) -> int:
+    return MODELS[name].get("repeats", REPEATS)
+
 
 INVOICE_SYSTEM = (
     "Extract these fields from the invoice or credit note and reply with JSON only, using exactly these keys:\n"
@@ -97,7 +112,9 @@ def load_runs(items_file: str, dry_run: bool = False) -> dict[str, list[dict]]:
     """Results keyed by model short name."""
     runs = {}
     for path in sorted(results_dir(items_file, dry_run).glob("*.jsonl")):
-        rows = [r for r in read_jsonl(path) if r["repeat"] < REPEATS]
+        if path.stem not in MODELS:
+            continue
+        rows = [r for r in read_jsonl(path) if r["repeat"] < repeats_for(path.stem)]
         if rows:
             runs[path.stem] = rows
     return runs

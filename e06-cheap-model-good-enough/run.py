@@ -1,10 +1,10 @@
-"""E06: send every item to one model REPEATS times and save each raw answer.
+"""E06: send every item to one model (repeats set per model in common.py) and save each raw answer.
 
 Standard library only. Resumable: rerun the same command and it skips calls already saved.
 Scoring happens later, in analyse.py, so a scoring fix never needs a new run.
 
 Examples:
-    python run.py --model oss-20b --workers 4
+    python run.py --model oss-20b --workers 4      # repeats come from common.py (Sol: 1, others: 3)
     python run.py --model sol --items items_samples.jsonl --workers 4
     python run.py --model luna --dry-run          # scripted replies, no network, no key
 
@@ -30,11 +30,11 @@ from common import (
     HERE,
     MODELS,
     REASONING_EFFORT,
-    REPEATS,
     load_items,
     load_tools,
     messages_for,
     read_jsonl,
+    repeats_for,
     results_dir,
 )
 
@@ -66,6 +66,8 @@ def request_body(spec: dict, item: dict, tools: list[dict]) -> dict:
     if item["task"] == "tool":
         body["tools"] = [{"type": "function", "function": t} for t in tools]
         body["tool_choice"] = "auto"
+    if "temperature" in spec:
+        body["temperature"] = spec["temperature"]  # otherwise the host's default (Groq: 1.0)
     if spec["provider"] == "openrouter":
         if spec["reasoning"]:
             body["reasoning"] = {"effort": REASONING_EFFORT}
@@ -176,13 +178,15 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--model", choices=list(MODELS), required=True)
     ap.add_argument("--items", default="items.jsonl")
-    ap.add_argument("--repeats", type=int, default=REPEATS)
+    ap.add_argument("--repeats", type=int, help="calls per item (default: the model's setting in common.py)")
     ap.add_argument("--workers", type=int, default=1)
     ap.add_argument("--only", help="comma-separated item ids, for a quick check before the full run")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
     spec = MODELS[args.model]
+    if args.repeats is None:
+        args.repeats = repeats_for(args.model)
     items = list(load_items(args.items).values())
     if args.only:
         wanted = set(args.only.split(","))
@@ -218,6 +222,7 @@ def main() -> None:
                 "model": args.model,
                 "model_id": spec["model"],
                 "reasoning_effort": REASONING_EFFORT if spec["reasoning"] else None,
+                "temperature": spec.get("temperature"),
                 "ts": time.strftime("%Y-%m-%dT%H:%M:%S"),
                 **result,
             }

@@ -2,9 +2,12 @@
 
 Scoring is plain code, no LLM judge. Three kinds of output:
   1. accuracy per model and task, cost per 1,000 calls, median latency
-  2. accuracy per trap (the failure types written down in build_items.py before any run)
-  3. two cascades: the cheap model's answer is kept unless a cheap check fails, then a larger
-     model's answer (already run on the same item and repeat) is used instead. No extra calls.
+  0. run health: parse failures, cut-offs, calls written as text, which host served the call
+  1. accuracy per model and task, cost per 1,000 calls, median latency; then per kind as counts
+  2. results per trap (the failure types written down in build_items.py before any run), as counts:
+     3-6 items per trap is too few for percentages (decided 26 Oct)
+  3. two cascades: the cheap model's answer is kept unless a cheap check fails (or its three runs
+     disagree); otherwise the fallback model's single answer on that item is used. No extra calls.
 
     python analyse.py                      # items.jsonl, real results
     python analyse.py --items items_samples.jsonl --dry-run
@@ -20,7 +23,7 @@ from collections import defaultdict
 from datetime import date, datetime, timezone
 
 from build_items import INVOICE_FIELDS, TOOLS
-from common import HERE, MODELS, cost_usd, load_items, load_runs
+from common import HERE, MODELS, cost_usd, load_items, load_runs, repeats_for
 
 TOOL_NOW = datetime(2026, 11, 4, 10, 15, tzinfo=timezone.utc)
 TOOL_SPECS = {t["name"]: t["parameters"] for t in TOOLS}
@@ -124,7 +127,8 @@ def score(item: dict, row: dict) -> dict:
             if name is not None:
                 errors.append("called_when_should_ask")
         elif name is None:
-            errors.append("no_call_when_should_call")
+            # On a first-step item, asking for something a tool could look up is its own error type.
+            errors.append("asked_instead" if "first_step_only" in item["traps"] else "no_call_when_should_call")
         elif name != gold["call"]:
             errors.append("wrong_tool")
         else:
@@ -215,8 +219,25 @@ def main() -> None:
     order = [m for m in MODELS if m in runs]
     scored = {m: {(r["item"], r["repeat"]): (r, score(items[r["item"]], r)) for r in runs[m]} for m in order}
 
-    summary = {"models": {}, "traps": {}, "cascades": {}}
-    print(f"\n{'model':10} {'task':8} {'acc':>6} {'n':>4}  {'$/1k calls':>10}  {'median s':>8}")
+    summary = {"health": {}, "models": {}, "kinds": {}, "traps": {}, "cascades": {}}
+    print("\nRun health (check these before reading any accuracy):")
+    for m in order:
+        rows = list(scored[m].values())
+        errs = defaultdict(int)
+        for _, s in rows:
+            for e in s["errors"]:
+                if e in ("unparsed", "cut_off", "call_written_as_text", "bad_arguments_json", "several_calls"):
+                    errs[e] += 1
+        hosts = sorted({str(r.get("served_by")) for r, _ in rows})
+        max_out = max((r["completion_tokens"] or 0) for r, _ in rows)
+        reasoning = sum(1 for r, _ in rows if r.get("reasoning_tokens"))
+        temps = sorted({str(r.get("temperature")) for r, _ in rows})
+        summary["health"][m] = {"calls": len(rows), **errs, "served_by": hosts, "max_completion_tokens": max_out,
+                                "calls_with_reasoning_tokens": reasoning, "temperature_sent": temps}
+        print(f"  {m:13} calls {len(rows):4}  " + "  ".join(f"{k} {v}" for k, v in sorted(errs.items()))
+              + f"  served_by {','.join(hosts)}  max_out {max_out}  with_reasoning {reasoning}  temp {','.join(temps)}")
+
+    print(f"\n{'model':13} {'task':8} {'acc':>6} {'n':>4}  {'$/1k calls':>10}  {'median s':>8}")
     for m in order:
         rows = list(scored[m].values())
         by_task = defaultdict(list)
@@ -233,33 +254,48 @@ def main() -> None:
                 "usd_per_1k": 1000 * cost / len(rs),
                 "median_latency_s": lat,
             }
-            print(f"{m:10} {task:8} {acc:6.1%} {len(rs):4}  {1000 * cost / len(rs):10.3f}  {lat:8.2f}")
+            print(f"{m:13} {task:8} {acc:6.1%} {len(rs):4}  {1000 * cost / len(rs):10.3f}  {lat:8.2f}")
+
+    def counts(m: str, ids: set[str]) -> tuple[int, int]:
+        rs = [s for (i, _), (_, s) in scored[m].items() if i in ids]
+        return sum(s["correct"] for s in rs), len(rs)
+
+    print("\nCorrect / answers by kind (clear = no trap; a miss there is a real problem):")
+    print(f"{'kind':24}" + "".join(f"{m:>14}" for m in order))
+    for kind in ("clear", "hard", "contested"):
+        ids = {i for i, it in items.items() if it["kind"] == kind}
+        line, summary["kinds"][kind] = f"{kind + f' ({len(ids)} items)':24}", {}
+        for m in order:
+            k, n = counts(m, ids)
+            summary["kinds"][kind][m] = {"correct": k, "answers": n}
+            line += f"{f'{k}/{n}':>14}"
+        print(line)
 
     traps = sorted({t for it in items.values() for t in it["traps"]})
-    print("\nAccuracy by trap (items built to test it):")
-    print(f"{'trap':24}" + "".join(f"{m:>10}" for m in order))
+    print("\nCorrect / answers by trap (counts, not percentages: each trap has only a few items):")
+    print(f"{'trap':24}" + "".join(f"{m:>14}" for m in order))
     for t in traps:
         ids = {i for i, it in items.items() if t in it["traps"]}
-        line, summary["traps"][t] = f"{t:24}", {}
+        line, summary["traps"][t] = f"{t + f' ({len(ids)})':24}", {"items": len(ids)}
         for m in order:
-            rs = [s for (i, _), (_, s) in scored[m].items() if i in ids]
-            acc = sum(s["correct"] for s in rs) / len(rs) if rs else float("nan")
-            summary["traps"][t][m] = acc
-            line += f"{acc:10.0%}"
+            k, n = counts(m, ids)
+            summary["traps"][t][m] = {"correct": k, "answers": n}
+            line += f"{f'{k}/{n}':>14}"
         print(line)
 
     fb = args.fallback
     if fb in scored:
-        print(f"\nCascades into {fb} (no extra calls; uses {fb}'s answer on the same item and repeat):")
+        print(f"\nCascades into {fb} (no extra calls; uses {fb}'s single answer on the same item):")
         for m in order:
-            if m == fb:
+            if m == fb or MODELS[m].get("control"):
                 continue
             res = {}
             # A: escalate when the cheap check fails.
             n = esc = right = 0
             cost = 0.0
             for key, (r, s) in scored[m].items():
-                if key not in scored[fb]:
+                fb_key = (key[0], 0)  # the fallback runs once per item
+                if fb_key not in scored[fb]:
                     continue
                 n += 1
                 cost += cost_usd(m, r["prompt_tokens"] or 0, r["completion_tokens"] or 0)
@@ -267,19 +303,20 @@ def main() -> None:
                     right += s["correct"]
                 else:
                     esc += 1
-                    fr, fs = scored[fb][key]
+                    fr, fs = scored[fb][fb_key]
                     right += fs["correct"]
                     cost += cost_usd(fb, fr["prompt_tokens"] or 0, fr["completion_tokens"] or 0)
             if n:
                 res["check"] = {"accuracy": right / n, "escalated": esc / n, "usd_per_1k": 1000 * cost / n}
             # B: run the cheap model on every repeat; escalate when its answers disagree.
+            # Needs at least two runs per item, so it is skipped on a one-repeat pilot.
             per_item = defaultdict(list)
             for (i, rep), (r, s) in scored[m].items():
                 per_item[i].append((rep, r, s))
             n = esc = right = 0
             cost = 0.0
             for i, rs in per_item.items():
-                if (i, 0) not in scored[fb]:
+                if (i, 0) not in scored[fb] or len(rs) < 2:
                     continue
                 n += 1
                 cost += sum(cost_usd(m, r["prompt_tokens"] or 0, r["completion_tokens"] or 0) for _, r, _ in rs)
@@ -294,7 +331,10 @@ def main() -> None:
                 res["agreement"] = {"accuracy": right / n, "escalated": esc / n, "usd_per_1k_items": 1000 * cost / n}
             summary["cascades"][m] = res
             for k, v in res.items():
-                print(f"  {m:10} {k:9} acc {v['accuracy']:6.1%}  escalated {v['escalated']:5.1%}")
+                usd = v.get("usd_per_1k", v.get("usd_per_1k_items"))
+                print(f"  {m:13} {k:9} acc {v['accuracy']:6.1%}  escalated {v['escalated']:5.1%}  ${usd:.3f}/1k items")
+            if "agreement" not in res:
+                print(f"  {m:13} agreement skipped (needs 2+ runs per item)")
 
     out = HERE / ("summary-dry.json" if args.dry_run else "summary.json")
     out.write_text(json.dumps(summary, indent=2), encoding="utf-8")
