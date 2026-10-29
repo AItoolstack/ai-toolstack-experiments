@@ -1,0 +1,241 @@
+{
+  "review_date": "2026-10-29",
+  "items_file": "items_samples.jsonl",
+  "run_tag": "v2",
+  "items_sha256": "261a0cf43df8626f5051e98a79f3ae0ae60f6836c70c6db88e009c91a8445923",
+  "prices_checked_in_config": "2026-10-25",
+  "price_caveat": "Historical configured list prices; not independently reverified or reconciled to billing.",
+  "cost_caveat": "Successful saved calls only; retries, preflights and earlier development spend are additional.",
+  "projection_caveat": "Task-weighted extrapolation from seven pilot items per task; new policy lengths may differ.",
+  "study_models_without_revised_pilot": [
+    "glm-flash",
+    "glm-flash-t0",
+    "luna",
+    "oss-120b"
+  ],
+  "study_models": [
+    "oss-20b",
+    "luna",
+    "glm-flash",
+    "oss-120b",
+    "sol",
+    "glm-flash-t0"
+  ],
+  "models": {
+    "llama-8b": {
+      "saved_calls": 21,
+      "coverage_complete": true,
+      "recorded_run_dates": [
+        "2026-10-25"
+      ],
+      "timestamp_caveat": "Raw timestamps contain no UTC offset; date preserved as recorded.",
+      "source_sha256": "dd19be8f93a67920c8785317d30e0f36e21d32bd74fa525010406f92985916fc",
+      "current_request_fingerprint_matches": true,
+      "served_by": {
+        "Groq": 21
+      },
+      "expected_host_matches": true,
+      "reasoning_tokens_reported": 21,
+      "reasoning_tokens_positive": 0,
+      "usage_complete": true,
+      "max_completion_tokens": 134,
+      "over_configured_cap": 0,
+      "problems": {
+        "unparsed": [],
+        "cut_off": [],
+        "text_call": [],
+        "malformed_call": [],
+        "possible_call_text": []
+      },
+      "task_cost_projection": {
+        "invoice": {
+          "pilot_calls": 7,
+          "mean_input_tokens": 367.42857142857144,
+          "mean_output_tokens": 109.57142857142857,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.000976937142857143,
+          "projected_usd_one_repeat_double_output": 0.0012925028571428572
+        },
+        "tool": {
+          "pilot_calls": 7,
+          "mean_input_tokens": 1204.857142857143,
+          "mean_output_tokens": 39.714285714285715,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.00228312,
+          "projected_usd_one_repeat_double_output": 0.002397497142857143
+        },
+        "rules": {
+          "pilot_calls": 7,
+          "mean_input_tokens": 527.2857142857143,
+          "mean_output_tokens": 18.571428571428573,
+          "full_items": 30,
+          "projected_usd_one_repeat": 0.0008355,
+          "projected_usd_one_repeat_double_output": 0.0008800714285714286
+        }
+      },
+      "projected_usd_three_repeats": 0.01228667142857143,
+      "projected_usd_three_repeats_double_output": 0.013710214285714286,
+      "manual_review_selection": {
+        "invoice": [
+          "inv01",
+          "inv02",
+          "inv03"
+        ],
+        "tool": [
+          "tl01",
+          "tl02",
+          "tl03"
+        ],
+        "rules": [
+          "rl01",
+          "rl02",
+          "rl03"
+        ]
+      }
+    },
+    "oss-20b": {
+      "saved_calls": 21,
+      "coverage_complete": true,
+      "recorded_run_dates": [
+        "2026-10-25"
+      ],
+      "timestamp_caveat": "Raw timestamps contain no UTC offset; date preserved as recorded.",
+      "source_sha256": "ef11fc1847221ad5f29d55bda1bd024651363f8816adaefc27479e079b99fe71",
+      "current_request_fingerprint_matches": true,
+      "served_by": {
+        "Groq": 21
+      },
+      "expected_host_matches": true,
+      "reasoning_tokens_reported": 21,
+      "reasoning_tokens_positive": 21,
+      "usage_complete": true,
+      "max_completion_tokens": 268,
+      "over_configured_cap": 0,
+      "problems": {
+        "unparsed": [],
+        "cut_off": [],
+        "text_call": [],
+        "malformed_call": [],
+        "possible_call_text": []
+      },
+      "task_cost_projection": {
+        "invoice": {
+          "pilot_calls": 7,
+          "mean_input_tokens": 401.2857142857143,
+          "mean_output_tokens": 170.28571428571428,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.0029225571428571425,
+          "projected_usd_one_repeat_double_output": 0.004761642857142857
+        },
+        "tool": {
+          "pilot_calls": 7,
+          "mean_input_tokens": 764.4285714285714,
+          "mean_output_tokens": 78.85714285714286,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.002915614285714286,
+          "projected_usd_one_repeat_double_output": 0.0037672714285714288
+        },
+        "rules": {
+          "pilot_calls": 7,
+          "mean_input_tokens": 565.1428571428571,
+          "mean_output_tokens": 129.42857142857142,
+          "full_items": 30,
+          "projected_usd_one_repeat": 0.0024364285714285707,
+          "projected_usd_one_repeat_double_output": 0.003601285714285713
+        }
+      },
+      "projected_usd_three_repeats": 0.024823799999999993,
+      "projected_usd_three_repeats_double_output": 0.036390599999999995,
+      "manual_review_selection": {
+        "invoice": [
+          "inv01",
+          "inv02",
+          "inv03"
+        ],
+        "tool": [
+          "tl01",
+          "tl02",
+          "tl03"
+        ],
+        "rules": [
+          "rl01",
+          "rl02",
+          "rl03"
+        ]
+      }
+    },
+    "sol": {
+      "saved_calls": 21,
+      "coverage_complete": true,
+      "recorded_run_dates": [
+        "2026-10-25"
+      ],
+      "timestamp_caveat": "Raw timestamps contain no UTC offset; date preserved as recorded.",
+      "source_sha256": "5e1c7a7b3b4f8c4a9bbb791e15e86cefca8a6eed2530266da6c18e5afa08f4c3",
+      "current_request_fingerprint_matches": true,
+      "served_by": {
+        "OpenAI": 21
+      },
+      "expected_host_matches": true,
+      "reasoning_tokens_reported": 21,
+      "reasoning_tokens_positive": 3,
+      "usage_complete": true,
+      "max_completion_tokens": 117,
+      "over_configured_cap": 0,
+      "problems": {
+        "unparsed": [],
+        "cut_off": [],
+        "text_call": [],
+        "malformed_call": [],
+        "possible_call_text": []
+      },
+      "task_cost_projection": {
+        "invoice": {
+          "pilot_calls": 7,
+          "mean_input_tokens": 337.2857142857143,
+          "mean_output_tokens": 112.28571428571429,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.06470742857142858,
+          "projected_usd_one_repeat_double_output": 0.1051302857142857
+        },
+        "tool": {
+          "pilot_calls": 7,
+          "mean_input_tokens": 629.4285714285714,
+          "mean_output_tokens": 41.285714285714285,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.06018171428571429,
+          "projected_usd_one_repeat_double_output": 0.07504457142857142
+        },
+        "rules": {
+          "pilot_calls": 7,
+          "mean_input_tokens": 501.14285714285717,
+          "mean_output_tokens": 46.714285714285715,
+          "full_items": 30,
+          "projected_usd_one_repeat": 0.044082857142857146,
+          "projected_usd_one_repeat_double_output": 0.05809714285714286
+        }
+      },
+      "projected_usd_three_repeats": 0.506916,
+      "projected_usd_three_repeats_double_output": 0.7148159999999999,
+      "manual_review_selection": {
+        "invoice": [
+          "inv01",
+          "inv02",
+          "inv03"
+        ],
+        "tool": [
+          "tl01",
+          "tl02",
+          "tl03"
+        ],
+        "rules": [
+          "rl01",
+          "rl02",
+          "rl03"
+        ]
+      }
+    }
+  },
+  "projected_usd_piloted_three_models_three_repeats": 0.5440264714285714,
+  "projected_usd_piloted_three_models_three_repeats_double_output": 0.7649168142857141
+}

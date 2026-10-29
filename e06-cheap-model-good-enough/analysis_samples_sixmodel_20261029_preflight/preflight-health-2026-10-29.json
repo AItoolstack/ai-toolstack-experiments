@@ -1,0 +1,215 @@
+{
+  "review_date": "2026-10-29",
+  "purpose": "Compatibility and transport health only; not an accuracy evaluation.",
+  "models": {
+    "oss-20b": {
+      "status": "PASS",
+      "checks": {
+        "three_distinct_task_probes": true,
+        "preflight_marked": true,
+        "request_fingerprints_match": true,
+        "requested_model_matches": true,
+        "expected_host": true,
+        "complete_responses": true,
+        "usage_present_and_within_cap": true,
+        "no_recorded_retries": true,
+        "rules_parseable": true,
+        "rules_existing_non_gold_validator": true,
+        "native_tool_call_and_schema": true,
+        "tool_existing_non_gold_validator": true,
+        "invoice_parseable": true,
+        "invoice_fields_present": true,
+        "invoice_existing_non_gold_validator": true
+      },
+      "warnings": [],
+      "served_by": {
+        "Groq": 3
+      },
+      "reasoning_tokens": [
+        120,
+        7,
+        85
+      ],
+      "max_output_tokens": 171,
+      "saved_call_estimated_usd": 0.00023692499999999997,
+      "coarse_remaining_126_call_pilot_estimated_usd": 0.0016584749999999997,
+      "source_sha256": "9f98ba3b5c904bedf6ba429dc8a2c08ed38c6968995185ff32d2c4a6d77f6fb6"
+    },
+    "luna": {
+      "status": "PASS",
+      "checks": {
+        "three_distinct_task_probes": true,
+        "preflight_marked": true,
+        "request_fingerprints_match": true,
+        "requested_model_matches": true,
+        "expected_host": true,
+        "complete_responses": true,
+        "usage_present_and_within_cap": true,
+        "no_recorded_retries": true,
+        "rules_parseable": true,
+        "rules_existing_non_gold_validator": true,
+        "invoice_parseable": true,
+        "invoice_fields_present": true,
+        "invoice_existing_non_gold_validator": true,
+        "native_tool_call_and_schema": true,
+        "tool_existing_non_gold_validator": true
+      },
+      "warnings": [],
+      "served_by": {
+        "OpenAI": 3
+      },
+      "reasoning_tokens": [
+        86,
+        22,
+        0
+      ],
+      "max_output_tokens": 135,
+      "saved_call_estimated_usd": 0.0002841,
+      "coarse_remaining_126_call_pilot_estimated_usd": 0.0019887000000000004,
+      "source_sha256": "20b36cb51c61d2d8b9a34bd8c2df5bd59ce6cf1e8e0a86f6b29c8016f858df2d"
+    },
+    "glm-flash": {
+      "status": "PASS_WITH_FORMAT_CAVEAT",
+      "checks": {
+        "three_distinct_task_probes": true,
+        "preflight_marked": true,
+        "request_fingerprints_match": true,
+        "requested_model_matches": true,
+        "expected_host": true,
+        "complete_responses": true,
+        "usage_present_and_within_cap": true,
+        "no_recorded_retries": true,
+        "rules_parseable": true,
+        "rules_existing_non_gold_validator": true,
+        "invoice_parseable": true,
+        "invoice_fields_present": true,
+        "invoice_existing_non_gold_validator": true,
+        "native_tool_call_and_schema": true,
+        "tool_existing_non_gold_validator": true
+      },
+      "warnings": [
+        "inv01: fenced or surrounding text accepted by existing parser; not strict JSON"
+      ],
+      "served_by": {
+        "Z.AI": 3
+      },
+      "reasoning_tokens": [
+        13,
+        0,
+        0
+      ],
+      "max_output_tokens": 116,
+      "saved_call_estimated_usd": 0.00038659999999999996,
+      "coarse_remaining_126_call_pilot_estimated_usd": 0.0027061999999999998,
+      "source_sha256": "d62d4bbb84bfa4e8e39f1324e5b8224edabd10a296cbebabefe6dfee0b47f574"
+    },
+    "oss-120b": {
+      "status": "PASS",
+      "checks": {
+        "three_distinct_task_probes": true,
+        "preflight_marked": true,
+        "request_fingerprints_match": true,
+        "requested_model_matches": true,
+        "expected_host": true,
+        "complete_responses": true,
+        "usage_present_and_within_cap": true,
+        "no_recorded_retries": true,
+        "native_tool_call_and_schema": true,
+        "tool_existing_non_gold_validator": true,
+        "rules_parseable": true,
+        "rules_existing_non_gold_validator": true,
+        "invoice_parseable": true,
+        "invoice_fields_present": true,
+        "invoice_existing_non_gold_validator": true
+      },
+      "warnings": [],
+      "served_by": {
+        "Groq": 3
+      },
+      "reasoning_tokens": [
+        11,
+        95,
+        83
+      ],
+      "max_output_tokens": 199,
+      "saved_call_estimated_usd": 0.00048045,
+      "coarse_remaining_126_call_pilot_estimated_usd": 0.00336315,
+      "source_sha256": "ca51d7374323b0cd30b7b035cf62c5a81997dae498a49d63cd971840999d60a6"
+    },
+    "sol": {
+      "status": "PASS",
+      "checks": {
+        "three_distinct_task_probes": true,
+        "preflight_marked": true,
+        "request_fingerprints_match": true,
+        "requested_model_matches": true,
+        "expected_host": true,
+        "complete_responses": true,
+        "usage_present_and_within_cap": true,
+        "no_recorded_retries": true,
+        "invoice_parseable": true,
+        "invoice_fields_present": true,
+        "invoice_existing_non_gold_validator": true,
+        "native_tool_call_and_schema": true,
+        "tool_existing_non_gold_validator": true,
+        "rules_parseable": true,
+        "rules_existing_non_gold_validator": true
+      },
+      "warnings": [],
+      "served_by": {
+        "OpenAI": 3
+      },
+      "reasoning_tokens": [
+        0,
+        0,
+        0
+      ],
+      "max_output_tokens": 111,
+      "saved_call_estimated_usd": 0.004562,
+      "coarse_remaining_126_call_pilot_estimated_usd": 0.031934000000000004,
+      "source_sha256": "ea96bc08638de574798079677a040332e9867a88fb2701f21aa888237e0c87be"
+    },
+    "glm-flash-t0": {
+      "status": "PASS",
+      "checks": {
+        "three_distinct_task_probes": true,
+        "preflight_marked": true,
+        "request_fingerprints_match": true,
+        "requested_model_matches": true,
+        "expected_host": true,
+        "complete_responses": true,
+        "usage_present_and_within_cap": true,
+        "no_recorded_retries": true,
+        "rules_parseable": true,
+        "rules_existing_non_gold_validator": true,
+        "invoice_parseable": true,
+        "invoice_fields_present": true,
+        "invoice_existing_non_gold_validator": true,
+        "native_tool_call_and_schema": true,
+        "tool_existing_non_gold_validator": true
+      },
+      "warnings": [],
+      "served_by": {
+        "Z.AI": 3
+      },
+      "reasoning_tokens": [
+        13,
+        0,
+        0
+      ],
+      "max_output_tokens": 82,
+      "saved_call_estimated_usd": 0.0003681,
+      "coarse_remaining_126_call_pilot_estimated_usd": 0.0025767,
+      "source_sha256": "54efe87613c6c5e3362404a84e57347b7398257f9cfa8f00d8dc6690054b4997"
+    }
+  },
+  "caveats": [
+    "One item per task is insufficient for an accuracy or final budget estimate.",
+    "Fenced JSON remains accepted by the existing parser.",
+    "Temperature zero was submitted and accepted; compliance and determinism are not established.",
+    "Costs are configured list-price estimates for successful saved calls, not billing reconciliation."
+  ],
+  "all_18_compatibility_probes_passed": true,
+  "saved_preflight_estimated_usd": 0.006318175,
+  "coarse_126_call_pilot_estimated_usd": 0.04422722500000001
+}

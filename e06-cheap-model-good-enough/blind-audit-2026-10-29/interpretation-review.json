@@ -1,0 +1,35 @@
+{
+  "scope": "Source-only interpretations of original requests; original blind answers and label reviews are unchanged.",
+  "inv03": {
+    "tax_total_supported": 0,
+    "materially_different_tax_answer_supported": false,
+    "reason": "Not VAT registered communicates that this supplier has not charged VAT. The two goods/service lines sum to the stated GBP 3090 total, and the only reduction is a separately identified deposit. There is no stated tax charge or other tax basis supporting a positive or negative tax total.",
+    "null_assessment": "A null tax value would reflect an unusually literal requirement for a separate numeric tax line, but would discard the document's explicit Not VAT registered statement. Under ordinary semantic extraction, zero is supported and null is not an equally supported materially different tax assessment."
+  },
+  "inv06": {
+    "invoice_date_readings": [
+      {
+        "date": "2026-10-07",
+        "numeric_convention": "MM/DD/YYYY",
+        "support": "The issuer is in San Francisco, and October 7 matches the explicitly written service-period start.",
+        "limits": "The document does not expressly declare MM/DD/YYYY, and an invoice date need not equal a service-period start. This is the stronger contextual reading, not a logically forced date."
+      },
+      {
+        "date": "2026-07-10",
+        "numeric_convention": "DD/MM/YYYY",
+        "support": "The customer is in the UK, where this reading is conventional. A July invoice for a service starting in October is possible; the text does not prohibit advance billing.",
+        "limits": "The US issuer and matching October service start provide stronger evidence for October 7. There is no explicit statement that the issuer formats dates for the UK customer."
+      }
+    ],
+    "unique_invoice_date_explicitly_established": false,
+    "due_date_supported": null,
+    "due_date_reason": "Payment due on receipt establishes an event-based term but gives no receipt date. Neither possible invoice date can be substituted for that missing event date without an extra assumption.",
+    "tax_total_supported": 0,
+    "tax_reason": "Sales tax is explicitly not applicable for the stated export of services. The source supplies a zero-tax condition rather than merely omitting tax information."
+  },
+  "inv36": {
+    "invoice_date_as_due_date_supported": false,
+    "due_date_supported": null,
+    "reason": "The invoice date is explicitly 2026-10-02, but due on receipt does not state that receipt occurred on that day. Under Use null for any field the document does not give and Do not guess, the missing receipt date cannot become a specific due date. A receipt-on-issue convention would have to be supplied separately."
+  }
+}

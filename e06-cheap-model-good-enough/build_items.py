@@ -17,6 +17,7 @@ This file holds the 21 sample items for design review. The full set is added aft
 
 from __future__ import annotations
 
+import hashlib
 import json
 from pathlib import Path
 
@@ -561,11 +562,20 @@ def build() -> list[dict]:
 
 
 if __name__ == "__main__":
+    from evaluation_items import build_all
+
     items = build()
+    full_items, manifest = build_all()
     ids = [i["id"] for i in items]
     assert len(ids) == len(set(ids)), "duplicate ids"
-    with open(HERE / "items_samples.jsonl", "w", encoding="utf-8") as f:
+    with open(HERE / "items_samples.jsonl", "w", encoding="utf-8", newline="\n") as f:
         for item in items:
             f.write(json.dumps(item, ensure_ascii=False) + "\n")
-    (HERE / "tools.json").write_text(json.dumps(TOOLS, indent=2), encoding="utf-8")
+    (HERE / "tools.json").write_text(json.dumps(TOOLS, indent=2), encoding="utf-8", newline="\n")
     print(f"{len(items)} items -> items_samples.jsonl; {len(TOOLS)} tools -> tools.json")
+    with (HERE / "items.jsonl").open("w", encoding="utf-8") as f:
+        for item in full_items:
+            f.write(json.dumps(item, ensure_ascii=False) + "\n")
+    manifest["items_sha256"] = hashlib.sha256((HERE / "items.jsonl").read_bytes()).hexdigest()
+    (HERE / "dataset-manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    print(f"{len(full_items)} items -> items.jsonl; counts and trap coverage -> dataset-manifest.json")

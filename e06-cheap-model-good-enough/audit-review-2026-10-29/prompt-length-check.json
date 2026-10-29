@@ -1,0 +1,14 @@
+{
+  "invoice": {
+    "sample_mean_chars": 1363.2857142857142,
+    "full_mean_chars": 1163.4166666666667
+  },
+  "tool": {
+    "sample_mean_chars": 3824.285714285714,
+    "full_mean_chars": 3837.527777777778
+  },
+  "rules": {
+    "sample_mean_chars": 2109,
+    "full_mean_chars": 1622.3666666666666
+  }
+}

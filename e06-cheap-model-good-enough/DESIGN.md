@@ -1,6 +1,22 @@
 # E06 design: is the cheap model good enough?
 
-Status: **design for review, 25 Oct 2026. Nothing has been run against a real model.**
+Original status at creation: **design for review, 25 Oct 2026; before any real-model run.**
+Current status: three development pilots have run, most recently 21 answers per model for
+the six-model lineup. The 102-item set and independent blind audit are complete.
+The full evaluation has not run. See `PROTOCOL.md` for the dated post-pilot amendment,
+`CHANGELOG.md` for changes and `PUBLICATION.md` for the maintained article draft.
+The remaining text records the original design; planned counts, prices and costs below are
+design assumptions, not completed results or newly verified billing figures.
+Resumption amendment, **29 October 2026**: Tej selected the six-model handover lineup.
+See `RESUME-2026-10-29.md` for the verified starting state, model/repeat changes, historical
+pilot health review and remaining evaluation gates. This is a post-pilot amendment.
+Post-pilot reporting fix, **29 October 2026**: `pilot_health.py` now applies the selected
+per-model repeat schedule to cost projections instead of multiplying all models by three.
+No request, item or key changed; see `PILOT-REVIEW-2026-10-29.md`.
+Full-set amendment, **29 October 2026**: completed 81 additional items and four policies.
+Independent blind answering, label review and four re-audits changed 17 items (six keys).
+The audited mix is 34 clear / 60 hard / 8 contested, superseding the target. All named traps
+retain at least three examples. See `AUDIT-2026-10-29.md` for every change and its reason.
 Written before any run so the answer key, the failure types and the comparisons can't be fitted to the results afterwards.
 
 ## The question

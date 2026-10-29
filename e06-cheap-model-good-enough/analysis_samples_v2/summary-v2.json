@@ -1,0 +1,1077 @@
+{
+  "analysis_version": "v3",
+  "checks": "v2",
+  "items_file": "items_samples.jsonl",
+  "run_tag": "v2",
+  "expected_repeats": 1,
+  "expected_repeats_by_model": {
+    "llama-8b": 1,
+    "oss-20b": 1,
+    "sol": 1
+  },
+  "models": {
+    "llama-8b": {
+      "invoice": {
+        "accuracy": 0.7142857142857143,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 0.02713714285714286,
+        "median_latency_s": 0.44,
+        "errors": {
+          "invoice_date": 2,
+          "due_date": 1,
+          "invoice_number": 1
+        }
+      },
+      "rules": {
+        "accuracy": 0.2857142857142857,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 0.027849999999999996,
+        "median_latency_s": 0.23,
+        "errors": {
+          "wrong_amount": 5
+        }
+      },
+      "tool": {
+        "accuracy": 0.2857142857142857,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 0.06342,
+        "median_latency_s": 0.33,
+        "errors": {
+          "arg:start": 1,
+          "arg:end": 1,
+          "wrong_tool": 2,
+          "called_when_should_ask": 1,
+          "arg:status": 1
+        }
+      },
+      "all": {
+        "accuracy": 0.42857142857142855,
+        "n": 21,
+        "n_items": 21,
+        "usd_per_1k": 0.03946904761904762,
+        "median_latency_s": 0.31,
+        "errors": {
+          "invoice_date": 2,
+          "due_date": 1,
+          "invoice_number": 1,
+          "arg:start": 1,
+          "arg:end": 1,
+          "wrong_tool": 2,
+          "called_when_should_ask": 1,
+          "arg:status": 1,
+          "wrong_amount": 5
+        }
+      }
+    },
+    "oss-20b": {
+      "invoice": {
+        "accuracy": 1.0,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 0.08118214285714287,
+        "median_latency_s": 0.58,
+        "errors": {}
+      },
+      "rules": {
+        "accuracy": 0.8571428571428571,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 0.08121428571428571,
+        "median_latency_s": 0.59,
+        "errors": {
+          "wrong_amount": 1
+        }
+      },
+      "tool": {
+        "accuracy": 1.0,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 0.08098928571428572,
+        "median_latency_s": 0.28,
+        "errors": {}
+      },
+      "all": {
+        "accuracy": 0.9523809523809523,
+        "n": 21,
+        "n_items": 21,
+        "usd_per_1k": 0.08112857142857141,
+        "median_latency_s": 0.56,
+        "errors": {
+          "wrong_amount": 1
+        }
+      }
+    },
+    "sol": {
+      "invoice": {
+        "accuracy": 1.0,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 1.7974285714285714,
+        "median_latency_s": 3.72,
+        "errors": {}
+      },
+      "rules": {
+        "accuracy": 1.0,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 1.4694285714285715,
+        "median_latency_s": 1.97,
+        "errors": {}
+      },
+      "tool": {
+        "accuracy": 1.0,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 1.6717142857142857,
+        "median_latency_s": 1.97,
+        "errors": {}
+      },
+      "all": {
+        "accuracy": 1.0,
+        "n": 21,
+        "n_items": 21,
+        "usd_per_1k": 1.6461904761904766,
+        "median_latency_s": 2.38,
+        "errors": {}
+      }
+    }
+  },
+  "traps": {
+    "amount_due_differs": {
+      "llama-8b": 1.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "computed_due_date": {
+      "llama-8b": 0.6666666666666666,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "credit_note": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "date_format": {
+      "llama-8b": 1.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "decoy_reference": {
+      "llama-8b": 0.5,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "default_attendee": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "derived_base": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "distractor_numbers": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "enum_mapping": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "exception_tier": {
+      "llama-8b": 0.0,
+      "oss-20b": 0.0,
+      "sol": 1.0
+    },
+    "exclusion": {
+      "llama-8b": 1.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "first_step_only": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "foreign_language": {
+      "llama-8b": 1.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "format_conversion": {
+      "llama-8b": 1.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "missing_argument": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "missing_field": {
+      "llama-8b": 1.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "number_format": {
+      "llama-8b": 1.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "ocr_noise": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "order_of_operations": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "party_confusion": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "policy_override": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "relative_date": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "rounding": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "similar_tools": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "threshold_minimum": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    }
+  },
+  "cascades": {
+    "llama-8b": {
+      "invoice": {
+        "check": {
+          "status": "complete",
+          "n": 7,
+          "n_items": 7,
+          "fallback_repeat_policy": "reuse_repeat_0",
+          "accuracy": 0.7142857142857143,
+          "escalated": 0.0,
+          "usd_per_1k_items": 0.02713714285714286,
+          "fallback_usd_per_1k_items": 1.7974285714285714,
+          "fallback_accuracy": 1.0,
+          "estimated_sequential_median_latency_s": 0.44
+        },
+        "agreement": {
+          "status": "incomplete",
+          "required_repeats": 3,
+          "missing_cheap": 14,
+          "missing_fallback": 0
+        }
+      },
+      "rules": {
+        "check": {
+          "status": "complete",
+          "n": 7,
+          "n_items": 7,
+          "fallback_repeat_policy": "reuse_repeat_0",
+          "accuracy": 0.2857142857142857,
+          "escalated": 0.0,
+          "usd_per_1k_items": 0.027849999999999996,
+          "fallback_usd_per_1k_items": 1.4694285714285715,
+          "fallback_accuracy": 1.0,
+          "estimated_sequential_median_latency_s": 0.23
+        },
+        "agreement": {
+          "status": "incomplete",
+          "required_repeats": 3,
+          "missing_cheap": 14,
+          "missing_fallback": 0
+        }
+      },
+      "tool": {
+        "check": {
+          "status": "complete",
+          "n": 7,
+          "n_items": 7,
+          "fallback_repeat_policy": "reuse_repeat_0",
+          "accuracy": 0.2857142857142857,
+          "escalated": 0.0,
+          "usd_per_1k_items": 0.06342,
+          "fallback_usd_per_1k_items": 1.6717142857142857,
+          "fallback_accuracy": 1.0,
+          "estimated_sequential_median_latency_s": 0.33
+        },
+        "agreement": {
+          "status": "incomplete",
+          "required_repeats": 3,
+          "missing_cheap": 14,
+          "missing_fallback": 0
+        }
+      },
+      "all": {
+        "check": {
+          "status": "complete",
+          "n": 21,
+          "n_items": 21,
+          "fallback_repeat_policy": "reuse_repeat_0",
+          "accuracy": 0.42857142857142855,
+          "escalated": 0.0,
+          "usd_per_1k_items": 0.039469047619047626,
+          "fallback_usd_per_1k_items": 1.6461904761904762,
+          "fallback_accuracy": 1.0,
+          "estimated_sequential_median_latency_s": 0.31
+        },
+        "agreement": {
+          "status": "incomplete",
+          "required_repeats": 3,
+          "missing_cheap": 42,
+          "missing_fallback": 0
+        }
+      }
+    },
+    "oss-20b": {
+      "invoice": {
+        "check": {
+          "status": "complete",
+          "n": 7,
+          "n_items": 7,
+          "fallback_repeat_policy": "reuse_repeat_0",
+          "accuracy": 1.0,
+          "escalated": 0.0,
+          "usd_per_1k_items": 0.08118214285714286,
+          "fallback_usd_per_1k_items": 1.7974285714285714,
+          "fallback_accuracy": 1.0,
+          "estimated_sequential_median_latency_s": 0.58
+        },
+        "agreement": {
+          "status": "incomplete",
+          "required_repeats": 3,
+          "missing_cheap": 14,
+          "missing_fallback": 0
+        }
+      },
+      "rules": {
+        "check": {
+          "status": "complete",
+          "n": 7,
+          "n_items": 7,
+          "fallback_repeat_policy": "reuse_repeat_0",
+          "accuracy": 0.8571428571428571,
+          "escalated": 0.0,
+          "usd_per_1k_items": 0.08121428571428571,
+          "fallback_usd_per_1k_items": 1.4694285714285715,
+          "fallback_accuracy": 1.0,
+          "estimated_sequential_median_latency_s": 0.59
+        },
+        "agreement": {
+          "status": "incomplete",
+          "required_repeats": 3,
+          "missing_cheap": 14,
+          "missing_fallback": 0
+        }
+      },
+      "tool": {
+        "check": {
+          "status": "complete",
+          "n": 7,
+          "n_items": 7,
+          "fallback_repeat_policy": "reuse_repeat_0",
+          "accuracy": 1.0,
+          "escalated": 0.0,
+          "usd_per_1k_items": 0.08098928571428572,
+          "fallback_usd_per_1k_items": 1.6717142857142857,
+          "fallback_accuracy": 1.0,
+          "estimated_sequential_median_latency_s": 0.28
+        },
+        "agreement": {
+          "status": "incomplete",
+          "required_repeats": 3,
+          "missing_cheap": 14,
+          "missing_fallback": 0
+        }
+      },
+      "all": {
+        "check": {
+          "status": "complete",
+          "n": 21,
+          "n_items": 21,
+          "fallback_repeat_policy": "reuse_repeat_0",
+          "accuracy": 0.9523809523809523,
+          "escalated": 0.0,
+          "usd_per_1k_items": 0.08112857142857144,
+          "fallback_usd_per_1k_items": 1.6461904761904762,
+          "fallback_accuracy": 1.0,
+          "estimated_sequential_median_latency_s": 0.56
+        },
+        "agreement": {
+          "status": "incomplete",
+          "required_repeats": 3,
+          "missing_cheap": 42,
+          "missing_fallback": 0
+        }
+      }
+    }
+  },
+  "coverage": {
+    "llama-8b": {
+      "saved": 21,
+      "expected": 21,
+      "complete": true,
+      "missing": []
+    },
+    "oss-20b": {
+      "saved": 21,
+      "expected": 21,
+      "complete": true,
+      "missing": []
+    },
+    "sol": {
+      "saved": 21,
+      "expected": 21,
+      "complete": true,
+      "missing": []
+    }
+  },
+  "checks_by_version": {
+    "llama-8b": {
+      "baseline": {
+        "invoice": {
+          "correct_accepted": 5,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 2,
+          "n": 7,
+          "accepted_accuracy": 0.7142857142857143,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        },
+        "rules": {
+          "correct_accepted": 2,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 5,
+          "n": 7,
+          "accepted_accuracy": 0.2857142857142857,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        },
+        "tool": {
+          "correct_accepted": 2,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 5,
+          "n": 7,
+          "accepted_accuracy": 0.2857142857142857,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        },
+        "all": {
+          "correct_accepted": 9,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 12,
+          "n": 21,
+          "accepted_accuracy": 0.42857142857142855,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        }
+      },
+      "v2": {
+        "invoice": {
+          "correct_accepted": 5,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 2,
+          "n": 7,
+          "accepted_accuracy": 0.7142857142857143,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        },
+        "rules": {
+          "correct_accepted": 2,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 5,
+          "n": 7,
+          "accepted_accuracy": 0.2857142857142857,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        },
+        "tool": {
+          "correct_accepted": 2,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 5,
+          "n": 7,
+          "accepted_accuracy": 0.2857142857142857,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        },
+        "all": {
+          "correct_accepted": 9,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 12,
+          "n": 21,
+          "accepted_accuracy": 0.42857142857142855,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        }
+      }
+    },
+    "oss-20b": {
+      "baseline": {
+        "invoice": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 7,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        },
+        "rules": {
+          "correct_accepted": 6,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 1,
+          "n": 7,
+          "accepted_accuracy": 0.8571428571428571,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        },
+        "tool": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 7,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        },
+        "all": {
+          "correct_accepted": 20,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 1,
+          "n": 21,
+          "accepted_accuracy": 0.9523809523809523,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        }
+      },
+      "v2": {
+        "invoice": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 7,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        },
+        "rules": {
+          "correct_accepted": 6,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 1,
+          "n": 7,
+          "accepted_accuracy": 0.8571428571428571,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        },
+        "tool": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 7,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        },
+        "all": {
+          "correct_accepted": 20,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 1,
+          "n": 21,
+          "accepted_accuracy": 0.9523809523809523,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        }
+      }
+    },
+    "sol": {
+      "baseline": {
+        "invoice": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 7,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        },
+        "rules": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 7,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        },
+        "tool": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 7,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        },
+        "all": {
+          "correct_accepted": 21,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 21,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        }
+      },
+      "v2": {
+        "invoice": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 7,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        },
+        "rules": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 7,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        },
+        "tool": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 7,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        },
+        "all": {
+          "correct_accepted": 21,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 21,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        }
+      }
+    }
+  },
+  "cost_basis": "Listed token prices in common.py; successful answers only. Failed attempts and cache discounts are not priced. Legacy latency omits retries.",
+  "provenance": {
+    "items_sha256": "261a0cf43df8626f5051e98a79f3ae0ae60f6836c70c6db88e009c91a8445923",
+    "analysis_sha256": "7b7ace0f026a38d671e57624158a3fe8e328b8d0ce03b854d80286f801a3d212",
+    "result_sha256": {
+      "llama-8b": "dd19be8f93a67920c8785317d30e0f36e21d32bd74fa525010406f92985916fc",
+      "oss-20b": "ef11fc1847221ad5f29d55bda1bd024651363f8816adaefc27479e079b99fe71",
+      "sol": "5e1c7a7b3b4f8c4a9bbb791e15e86cefca8a6eed2530266da6c18e5afa08f4c3"
+    }
+  },
+  "trap_counts": {
+    "amount_due_differs": {
+      "llama-8b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "oss-20b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "sol": {
+        "n_calls": 2,
+        "n_items": 2
+      }
+    },
+    "computed_due_date": {
+      "llama-8b": {
+        "n_calls": 3,
+        "n_items": 3
+      },
+      "oss-20b": {
+        "n_calls": 3,
+        "n_items": 3
+      },
+      "sol": {
+        "n_calls": 3,
+        "n_items": 3
+      }
+    },
+    "credit_note": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "date_format": {
+      "llama-8b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "oss-20b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "sol": {
+        "n_calls": 2,
+        "n_items": 2
+      }
+    },
+    "decoy_reference": {
+      "llama-8b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "oss-20b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "sol": {
+        "n_calls": 2,
+        "n_items": 2
+      }
+    },
+    "default_attendee": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "derived_base": {
+      "llama-8b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "oss-20b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "sol": {
+        "n_calls": 2,
+        "n_items": 2
+      }
+    },
+    "distractor_numbers": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "enum_mapping": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "exception_tier": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "exclusion": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "first_step_only": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "foreign_language": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "format_conversion": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "missing_argument": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "missing_field": {
+      "llama-8b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "oss-20b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "sol": {
+        "n_calls": 2,
+        "n_items": 2
+      }
+    },
+    "number_format": {
+      "llama-8b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "oss-20b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "sol": {
+        "n_calls": 2,
+        "n_items": 2
+      }
+    },
+    "ocr_noise": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "order_of_operations": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "party_confusion": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "policy_override": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "relative_date": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "rounding": {
+      "llama-8b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "oss-20b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "sol": {
+        "n_calls": 2,
+        "n_items": 2
+      }
+    },
+    "similar_tools": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "threshold_minimum": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    }
+  }
+}

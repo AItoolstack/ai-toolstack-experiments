@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
-from build_items import INVOICE_FIELDS, RAIL_POLICY, RULES_QUESTION, TOOL_SYSTEM
+from build_items import INVOICE_FIELDS, TOOL_SYSTEM
+from policies import POLICIES
 
 HERE = Path(__file__).resolve().parent
 REPEATS = 3
@@ -23,7 +25,19 @@ MODELS = {
     "luna": {"provider": "openai", "model": "gpt-6-luna", "route": None, "reasoning": True},
     "oss-120b": {"provider": "openrouter", "model": "openai/gpt-oss-120b", "route": "groq", "reasoning": True},
     "sol": {"provider": "openai", "model": "gpt-6.1-sol", "route": None, "reasoning": True},
+    "glm-flash": {
+        "provider": "openrouter", "model": "z-ai/glm-5.3-flash", "route": "z-ai/fp8",
+        "reasoning": True, "token_limit_field": "max_tokens",
+    },
+    "glm-flash-t0": {
+        "provider": "openrouter", "model": "z-ai/glm-5.3-flash", "route": "z-ai/fp8",
+        "reasoning": True, "token_limit_field": "max_tokens", "temperature": 0,
+    },
 }
+# Keep Llama registered so development results remain reproducible. It is outside the new study.
+STUDY_MODELS = ("oss-20b", "luna", "glm-flash", "oss-120b", "sol", "glm-flash-t0")
+CONTROL_MODELS = {"glm-flash-t0"}
+MODEL_REPEATS = {name: (1 if name in CONTROL_MODELS or name == "sol" else REPEATS) for name in MODELS}
 REASONING_EFFORT = "low"
 
 # USD per million tokens (input, output), list prices for the host used. Reasoning tokens bill as output.
@@ -34,6 +48,8 @@ PRICES = {
     "luna": (0.10, 0.50),
     "oss-120b": (0.15, 0.60),  # Groq via OpenRouter
     "sol": (2.00, 10.00),
+    "glm-flash": (0.15, 0.50),
+    "glm-flash-t0": (0.15, 0.50),
 }
 
 INVOICE_SYSTEM = (
@@ -83,20 +99,25 @@ def messages_for(item: dict) -> list[dict]:
     if item["task"] == "tool":
         return [{"role": "system", "content": TOOL_SYSTEM}, {"role": "user", "content": item["request"]}]
     if item["task"] == "rules":
-        user = f"Policy:\n{RAIL_POLICY}\n\nCase: {item['case']}\n\n{RULES_QUESTION}"
+        policy, question = POLICIES[item.get("policy", "rail")]
+        user = f"Policy:\n{policy}\n\nCase: {item['case']}\n\n{question}"
         return [{"role": "system", "content": RULES_SYSTEM}, {"role": "user", "content": user}]
     raise ValueError(item["task"])
 
 
-def results_dir(items_file: str, dry_run: bool = False) -> Path:
+def results_dir(items_file: str, dry_run: bool = False, run_tag: str = "") -> Path:
     suffix = Path(items_file).stem.replace("items", "")
-    return HERE / (("results-dry" if dry_run else "results") + suffix)
+    if run_tag and not re.fullmatch(r"[A-Za-z0-9_-]+", run_tag):
+        raise ValueError("run tag must contain only letters, numbers, underscores or hyphens")
+    return HERE / (("results-dry" if dry_run else "results") + suffix + (f"_{run_tag}" if run_tag else ""))
 
 
-def load_runs(items_file: str, dry_run: bool = False) -> dict[str, list[dict]]:
+def load_runs(items_file: str, dry_run: bool = False, run_tag: str = "") -> dict[str, list[dict]]:
     """Results keyed by model short name."""
     runs = {}
-    for path in sorted(results_dir(items_file, dry_run).glob("*.jsonl")):
+    for path in sorted(results_dir(items_file, dry_run, run_tag).glob("*.jsonl")):
+        if path.stem not in MODELS:
+            continue  # diagnostics are not model answers
         rows = [r for r in read_jsonl(path) if r["repeat"] < REPEATS]
         if rows:
             runs[path.stem] = rows

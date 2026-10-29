@@ -1,0 +1,4 @@
+# Preserve bytes for the experiment's recorded source/data/audit hashes on every platform.
+e06-cheap-model-good-enough/** -text
+.gitattributes text eol=lf
+pyproject.toml text eol=lf

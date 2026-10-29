@@ -1,0 +1,102 @@
+{"id":"inv01","answer":{"supplier_name":"NORTHGATE PRINT LTD","invoice_number":"NP-20417","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"GBP","net_total":347,"tax_total":69.4,"gross_total":416.4,"amount_due":416.4,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv02","answer":{"supplier_name":"Kessler Messtechnik GmbH","invoice_number":"2026-1187","invoice_date":"2026-11-03","due_date":"2026-11-17","currency":"EUR","net_total":1234.5,"tax_total":234.56,"gross_total":1469.06,"amount_due":1469.06,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv03","answer":{"supplier_name":"Ashdown Joinery (Sam Ashdown)","invoice_number":"0093","invoice_date":"2026-09-14","due_date":"2026-10-14","currency":"GBP","net_total":3090,"tax_total":0,"gross_total":3090,"amount_due":2090,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv04","answer":{"supplier_name":"Brightwater Office Supplies Ltd","invoice_number":"CN-5521","invoice_date":"2026-10-21","due_date":null,"currency":"GBP","net_total":-402.3,"tax_total":-80.46,"gross_total":-482.76,"amount_due":-482.76,"is_credit_note":true},"ambiguous":false,"reason":""}
+{"id":"inv05","answer":{"supplier_name":"Harbour Lights AV Hire Ltd","invoice_number":"HL-7731","invoice_date":"2026-10-09","due_date":"2026-10-23","currency":"GBP","net_total":864,"tax_total":172.8,"gross_total":1036.8,"amount_due":1036.8,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv06","answer":{"supplier_name":"BRIGHTLINE SOFTWARE INC.","invoice_number":"BL-INV-30992","invoice_date":"2026-10-07","due_date":null,"currency":"USD","net_total":4320,"tax_total":0,"gross_total":4320,"amount_due":4320,"is_credit_note":false},"ambiguous":true,"reason":"Payment is due on receipt, but the receipt date is not supplied; null avoids assuming receipt on the invoice date."}
+{"id":"inv07","answer":{"supplier_name":"Atelier Verdon SARL","invoice_number":"F-26-0412","invoice_date":"2026-10-19","due_date":"2026-11-18","currency":"EUR","net_total":1595,"tax_total":319,"gross_total":1914,"amount_due":1414,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv08","answer":{"supplier_name":"Alder Quay Workshop 8 Ltd","invoice_number":"AQ-0008","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"GBP","net_total":204,"tax_total":40.8,"gross_total":244.8,"amount_due":244.8,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv09","answer":{"supplier_name":"Alder Quay Workshop 9 Ltd","invoice_number":"AQ-0009","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"USD","net_total":217,"tax_total":17.36,"gross_total":234.36,"amount_due":234.36,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv10","answer":{"supplier_name":"Alder Quay Workshop 10 Ltd","invoice_number":"AQ-0010","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"GBP","net_total":230,"tax_total":46,"gross_total":276,"amount_due":276,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv11","answer":{"supplier_name":"Alder Quay Workshop 11 Ltd","invoice_number":"AQ-0011","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"GBP","net_total":243,"tax_total":48.6,"gross_total":291.6,"amount_due":291.6,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv12","answer":{"supplier_name":"Alder Quay Workshop 12 Ltd","invoice_number":"AQ-0012","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"USD","net_total":256,"tax_total":20.48,"gross_total":276.48,"amount_due":276.48,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv13","answer":{"supplier_name":"Alder Quay Workshop 13 Ltd","invoice_number":"AQ-0013","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"GBP","net_total":269,"tax_total":53.8,"gross_total":322.8,"amount_due":322.8,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv14","answer":{"supplier_name":"Alder Quay Workshop 14 Ltd","invoice_number":"AQ-0014","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"GBP","net_total":282,"tax_total":56.4,"gross_total":338.4,"amount_due":338.4,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv15","answer":{"supplier_name":"Alder Quay Workshop 15 Ltd","invoice_number":"AQ-0015","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"USD","net_total":295,"tax_total":23.6,"gross_total":318.6,"amount_due":318.6,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv16","answer":{"supplier_name":"Alder Quay Workshop 16 Ltd","invoice_number":"AQ-0016","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"GBP","net_total":308,"tax_total":61.6,"gross_total":369.6,"amount_due":369.6,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv17","answer":{"supplier_name":"Alder Quay Workshop 17 Ltd","invoice_number":"AQ-0017","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"GBP","net_total":321,"tax_total":64.2,"gross_total":385.2,"amount_due":385.2,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv18","answer":{"supplier_name":"Alder Quay Workshop 18 Ltd","invoice_number":"AQ-0018","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"USD","net_total":334,"tax_total":26.72,"gross_total":360.72,"amount_due":360.72,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv19","answer":{"supplier_name":"Falken Bucht Werkstatt 19 GmbH","invoice_number":"AQ-0019","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"EUR","net_total":1234.5,"tax_total":246.9,"gross_total":1481.4,"amount_due":1481.4,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv20","answer":{"supplier_name":"Atelier Rive Ambre 20 SARL","invoice_number":"AQ-0020","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"EUR","net_total":1595,"tax_total":319,"gross_total":1914,"amount_due":1914,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv21","answer":{"supplier_name":"Alder Quay Workshop 21 Ltd","invoice_number":"AQ-0021","invoice_date":"2026-11-03","due_date":"2026-12-03","currency":"GBP","net_total":125,"tax_total":25,"gross_total":150,"amount_due":150,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv22","answer":{"supplier_name":"Alder Quay Workshop 22 Ltd","invoice_number":"AQ-0022","invoice_date":"2026-03-11","due_date":"2026-04-10","currency":"USD","net_total":125,"tax_total":25,"gross_total":150,"amount_due":150,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv23","answer":{"supplier_name":"Alder Quay Workshop 23 Ltd","invoice_number":"AQ-0023","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"GBP","net_total":-125,"tax_total":-25,"gross_total":-150,"amount_due":-150,"is_credit_note":true},"ambiguous":false,"reason":""}
+{"id":"inv24","answer":{"supplier_name":"Alder Quay Workshop 24 Ltd","invoice_number":"AQ-0024","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"GBP","net_total":-1345.5,"tax_total":-269.1,"gross_total":-1614.6,"amount_due":-1614.6,"is_credit_note":true},"ambiguous":false,"reason":""}
+{"id":"inv25","answer":{"supplier_name":"Alder Quay Workshop 25 Ltd","invoice_number":"AQ-0025","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"GBP","net_total":125,"tax_total":25,"gross_total":150,"amount_due":150,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv26","answer":{"supplier_name":"Alder Quay Workshop 26 Ltd","invoice_number":"AQ-0026","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"GBP","net_total":125,"tax_total":25,"gross_total":150,"amount_due":150,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv27","answer":{"supplier_name":"Alder Quay Workshop 27 Ltd","invoice_number":"AQ-0027","invoice_date":"2026-10-02","due_date":null,"currency":"GBP","net_total":125,"tax_total":25,"gross_total":150,"amount_due":150,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv28","answer":{"supplier_name":"Alder Quay Workshop 28 Ltd","invoice_number":"AQ-0028","invoice_date":"2026-12-17","due_date":"2027-01-16","currency":"GBP","net_total":125,"tax_total":25,"gross_total":150,"amount_due":150,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv29","answer":{"supplier_name":"Alder Quay Workshop 29 Ltd","invoice_number":"AQ-0029","invoice_date":"2026-10-02","due_date":null,"currency":"GBP","net_total":125,"tax_total":25,"gross_total":150,"amount_due":110,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv30","answer":{"supplier_name":"Alder Quay Workshop 30 Ltd","invoice_number":"AQ-0030","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"GBP","net_total":345.5,"tax_total":69.1,"gross_total":414.6,"amount_due":314.6,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv31","answer":{"supplier_name":"Alder Quay Workshop 31 Ltd","invoice_number":"AQ-0031","invoice_date":"2026-04-09","due_date":"2026-05-09","currency":"GBP","net_total":125,"tax_total":null,"gross_total":150,"amount_due":150,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv32","answer":{"supplier_name":"Falken Bucht Werkstatt 32 GmbH","invoice_number":"AQ-0032","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"EUR","net_total":2345.75,"tax_total":469.15,"gross_total":2814.9,"amount_due":2814.9,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv33","answer":{"supplier_name":"Alder Quay Workshop 33 Ltd","invoice_number":"AQ-0033","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"GBP","net_total":125,"tax_total":null,"gross_total":150,"amount_due":125,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv34","answer":{"supplier_name":"Alder Quay Workshop 34 Ltd","invoice_number":"AQ-0034","invoice_date":"2026-10-02","due_date":"2026-11-01","currency":"GBP","net_total":-125,"tax_total":-25,"gross_total":-150,"amount_due":-150,"is_credit_note":true},"ambiguous":false,"reason":""}
+{"id":"inv35","answer":{"supplier_name":"Alder Quay Workshop 35 Ltd","invoice_number":"AQ-0035","invoice_date":"2026-11-12","due_date":"2026-12-12","currency":"USD","net_total":125,"tax_total":25,"gross_total":150,"amount_due":150,"is_credit_note":false},"ambiguous":false,"reason":""}
+{"id":"inv36","answer":{"supplier_name":"Alder Quay Workshop 36 Ltd","invoice_number":"AQ-0036","invoice_date":"2026-10-02","due_date":null,"currency":"GBP","net_total":125,"tax_total":25,"gross_total":150,"amount_due":150,"is_credit_note":false},"ambiguous":true,"reason":"Payment is due on receipt, but the receipt date is not supplied; null avoids assuming receipt on the invoice date."}
+{"id":"tl01","answer":{"call":"get_order","args":{"order_id":"FR-448210"}},"ambiguous":false,"reason":""}
+{"id":"tl02","answer":{"call":"create_calendar_event","args":{"title":"Q4 returns review","start":"2026-11-06T14:00:00+00:00","end":"2026-11-06T15:00:00+00:00","attendee_emails":[]}},"ambiguous":false,"reason":""}
+{"id":"tl03","answer":{"call":"create_ticket","args":{"title":"Refund request for FR-447902","priority":"P2","team":"finance","details":"Customer requests a full GBP 129.99 refund for order FR-447902 because the lamp arrived broken."}},"ambiguous":false,"reason":""}
+{"id":"tl04","answer":{"call":null},"ambiguous":true,"reason":"The order ID and delivery-charge amount are absent; ask which order and what delivery charge to refund."}
+{"id":"tl05","answer":{"call":"lookup_employee","args":{"name":"Tom Okoye"}},"ambiguous":false,"reason":""}
+{"id":"tl06","answer":{"call":"convert_currency","args":{"amount":45,"from_currency":"EUR","to_currency":"GBP"}},"ambiguous":false,"reason":""}
+{"id":"tl07","answer":{"call":"search_orders","args":{"customer_email":"jo.pemb@outlook.com","status":"returned"}},"ambiguous":false,"reason":""}
+{"id":"tl08","answer":{"call":"get_order","args":{"order_id":"FR-510008"}},"ambiguous":false,"reason":""}
+{"id":"tl09","answer":{"call":"lookup_employee","args":{"name":"Ellie Mere"}},"ambiguous":false,"reason":""}
+{"id":"tl10","answer":{"call":"send_email","args":{"to":["ellie.mere@fenwickrowe.co.uk"],"subject":"Stock count","body":"The stock count is complete."}},"ambiguous":false,"reason":""}
+{"id":"tl11","answer":{"call":"create_ticket","args":{"title":"Label printer offline","priority":"P3","team":"it"}},"ambiguous":false,"reason":""}
+{"id":"tl12","answer":{"call":"convert_currency","args":{"amount":80,"from_currency":"GBP","to_currency":"EUR"}},"ambiguous":false,"reason":""}
+{"id":"tl13","answer":{"call":"create_calendar_event","args":{"title":"Shelf review","start":"2026-11-12T09:00:00+00:00","end":"2026-11-12T09:30:00+00:00","attendee_emails":["ellie.mere@fenwickrowe.co.uk"]}},"ambiguous":false,"reason":""}
+{"id":"tl14","answer":{"call":"find_free_slots","args":{"attendee_emails":["ellie.mere@fenwickrowe.co.uk"],"date":"2026-11-13","duration_minutes":30}},"ambiguous":false,"reason":""}
+{"id":"tl15","answer":{"call":"search_orders","args":{"customer_email":"alden.mere@example.com","status":"placed"}},"ambiguous":false,"reason":""}
+{"id":"tl16","answer":{"call":"issue_refund","args":{"order_id":"FR-510016","amount_gbp":20,"reason":"Duplicate delivery charge"}},"ambiguous":false,"reason":""}
+{"id":"tl17","answer":{"call":null},"ambiguous":false,"reason":""}
+{"id":"tl18","answer":{"call":null},"ambiguous":false,"reason":""}
+{"id":"tl19","answer":{"call":"create_calendar_event","args":{"title":"Supplier notes","start":"2026-11-05T11:00:00+00:00","end":"2026-11-05T11:30:00+00:00","attendee_emails":[]}},"ambiguous":false,"reason":""}
+{"id":"tl20","answer":{"call":"create_calendar_event","args":{"title":"Winter planning","start":"2026-11-10T15:00:00+00:00","end":"2026-11-10T16:00:00+00:00","attendee_emails":[]}},"ambiguous":false,"reason":""}
+{"id":"tl21","answer":{"call":"create_ticket","args":{"title":"Refund request for FR-510021","priority":"P2","team":"finance","details":"Refund GBP 100.01 for order FR-510021; reason: damaged shade."}},"ambiguous":false,"reason":""}
+{"id":"tl22","answer":{"call":"create_ticket","args":{"title":"Refund request for broken desk","priority":"P2","team":"finance","details":"Customer requests a GBP 175 refund for a broken desk. The order ID is unavailable."}},"ambiguous":false,"reason":""}
+{"id":"tl23","answer":{"call":null},"ambiguous":true,"reason":"The meeting day, start time and end time or duration are missing; ask when to schedule it."}
+{"id":"tl24","answer":{"call":null},"ambiguous":true,"reason":"The email recipient and subject are missing; ask who should receive it and the subject."}
+{"id":"tl25","answer":{"call":"lookup_employee","args":{"name":"Nila Quay"}},"ambiguous":false,"reason":""}
+{"id":"tl26","answer":{"call":"lookup_employee","args":{"name":"Oren Vale"}},"ambiguous":false,"reason":""}
+{"id":"tl27","answer":{"call":"convert_currency","args":{"amount":1250.5,"from_currency":"EUR","to_currency":"GBP"}},"ambiguous":false,"reason":""}
+{"id":"tl28","answer":{"call":"convert_currency","args":{"amount":45,"from_currency":"CAD","to_currency":"GBP"}},"ambiguous":false,"reason":""}
+{"id":"tl29","answer":{"call":"search_orders","args":{"customer_email":"maren.quay@example.com","status":"dispatched"}},"ambiguous":false,"reason":""}
+{"id":"tl30","answer":{"call":"search_orders","args":{"customer_email":"rowan.vale@example.com","status":"cancelled"}},"ambiguous":false,"reason":""}
+{"id":"tl31","answer":{"call":"find_free_slots","args":{"attendee_emails":["ellie.mere@fenwickrowe.co.uk"],"date":"2026-11-05","duration_minutes":20}},"ambiguous":false,"reason":""}
+{"id":"tl32","answer":{"call":"create_calendar_event","args":{"title":"Packaging notes","start":"2026-11-18T10:00:00+00:00","end":"2026-11-18T10:30:00+00:00","attendee_emails":[]}},"ambiguous":false,"reason":""}
+{"id":"tl33","answer":{"call":"get_order","args":{"order_id":"FR-510033"}},"ambiguous":false,"reason":""}
+{"id":"tl34","answer":{"call":"create_ticket","args":{"title":"Refund request for FR-510034","priority":"P2","team":"finance","details":"Refund request of GBP 101 for order FR-510034; reason: Wrong lamp."}},"ambiguous":false,"reason":""}
+{"id":"tl35","answer":{"call":null},"ambiguous":true,"reason":"Next Friday can mean 6 or 13 November 2026; ask which date before searching availability."}
+{"id":"tl36","answer":{"call":"find_free_slots","args":{"attendee_emails":["ellie.mere@fenwickrowe.co.uk"],"date":"2026-11-07","duration_minutes":20}},"ambiguous":false,"reason":""}
+{"id":"rl01","answer":{"amount":9.2,"rules_used":"1, 2, 5, 6, 9"},"ambiguous":false,"reason":""}
+{"id":"rl02","answer":{"amount":6.5,"rules_used":"1, 2, 3, 5, 6, 9"},"ambiguous":false,"reason":""}
+{"id":"rl03","answer":{"amount":0,"rules_used":"1, 2, 5, 6, 8"},"ambiguous":false,"reason":""}
+{"id":"rl04","answer":{"amount":10.3,"rules_used":"1, 2, 4, 5, 6, 9"},"ambiguous":false,"reason":""}
+{"id":"rl05","answer":{"amount":12.76,"rules_used":"1, 2, 5, 6, 9"},"ambiguous":false,"reason":""}
+{"id":"rl06","answer":{"amount":64,"rules_used":"1, 2, 3, 5, 6, 9"},"ambiguous":false,"reason":""}
+{"id":"rl07","answer":{"amount":0,"rules_used":"7"},"ambiguous":false,"reason":""}
+{"id":"rl08","answer":{"amount":24,"rules_used":"1, 4, 5"},"ambiguous":false,"reason":""}
+{"id":"rl09","answer":{"amount":18,"rules_used":"1, 4, 5"},"ambiguous":false,"reason":""}
+{"id":"rl10","answer":{"amount":17.3,"rules_used":"1, 3, 4, 5"},"ambiguous":false,"reason":""}
+{"id":"rl11","answer":{"amount":0,"rules_used":"1, 4"},"ambiguous":false,"reason":""}
+{"id":"rl12","answer":{"amount":25.63,"rules_used":"1, 4, 5"},"ambiguous":false,"reason":""}
+{"id":"rl13","answer":{"amount":18,"rules_used":"1, 4, 5, 6"},"ambiguous":true,"reason":"Rule 6 permits either recorded choice: cash gives GBP 18 and voucher gives GBP 19.80; cash is selected here."}
+{"id":"rl14","answer":{"amount":15,"rules_used":"1, 4, 5"},"ambiguous":false,"reason":""}
+{"id":"rl15","answer":{"amount":20,"rules_used":"1, 4, 5"},"ambiguous":false,"reason":""}
+{"id":"rl16","answer":{"amount":20,"rules_used":"1, 2, 4, 5"},"ambiguous":false,"reason":""}
+{"id":"rl17","answer":{"amount":25,"rules_used":"1, 4, 5"},"ambiguous":false,"reason":""}
+{"id":"rl18","answer":{"amount":0,"rules_used":"3"},"ambiguous":false,"reason":""}
+{"id":"rl19","answer":{"amount":0,"rules_used":"1"},"ambiguous":false,"reason":""}
+{"id":"rl20","answer":{"amount":2,"rules_used":"1, 2, 4, 5"},"ambiguous":false,"reason":""}
+{"id":"rl21","answer":{"amount":10,"rules_used":"1, 2, 4, 5"},"ambiguous":false,"reason":""}
+{"id":"rl22","answer":{"amount":1,"rules_used":"1, 2, 4, 5"},"ambiguous":false,"reason":""}
+{"id":"rl23","answer":{"amount":20,"rules_used":"1, 2, 4, 5"},"ambiguous":false,"reason":""}
+{"id":"rl24","answer":{"amount":0,"rules_used":"3"},"ambiguous":false,"reason":""}
+{"id":"rl25","answer":{"amount":2,"rules_used":"1, 2, 4, 5, 7"},"ambiguous":true,"reason":"Rule 7 permits either illegible date: day 28 gives GBP 2 and day 29 gives GBP 5; day 28 is selected here."}
+{"id":"rl26","answer":{"amount":30,"rules_used":"1, 4"},"ambiguous":false,"reason":""}
+{"id":"rl27","answer":{"amount":40,"rules_used":"1, 4"},"ambiguous":false,"reason":""}
+{"id":"rl28","answer":{"amount":10.44,"rules_used":"1, 4, 5"},"ambiguous":false,"reason":""}
+{"id":"rl29","answer":{"amount":0,"rules_used":"1, 4"},"ambiguous":false,"reason":""}
+{"id":"rl30","answer":{"amount":30,"rules_used":"1, 3, 4"},"ambiguous":false,"reason":""}

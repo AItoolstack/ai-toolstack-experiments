@@ -1,0 +1,421 @@
+{
+  "date": "2026-10-29",
+  "initial_answers": 102,
+  "initial_answer_disagreements": 1,
+  "initial_disagreement_ids": [
+    "tl35"
+  ],
+  "items_changed": 17,
+  "gold_changed_items": 6,
+  "source_rewrites": 4,
+  "re_audited_ids": [
+    "inv31",
+    "inv33",
+    "tl29",
+    "tl30"
+  ],
+  "all_final_answers_match": true,
+  "final_answer_failures": [],
+  "stage_one_lock": {
+    "answers_sha256": "34dc0d2cf5213683a54ce70d0c6ce8e64fb5cbd350ad3bcd7760da59482616a2",
+    "requests_sha256": "c64bb4a166a8b36e9f26514bf044d98adf778a0ac0fc9f46670823669b42563a",
+    "date": "2026-10-29",
+    "answered": 102
+  },
+  "changes": [
+    {
+      "id": "inv03",
+      "changes": {
+        "gold": {
+          "old": {
+            "supplier_name": {
+              "any_of": [
+                "Ashdown Joinery",
+                "Ashdown Joinery (Sam Ashdown)"
+              ]
+            },
+            "invoice_number": "0093",
+            "invoice_date": "2026-09-14",
+            "due_date": "2026-10-14",
+            "currency": "GBP",
+            "net_total": 3090.0,
+            "tax_total": {
+              "any_of": [
+                0.0,
+                null
+              ]
+            },
+            "gross_total": 3090.0,
+            "amount_due": 2090.0,
+            "is_credit_note": false
+          },
+          "new": {
+            "supplier_name": {
+              "any_of": [
+                "Ashdown Joinery",
+                "Ashdown Joinery (Sam Ashdown)"
+              ]
+            },
+            "invoice_number": "0093",
+            "invoice_date": "2026-09-14",
+            "due_date": "2026-10-14",
+            "currency": "GBP",
+            "net_total": 3090.0,
+            "tax_total": 0.0,
+            "gross_total": 3090.0,
+            "amount_due": 2090.0,
+            "is_credit_note": false
+          }
+        },
+        "kind": {
+          "old": "contested",
+          "new": "hard"
+        },
+        "note": {
+          "old": "Contested only on tax_total: 'not VAT registered' supports 0 or null.",
+          "new": "Audit: not VAT registered supports zero tax; issuer-name forms represent the same entity."
+        },
+        "traps": {
+          "old": [
+            "amount_due_differs",
+            "computed_due_date",
+            "missing_field"
+          ],
+          "new": [
+            "amount_due_differs",
+            "computed_due_date"
+          ]
+        }
+      }
+    },
+    {
+      "id": "inv06",
+      "changes": {
+        "gold": {
+          "old": {
+            "supplier_name": "Brightline Software Inc.",
+            "invoice_number": "BL-INV-30992",
+            "invoice_date": "2026-10-07",
+            "due_date": {
+              "any_of": [
+                null,
+                "2026-10-07"
+              ]
+            },
+            "currency": "USD",
+            "net_total": 4320.0,
+            "tax_total": {
+              "any_of": [
+                0.0,
+                null
+              ]
+            },
+            "gross_total": 4320.0,
+            "amount_due": 4320.0,
+            "is_credit_note": false
+          },
+          "new": {
+            "supplier_name": "Brightline Software Inc.",
+            "invoice_number": "BL-INV-30992",
+            "invoice_date": {
+              "any_of": [
+                "2026-10-07",
+                "2026-07-10"
+              ]
+            },
+            "due_date": null,
+            "currency": "USD",
+            "net_total": 4320.0,
+            "tax_total": 0.0,
+            "gross_total": 4320.0,
+            "amount_due": 4320.0,
+            "is_credit_note": false
+          }
+        },
+        "note": {
+          "old": "US date format, confirmed by the service period. 'Due on receipt' supports null or the invoice date.",
+          "new": "Audit: numeric date convention is undeclared; receipt date is absent, so due_date is null."
+        }
+      }
+    },
+    {
+      "id": "inv07",
+      "changes": {
+        "traps": {
+          "old": [
+            "amount_due_differs",
+            "number_format",
+            "decoy_reference"
+          ],
+          "new": [
+            "amount_due_differs",
+            "number_format",
+            "decoy_reference",
+            "foreign_language",
+            "date_format"
+          ]
+        }
+      }
+    },
+    {
+      "id": "inv31",
+      "changes": {
+        "document": {
+          "old": "Supplier / issuer: Alder Quay Workshop 31 Ltd\nBill to: Moss Lantern Studio Ltd\nDocument country: UK; currency GBP\nInvoice no: AQ-0031\nDate: 09/04/2026\nDue date: 09/05/2026\nOne workshop service, quantity 1; net line amount 125.00 GBP\nNet: 125.00 GBP\nTotal: 150.00 GBP\nAmount due: 150.00 GBP",
+          "new": "Supplier / issuer: Alder Quay Workshop 31 Ltd\nBill to: Moss Lantern Studio Ltd\nDocument country: UK; currency GBP\nDate: 09/04/2026\nDue date: 09/05/2026\nOne workshop service, quantity 1; net line amount 125.00 GBP\nNet: 125.00 GBP\nTax (20.00%): 25.00 GBP\nTotal: 150.00 GBP\nAmount due: 150.00 GBP"
+        },
+        "gold": {
+          "old": {
+            "supplier_name": "Alder Quay Workshop 31 Ltd",
+            "invoice_number": "AQ-0031",
+            "invoice_date": "2026-04-09",
+            "due_date": "2026-05-09",
+            "currency": "GBP",
+            "net_total": 125.0,
+            "tax_total": null,
+            "gross_total": 150.0,
+            "amount_due": 150.0,
+            "is_credit_note": false
+          },
+          "new": {
+            "supplier_name": "Alder Quay Workshop 31 Ltd",
+            "invoice_number": null,
+            "invoice_date": "2026-04-09",
+            "due_date": "2026-05-09",
+            "currency": "GBP",
+            "net_total": 125.0,
+            "tax_total": 25.0,
+            "gross_total": 150.0,
+            "amount_due": 150.0,
+            "is_credit_note": false
+          }
+        }
+      }
+    },
+    {
+      "id": "inv33",
+      "changes": {
+        "document": {
+          "old": "Supplier / issuer: Alder Quay Workshop 33 Ltd\nBill to: Moss Lantern Studio Ltd\nDocument country: UK; currency GBP\nInvoice no: AQ-0033\nDate: 2026-10-02\nDue date: 2026-11-01\nOne workshop service, quantity 1; net line amount 125.00 GBP\nNet: 125.00 GBP\nTotal: 150.00 GBP\nDeposit already received: 25.00 GBP\nAmount due: 125.00 GBP",
+          "new": "Supplier / issuer: Alder Quay Workshop 33 Ltd\nBill to: Moss Lantern Studio Ltd\nDocument country: UK; currency GBP\nDate: 2026-10-02\nDue date: 2026-11-01\nOne workshop service, quantity 1; net line amount 125.00 GBP\nNet: 125.00 GBP\nTax (20.00%): 25.00 GBP\nTotal: 150.00 GBP\nDeposit already received: 25.00 GBP\nAmount due: 125.00 GBP"
+        },
+        "gold": {
+          "old": {
+            "supplier_name": "Alder Quay Workshop 33 Ltd",
+            "invoice_number": "AQ-0033",
+            "invoice_date": "2026-10-02",
+            "due_date": "2026-11-01",
+            "currency": "GBP",
+            "net_total": 125.0,
+            "tax_total": null,
+            "gross_total": 150.0,
+            "amount_due": 125.0,
+            "is_credit_note": false
+          },
+          "new": {
+            "supplier_name": "Alder Quay Workshop 33 Ltd",
+            "invoice_number": null,
+            "invoice_date": "2026-10-02",
+            "due_date": "2026-11-01",
+            "currency": "GBP",
+            "net_total": 125.0,
+            "tax_total": 25.0,
+            "gross_total": 150.0,
+            "amount_due": 125.0,
+            "is_credit_note": false
+          }
+        }
+      }
+    },
+    {
+      "id": "inv36",
+      "changes": {
+        "gold": {
+          "old": {
+            "supplier_name": "Alder Quay Workshop 36 Ltd",
+            "invoice_number": "AQ-0036",
+            "invoice_date": "2026-10-02",
+            "due_date": {
+              "any_of": [
+                "2026-10-02",
+                null
+              ]
+            },
+            "currency": "GBP",
+            "net_total": 125.0,
+            "tax_total": 25.0,
+            "gross_total": 150.0,
+            "amount_due": 150.0,
+            "is_credit_note": false
+          },
+          "new": {
+            "supplier_name": "Alder Quay Workshop 36 Ltd",
+            "invoice_number": "AQ-0036",
+            "invoice_date": "2026-10-02",
+            "due_date": null,
+            "currency": "GBP",
+            "net_total": 125.0,
+            "tax_total": 25.0,
+            "gross_total": 150.0,
+            "amount_due": 150.0,
+            "is_credit_note": false
+          }
+        },
+        "kind": {
+          "old": "contested",
+          "new": "hard"
+        }
+      }
+    },
+    {
+      "id": "tl02",
+      "changes": {
+        "kind": {
+          "old": "hard",
+          "new": "contested"
+        }
+      }
+    },
+    {
+      "id": "tl07",
+      "changes": {
+        "traps": {
+          "old": [
+            "enum_mapping",
+            "similar_tools"
+          ],
+          "new": [
+            "enum_mapping"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tl19",
+      "changes": {
+        "kind": {
+          "old": "hard",
+          "new": "contested"
+        }
+      }
+    },
+    {
+      "id": "tl20",
+      "changes": {
+        "kind": {
+          "old": "hard",
+          "new": "contested"
+        }
+      }
+    },
+    {
+      "id": "tl29",
+      "changes": {
+        "request": {
+          "old": "Find all orders for maren.quay@example.com that have been sent out but aren't necessarily delivered.",
+          "new": "Order FR-510029 is one example for maren.quay@example.com. Find ALL this customer's orders that have been sent out but aren't necessarily delivered, not just that example order."
+        }
+      }
+    },
+    {
+      "id": "tl30",
+      "changes": {
+        "request": {
+          "old": "Find the orders for rowan.vale@example.com that were called off, not returned after delivery.",
+          "new": "Order FR-510030 is one example for rowan.vale@example.com. Find ALL this customer's orders that were called off, not returned after delivery; don't fetch just that example order."
+        }
+      }
+    },
+    {
+      "id": "tl32",
+      "changes": {
+        "kind": {
+          "old": "hard",
+          "new": "contested"
+        }
+      }
+    },
+    {
+      "id": "tl35",
+      "changes": {
+        "gold": {
+          "old": {
+            "call": "find_free_slots",
+            "args": {
+              "attendee_emails": {
+                "set": [
+                  "ellie.mere@fenwickrowe.co.uk"
+                ]
+              },
+              "date": {
+                "any_of": [
+                  "2026-11-06",
+                  "2026-11-13"
+                ]
+              },
+              "duration_minutes": 30
+            }
+          },
+          "new": {
+            "call": null
+          }
+        },
+        "kind": {
+          "old": "contested",
+          "new": "hard"
+        },
+        "traps": {
+          "old": [
+            "relative_date"
+          ],
+          "new": [
+            "relative_date",
+            "missing_argument"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rl03",
+      "changes": {
+        "traps": {
+          "old": [
+            "rounding",
+            "threshold_minimum"
+          ],
+          "new": [
+            "threshold_minimum"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rl11",
+      "changes": {
+        "traps": {
+          "old": [
+            "rounding",
+            "threshold_minimum"
+          ],
+          "new": [
+            "threshold_minimum"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rl29",
+      "changes": {
+        "traps": {
+          "old": [
+            "rounding",
+            "threshold_minimum"
+          ],
+          "new": [
+            "threshold_minimum"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{"id": "inv01", "kind": "clear", "traps": []}
+{"id": "inv02", "kind": "hard", "traps": ["number_format", "date_format", "computed_due_date", "foreign_language"]}
+{"id": "inv03", "kind": "contested", "traps": ["amount_due_differs", "computed_due_date", "missing_field"]}
+{"id": "inv04", "kind": "hard", "traps": ["credit_note", "decoy_reference"]}
+{"id": "inv05", "kind": "hard", "traps": ["party_confusion", "ocr_noise", "computed_due_date"]}
+{"id": "inv06", "kind": "contested", "traps": ["date_format", "missing_field"]}
+{"id": "inv07", "kind": "hard", "traps": ["amount_due_differs", "number_format", "decoy_reference"]}
+{"id": "inv08", "kind": "clear", "traps": []}
+{"id": "inv09", "kind": "clear", "traps": []}
+{"id": "inv10", "kind": "clear", "traps": []}
+{"id": "inv11", "kind": "clear", "traps": []}
+{"id": "inv12", "kind": "clear", "traps": []}
+{"id": "inv13", "kind": "clear", "traps": []}
+{"id": "inv14", "kind": "clear", "traps": []}
+{"id": "inv15", "kind": "clear", "traps": []}
+{"id": "inv16", "kind": "clear", "traps": []}
+{"id": "inv17", "kind": "clear", "traps": []}
+{"id": "inv18", "kind": "clear", "traps": []}
+{"id": "inv19", "kind": "hard", "traps": ["number_format", "foreign_language"]}
+{"id": "inv20", "kind": "hard", "traps": ["number_format", "foreign_language"]}
+{"id": "inv21", "kind": "hard", "traps": ["date_format", "computed_due_date"]}
+{"id": "inv22", "kind": "hard", "traps": ["date_format", "computed_due_date"]}
+{"id": "inv23", "kind": "hard", "traps": ["credit_note", "decoy_reference"]}
+{"id": "inv24", "kind": "hard", "traps": ["credit_note", "number_format"]}
+{"id": "inv25", "kind": "hard", "traps": ["party_confusion", "decoy_reference"]}
+{"id": "inv26", "kind": "hard", "traps": ["party_confusion", "ocr_noise"]}
+{"id": "inv27", "kind": "hard", "traps": ["ocr_noise", "missing_field"]}
+{"id": "inv28", "kind": "hard", "traps": ["ocr_noise", "computed_due_date"]}
+{"id": "inv29", "kind": "hard", "traps": ["amount_due_differs", "missing_field"]}
+{"id": "inv30", "kind": "hard", "traps": ["amount_due_differs", "decoy_reference"]}
+{"id": "inv31", "kind": "hard", "traps": ["missing_field", "date_format"]}
+{"id": "inv32", "kind": "hard", "traps": ["number_format", "foreign_language"]}
+{"id": "inv33", "kind": "hard", "traps": ["missing_field", "amount_due_differs"]}
+{"id": "inv34", "kind": "hard", "traps": ["party_confusion", "credit_note"]}
+{"id": "inv35", "kind": "hard", "traps": ["computed_due_date", "date_format"]}
+{"id": "inv36", "kind": "contested", "traps": ["missing_field"]}
+{"id": "tl01", "kind": "clear", "traps": []}
+{"id": "tl02", "kind": "hard", "traps": ["relative_date", "default_attendee"]}
+{"id": "tl03", "kind": "hard", "traps": ["policy_override"]}
+{"id": "tl04", "kind": "hard", "traps": ["missing_argument"]}
+{"id": "tl05", "kind": "hard", "traps": ["first_step_only"]}
+{"id": "tl06", "kind": "hard", "traps": ["format_conversion"]}
+{"id": "tl07", "kind": "hard", "traps": ["enum_mapping", "similar_tools"]}
+{"id": "tl08", "kind": "clear", "traps": []}
+{"id": "tl09", "kind": "clear", "traps": []}
+{"id": "tl10", "kind": "clear", "traps": []}
+{"id": "tl11", "kind": "clear", "traps": []}
+{"id": "tl12", "kind": "clear", "traps": []}
+{"id": "tl13", "kind": "clear", "traps": []}
+{"id": "tl14", "kind": "clear", "traps": []}
+{"id": "tl15", "kind": "clear", "traps": []}
+{"id": "tl16", "kind": "clear", "traps": []}
+{"id": "tl17", "kind": "clear", "traps": []}
+{"id": "tl18", "kind": "clear", "traps": []}
+{"id": "tl19", "kind": "hard", "traps": ["relative_date", "default_attendee"]}
+{"id": "tl20", "kind": "hard", "traps": ["relative_date", "default_attendee"]}
+{"id": "tl21", "kind": "hard", "traps": ["policy_override"]}
+{"id": "tl22", "kind": "hard", "traps": ["policy_override"]}
+{"id": "tl23", "kind": "hard", "traps": ["missing_argument"]}
+{"id": "tl24", "kind": "hard", "traps": ["missing_argument"]}
+{"id": "tl25", "kind": "hard", "traps": ["first_step_only"]}
+{"id": "tl26", "kind": "hard", "traps": ["first_step_only"]}
+{"id": "tl27", "kind": "hard", "traps": ["format_conversion"]}
+{"id": "tl28", "kind": "hard", "traps": ["format_conversion"]}
+{"id": "tl29", "kind": "hard", "traps": ["enum_mapping", "similar_tools"]}
+{"id": "tl30", "kind": "hard", "traps": ["enum_mapping", "similar_tools"]}
+{"id": "tl31", "kind": "hard", "traps": ["relative_date"]}
+{"id": "tl32", "kind": "hard", "traps": ["default_attendee"]}
+{"id": "tl33", "kind": "hard", "traps": ["similar_tools"]}
+{"id": "tl34", "kind": "hard", "traps": ["policy_override"]}
+{"id": "tl35", "kind": "contested", "traps": ["relative_date"]}
+{"id": "tl36", "kind": "contested", "traps": ["relative_date"]}
+{"id": "rl01", "kind": "clear", "traps": []}
+{"id": "rl02", "kind": "hard", "traps": ["derived_base", "distractor_numbers"]}
+{"id": "rl03", "kind": "hard", "traps": ["rounding", "threshold_minimum"]}
+{"id": "rl04", "kind": "hard", "traps": ["derived_base"]}
+{"id": "rl05", "kind": "hard", "traps": ["rounding", "order_of_operations"]}
+{"id": "rl06", "kind": "hard", "traps": ["exception_tier"]}
+{"id": "rl07", "kind": "hard", "traps": ["exclusion"]}
+{"id": "rl08", "kind": "clear", "traps": []}
+{"id": "rl09", "kind": "clear", "traps": []}
+{"id": "rl10", "kind": "hard", "traps": ["derived_base", "rounding"]}
+{"id": "rl11", "kind": "hard", "traps": ["rounding", "threshold_minimum"]}
+{"id": "rl12", "kind": "hard", "traps": ["rounding", "order_of_operations"]}
+{"id": "rl13", "kind": "contested", "traps": []}
+{"id": "rl14", "kind": "clear", "traps": []}
+{"id": "rl15", "kind": "clear", "traps": []}
+{"id": "rl16", "kind": "hard", "traps": ["derived_base", "distractor_numbers"]}
+{"id": "rl17", "kind": "hard", "traps": ["exception_tier"]}
+{"id": "rl18", "kind": "hard", "traps": ["exclusion"]}
+{"id": "rl19", "kind": "clear", "traps": []}
+{"id": "rl20", "kind": "clear", "traps": []}
+{"id": "rl21", "kind": "clear", "traps": []}
+{"id": "rl22", "kind": "hard", "traps": ["derived_base", "distractor_numbers"]}
+{"id": "rl23", "kind": "hard", "traps": ["exception_tier"]}
+{"id": "rl24", "kind": "hard", "traps": ["exclusion"]}
+{"id": "rl25", "kind": "contested", "traps": []}
+{"id": "rl26", "kind": "clear", "traps": []}
+{"id": "rl27", "kind": "clear", "traps": []}
+{"id": "rl28", "kind": "hard", "traps": ["rounding", "order_of_operations"]}
+{"id": "rl29", "kind": "hard", "traps": ["rounding", "threshold_minimum"]}
+{"id": "rl30", "kind": "hard", "traps": ["derived_base", "distractor_numbers"]}

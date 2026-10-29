@@ -1,0 +1,258 @@
+{
+  "authored_date": "2026-10-29",
+  "status": "BLIND_AUDITED_FREEZE_RECORDED_SEPARATELY",
+  "development_ids": [
+    "inv01",
+    "inv02",
+    "inv03",
+    "inv04",
+    "inv05",
+    "inv06",
+    "inv07",
+    "tl01",
+    "tl02",
+    "tl03",
+    "tl04",
+    "tl05",
+    "tl06",
+    "tl07",
+    "rl01",
+    "rl02",
+    "rl03",
+    "rl04",
+    "rl05",
+    "rl06",
+    "rl07"
+  ],
+  "held_out_ids": [
+    "inv08",
+    "inv09",
+    "inv10",
+    "inv11",
+    "inv12",
+    "inv13",
+    "inv14",
+    "inv15",
+    "inv16",
+    "inv17",
+    "inv18",
+    "inv19",
+    "inv20",
+    "inv21",
+    "inv22",
+    "inv23",
+    "inv24",
+    "inv25",
+    "inv26",
+    "inv27",
+    "inv28",
+    "inv29",
+    "inv30",
+    "inv31",
+    "inv32",
+    "inv33",
+    "inv34",
+    "inv35",
+    "inv36",
+    "tl08",
+    "tl09",
+    "tl10",
+    "tl11",
+    "tl12",
+    "tl13",
+    "tl14",
+    "tl15",
+    "tl16",
+    "tl17",
+    "tl18",
+    "tl19",
+    "tl20",
+    "tl21",
+    "tl22",
+    "tl23",
+    "tl24",
+    "tl25",
+    "tl26",
+    "tl27",
+    "tl28",
+    "tl29",
+    "tl30",
+    "tl31",
+    "tl32",
+    "tl33",
+    "tl34",
+    "tl35",
+    "tl36",
+    "rl08",
+    "rl09",
+    "rl10",
+    "rl11",
+    "rl12",
+    "rl13",
+    "rl14",
+    "rl15",
+    "rl16",
+    "rl17",
+    "rl18",
+    "rl19",
+    "rl20",
+    "rl21",
+    "rl22",
+    "rl23",
+    "rl24",
+    "rl25",
+    "rl26",
+    "rl27",
+    "rl28",
+    "rl29",
+    "rl30"
+  ],
+  "evaluation_copy_relabels": [
+    {
+      "id": "inv02",
+      "old": "clear",
+      "new": "hard",
+      "reason": "Apply handover kind rule in evaluation copy; preserve original development sample."
+    },
+    {
+      "id": "inv04",
+      "old": "clear",
+      "new": "hard",
+      "reason": "Apply handover kind rule in evaluation copy; preserve original development sample."
+    },
+    {
+      "id": "inv05",
+      "old": "clear",
+      "new": "hard",
+      "reason": "Apply handover kind rule in evaluation copy; preserve original development sample."
+    },
+    {
+      "id": "inv07",
+      "old": "clear",
+      "new": "hard",
+      "reason": "Apply handover kind rule in evaluation copy; preserve original development sample."
+    },
+    {
+      "id": "tl02",
+      "old": "clear",
+      "new": "hard",
+      "reason": "Apply handover kind rule in evaluation copy; preserve original development sample."
+    },
+    {
+      "id": "tl03",
+      "old": "clear",
+      "new": "hard",
+      "reason": "Apply handover kind rule in evaluation copy; preserve original development sample."
+    },
+    {
+      "id": "tl04",
+      "old": "clear",
+      "new": "hard",
+      "reason": "Apply handover kind rule in evaluation copy; preserve original development sample."
+    },
+    {
+      "id": "tl05",
+      "old": "contested",
+      "new": "hard",
+      "reason": "Apply handover kind rule in evaluation copy; preserve original development sample."
+    },
+    {
+      "id": "tl06",
+      "old": "clear",
+      "new": "hard",
+      "reason": "Apply handover kind rule in evaluation copy; preserve original development sample."
+    },
+    {
+      "id": "tl07",
+      "old": "clear",
+      "new": "hard",
+      "reason": "Apply handover kind rule in evaluation copy; preserve original development sample."
+    },
+    {
+      "id": "rl02",
+      "old": "clear",
+      "new": "hard",
+      "reason": "Apply handover kind rule in evaluation copy; preserve original development sample."
+    },
+    {
+      "id": "rl03",
+      "old": "clear",
+      "new": "hard",
+      "reason": "Apply handover kind rule in evaluation copy; preserve original development sample."
+    },
+    {
+      "id": "rl04",
+      "old": "clear",
+      "new": "hard",
+      "reason": "Apply handover kind rule in evaluation copy; preserve original development sample."
+    },
+    {
+      "id": "rl05",
+      "old": "clear",
+      "new": "hard",
+      "reason": "Apply handover kind rule in evaluation copy; preserve original development sample."
+    },
+    {
+      "id": "rl06",
+      "old": "clear",
+      "new": "hard",
+      "reason": "Apply handover kind rule in evaluation copy; preserve original development sample."
+    },
+    {
+      "id": "rl07",
+      "old": "clear",
+      "new": "hard",
+      "reason": "Apply handover kind rule in evaluation copy; preserve original development sample."
+    }
+  ],
+  "sample_sha256_before_build": "261a0cf43df8626f5051e98a79f3ae0ae60f6836c70c6db88e009c91a8445923",
+  "counts": {
+    "invoice": 36,
+    "tool": 36,
+    "rules": 30
+  },
+  "kinds": {
+    "clear": 34,
+    "hard": 60,
+    "contested": 8
+  },
+  "trap_coverage": {
+    "invoice": {
+      "number_format": 6,
+      "date_format": 7,
+      "computed_due_date": 7,
+      "foreign_language": 5,
+      "amount_due_differs": 5,
+      "credit_note": 4,
+      "decoy_reference": 5,
+      "party_confusion": 4,
+      "ocr_noise": 4,
+      "missing_field": 6
+    },
+    "tool": {
+      "relative_date": 6,
+      "default_attendee": 4,
+      "policy_override": 4,
+      "missing_argument": 4,
+      "first_step_only": 3,
+      "format_conversion": 3,
+      "enum_mapping": 3,
+      "similar_tools": 3
+    },
+    "rules": {
+      "derived_base": 6,
+      "distractor_numbers": 4,
+      "threshold_minimum": 3,
+      "rounding": 4,
+      "order_of_operations": 3,
+      "exception_tier": 3,
+      "exclusion": 3
+    }
+  },
+  "limits": [
+    "21 development items are not unseen. Report 81 new items separately.",
+    "Template-based invoices share structure; item uncertainty does not capture template dependence.",
+    "Validators were revised using earlier development pilots. This is a post-pilot frozen design."
+  ],
+  "items_sha256": "a7dc5037eca492ff55c615b610243eae245c58b6dddff9d458d9bf252754625e"
+}

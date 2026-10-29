@@ -1,0 +1,1042 @@
+{
+  "analysis_version": "v2",
+  "checks": "v2",
+  "items_file": "items_samples.jsonl",
+  "run_tag": "",
+  "expected_repeats": 1,
+  "models": {
+    "llama-8b": {
+      "invoice": {
+        "accuracy": 0.5714285714285714,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 0.02674857142857143,
+        "median_latency_s": 0.38,
+        "errors": {
+          "net_total": 1,
+          "due_date": 2,
+          "invoice_date": 1
+        }
+      },
+      "rules": {
+        "accuracy": 0.14285714285714285,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 0.027975714285714288,
+        "median_latency_s": 0.22,
+        "errors": {
+          "wrong_amount": 6
+        }
+      },
+      "tool": {
+        "accuracy": 0.2857142857142857,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 0.06487142857142858,
+        "median_latency_s": 0.32,
+        "errors": {
+          "called_when_should_ask": 1,
+          "arg:start": 1,
+          "arg:end": 1,
+          "several_calls": 1,
+          "wrong_tool": 1,
+          "arg:status": 1
+        }
+      },
+      "all": {
+        "accuracy": 0.3333333333333333,
+        "n": 21,
+        "n_items": 21,
+        "usd_per_1k": 0.0398652380952381,
+        "median_latency_s": 0.28,
+        "errors": {
+          "net_total": 1,
+          "due_date": 2,
+          "invoice_date": 1,
+          "called_when_should_ask": 1,
+          "arg:start": 1,
+          "arg:end": 1,
+          "several_calls": 1,
+          "wrong_tool": 1,
+          "arg:status": 1,
+          "wrong_amount": 6
+        }
+      }
+    },
+    "oss-20b": {
+      "invoice": {
+        "accuracy": 1.0,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 0.0880392857142857,
+        "median_latency_s": 0.75,
+        "errors": {}
+      },
+      "rules": {
+        "accuracy": 0.7142857142857143,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 0.07954285714285714,
+        "median_latency_s": 0.65,
+        "errors": {
+          "wrong_amount": 2
+        }
+      },
+      "tool": {
+        "accuracy": 0.7142857142857143,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 0.08150357142857143,
+        "median_latency_s": 0.55,
+        "errors": {
+          "arg:start": 1,
+          "arg:end": 1,
+          "no_call_when_should_call": 1
+        }
+      },
+      "all": {
+        "accuracy": 0.8095238095238095,
+        "n": 21,
+        "n_items": 21,
+        "usd_per_1k": 0.08302857142857142,
+        "median_latency_s": 0.65,
+        "errors": {
+          "arg:start": 1,
+          "arg:end": 1,
+          "no_call_when_should_call": 1,
+          "wrong_amount": 2
+        }
+      }
+    },
+    "sol": {
+      "invoice": {
+        "accuracy": 1.0,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 1.8145714285714287,
+        "median_latency_s": 3.45,
+        "errors": {}
+      },
+      "all": {
+        "accuracy": 1.0,
+        "n": 7,
+        "n_items": 7,
+        "usd_per_1k": 1.8145714285714287,
+        "median_latency_s": 3.45,
+        "errors": {}
+      }
+    }
+  },
+  "traps": {
+    "amount_due_differs": {
+      "llama-8b": 1.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "computed_due_date": {
+      "llama-8b": 0.6666666666666666,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "credit_note": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "date_format": {
+      "llama-8b": 0.5,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "decoy_reference": {
+      "llama-8b": 0.5,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "default_attendee": {
+      "llama-8b": 0.0,
+      "oss-20b": 0.0,
+      "sol": null
+    },
+    "derived_base": {
+      "llama-8b": 0.0,
+      "oss-20b": 0.5,
+      "sol": null
+    },
+    "distractor_numbers": {
+      "llama-8b": 0.0,
+      "oss-20b": 0.0,
+      "sol": null
+    },
+    "enum_mapping": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": null
+    },
+    "exception_tier": {
+      "llama-8b": 0.0,
+      "oss-20b": 0.0,
+      "sol": null
+    },
+    "exclusion": {
+      "llama-8b": 1.0,
+      "oss-20b": 1.0,
+      "sol": null
+    },
+    "first_step_only": {
+      "llama-8b": 0.0,
+      "oss-20b": 0.0,
+      "sol": null
+    },
+    "foreign_language": {
+      "llama-8b": 1.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "format_conversion": {
+      "llama-8b": 1.0,
+      "oss-20b": 1.0,
+      "sol": null
+    },
+    "missing_argument": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": null
+    },
+    "missing_field": {
+      "llama-8b": 0.5,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "number_format": {
+      "llama-8b": 1.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "ocr_noise": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "order_of_operations": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": null
+    },
+    "party_confusion": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": 1.0
+    },
+    "policy_override": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": null
+    },
+    "relative_date": {
+      "llama-8b": 0.0,
+      "oss-20b": 0.0,
+      "sol": null
+    },
+    "rounding": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": null
+    },
+    "similar_tools": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": null
+    },
+    "threshold_minimum": {
+      "llama-8b": 0.0,
+      "oss-20b": 1.0,
+      "sol": null
+    }
+  },
+  "cascades": {
+    "llama-8b": {
+      "invoice": {
+        "check": {
+          "status": "complete",
+          "n": 7,
+          "accuracy": 0.8571428571428571,
+          "escalated": 0.2857142857142857,
+          "usd_per_1k_items": 0.5290342857142857,
+          "fallback_usd_per_1k_items": 1.8145714285714287,
+          "fallback_accuracy": 1.0,
+          "estimated_sequential_median_latency_s": 0.41
+        },
+        "agreement": {
+          "status": "incomplete",
+          "required_repeats": 3,
+          "missing_cheap": 14,
+          "missing_fallback": 0
+        }
+      },
+      "rules": {
+        "check": {
+          "status": "incomplete",
+          "required_repeats": 1,
+          "missing_cheap": 0,
+          "missing_fallback": 7
+        },
+        "agreement": {
+          "status": "incomplete",
+          "required_repeats": 3,
+          "missing_cheap": 14,
+          "missing_fallback": 7
+        }
+      },
+      "tool": {
+        "check": {
+          "status": "incomplete",
+          "required_repeats": 1,
+          "missing_cheap": 0,
+          "missing_fallback": 7
+        },
+        "agreement": {
+          "status": "incomplete",
+          "required_repeats": 3,
+          "missing_cheap": 14,
+          "missing_fallback": 7
+        }
+      },
+      "all": {
+        "check": {
+          "status": "incomplete",
+          "required_repeats": 1,
+          "missing_cheap": 0,
+          "missing_fallback": 14
+        },
+        "agreement": {
+          "status": "incomplete",
+          "required_repeats": 3,
+          "missing_cheap": 42,
+          "missing_fallback": 14
+        }
+      }
+    },
+    "oss-20b": {
+      "invoice": {
+        "check": {
+          "status": "complete",
+          "n": 7,
+          "accuracy": 1.0,
+          "escalated": 0.0,
+          "usd_per_1k_items": 0.0880392857142857,
+          "fallback_usd_per_1k_items": 1.8145714285714287,
+          "fallback_accuracy": 1.0,
+          "estimated_sequential_median_latency_s": 0.75
+        },
+        "agreement": {
+          "status": "incomplete",
+          "required_repeats": 3,
+          "missing_cheap": 14,
+          "missing_fallback": 0
+        }
+      },
+      "rules": {
+        "check": {
+          "status": "incomplete",
+          "required_repeats": 1,
+          "missing_cheap": 0,
+          "missing_fallback": 7
+        },
+        "agreement": {
+          "status": "incomplete",
+          "required_repeats": 3,
+          "missing_cheap": 14,
+          "missing_fallback": 7
+        }
+      },
+      "tool": {
+        "check": {
+          "status": "incomplete",
+          "required_repeats": 1,
+          "missing_cheap": 0,
+          "missing_fallback": 7
+        },
+        "agreement": {
+          "status": "incomplete",
+          "required_repeats": 3,
+          "missing_cheap": 14,
+          "missing_fallback": 7
+        }
+      },
+      "all": {
+        "check": {
+          "status": "incomplete",
+          "required_repeats": 1,
+          "missing_cheap": 0,
+          "missing_fallback": 14
+        },
+        "agreement": {
+          "status": "incomplete",
+          "required_repeats": 3,
+          "missing_cheap": 42,
+          "missing_fallback": 14
+        }
+      }
+    }
+  },
+  "coverage": {
+    "llama-8b": {
+      "saved": 21,
+      "expected": 21,
+      "complete": true,
+      "missing": []
+    },
+    "oss-20b": {
+      "saved": 21,
+      "expected": 21,
+      "complete": true,
+      "missing": []
+    },
+    "sol": {
+      "saved": 7,
+      "expected": 21,
+      "complete": false,
+      "missing": [
+        [
+          "rl01",
+          0
+        ],
+        [
+          "rl02",
+          0
+        ],
+        [
+          "rl03",
+          0
+        ],
+        [
+          "rl04",
+          0
+        ],
+        [
+          "rl05",
+          0
+        ],
+        [
+          "rl06",
+          0
+        ],
+        [
+          "rl07",
+          0
+        ],
+        [
+          "tl01",
+          0
+        ],
+        [
+          "tl02",
+          0
+        ],
+        [
+          "tl03",
+          0
+        ],
+        [
+          "tl04",
+          0
+        ],
+        [
+          "tl05",
+          0
+        ],
+        [
+          "tl06",
+          0
+        ],
+        [
+          "tl07",
+          0
+        ]
+      ]
+    }
+  },
+  "checks_by_version": {
+    "llama-8b": {
+      "baseline": {
+        "invoice": {
+          "correct_accepted": 4,
+          "correct_escalated": 0,
+          "wrong_caught": 2,
+          "wrong_accepted": 1,
+          "n": 7,
+          "accepted_accuracy": 0.8,
+          "error_catch_rate": 0.6666666666666666,
+          "escalation_rate": 0.2857142857142857
+        },
+        "rules": {
+          "correct_accepted": 1,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 6,
+          "n": 7,
+          "accepted_accuracy": 0.14285714285714285,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        },
+        "tool": {
+          "correct_accepted": 2,
+          "correct_escalated": 0,
+          "wrong_caught": 2,
+          "wrong_accepted": 3,
+          "n": 7,
+          "accepted_accuracy": 0.4,
+          "error_catch_rate": 0.4,
+          "escalation_rate": 0.2857142857142857
+        },
+        "all": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 4,
+          "wrong_accepted": 10,
+          "n": 21,
+          "accepted_accuracy": 0.4117647058823529,
+          "error_catch_rate": 0.2857142857142857,
+          "escalation_rate": 0.19047619047619047
+        }
+      },
+      "v2": {
+        "invoice": {
+          "correct_accepted": 4,
+          "correct_escalated": 0,
+          "wrong_caught": 2,
+          "wrong_accepted": 1,
+          "n": 7,
+          "accepted_accuracy": 0.8,
+          "error_catch_rate": 0.6666666666666666,
+          "escalation_rate": 0.2857142857142857
+        },
+        "rules": {
+          "correct_accepted": 1,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 6,
+          "n": 7,
+          "accepted_accuracy": 0.14285714285714285,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        },
+        "tool": {
+          "correct_accepted": 2,
+          "correct_escalated": 0,
+          "wrong_caught": 2,
+          "wrong_accepted": 3,
+          "n": 7,
+          "accepted_accuracy": 0.4,
+          "error_catch_rate": 0.4,
+          "escalation_rate": 0.2857142857142857
+        },
+        "all": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 4,
+          "wrong_accepted": 10,
+          "n": 21,
+          "accepted_accuracy": 0.4117647058823529,
+          "error_catch_rate": 0.2857142857142857,
+          "escalation_rate": 0.19047619047619047
+        }
+      }
+    },
+    "oss-20b": {
+      "baseline": {
+        "invoice": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 7,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        },
+        "rules": {
+          "correct_accepted": 5,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 2,
+          "n": 7,
+          "accepted_accuracy": 0.7142857142857143,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        },
+        "tool": {
+          "correct_accepted": 5,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 2,
+          "n": 7,
+          "accepted_accuracy": 0.7142857142857143,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        },
+        "all": {
+          "correct_accepted": 17,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 4,
+          "n": 21,
+          "accepted_accuracy": 0.8095238095238095,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        }
+      },
+      "v2": {
+        "invoice": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 7,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        },
+        "rules": {
+          "correct_accepted": 5,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 2,
+          "n": 7,
+          "accepted_accuracy": 0.7142857142857143,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        },
+        "tool": {
+          "correct_accepted": 5,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 2,
+          "n": 7,
+          "accepted_accuracy": 0.7142857142857143,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        },
+        "all": {
+          "correct_accepted": 17,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 4,
+          "n": 21,
+          "accepted_accuracy": 0.8095238095238095,
+          "error_catch_rate": 0.0,
+          "escalation_rate": 0.0
+        }
+      }
+    },
+    "sol": {
+      "baseline": {
+        "invoice": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 7,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        },
+        "all": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 7,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        }
+      },
+      "v2": {
+        "invoice": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 7,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        },
+        "all": {
+          "correct_accepted": 7,
+          "correct_escalated": 0,
+          "wrong_caught": 0,
+          "wrong_accepted": 0,
+          "n": 7,
+          "accepted_accuracy": 1.0,
+          "error_catch_rate": null,
+          "escalation_rate": 0.0
+        }
+      }
+    }
+  },
+  "cost_basis": "Listed token prices in common.py; successful answers only. Failed attempts and cache discounts are not priced. Legacy latency omits retries.",
+  "provenance": {
+    "items_sha256": "261a0cf43df8626f5051e98a79f3ae0ae60f6836c70c6db88e009c91a8445923",
+    "analysis_sha256": "cd33f940d2e1a322508df591d71c6bf516ffaa55b1870ead9a53eca8c65d17ec",
+    "result_sha256": {
+      "llama-8b": "5500c4167aff7d43ef6831c5c7ec7a4cd2f9ed714fb2d41e80c3b27b9fb2790c",
+      "oss-20b": "eac69ea21fe2bf73550cb57484c2ef4b1c138f8f0cc766cb1f838599f22badb5",
+      "sol": "9b460465e31648e72b4c6b342a05daf7bf9f617f76899a1bef9d81acb5b5f034"
+    }
+  },
+  "trap_counts": {
+    "amount_due_differs": {
+      "llama-8b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "oss-20b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "sol": {
+        "n_calls": 2,
+        "n_items": 2
+      }
+    },
+    "computed_due_date": {
+      "llama-8b": {
+        "n_calls": 3,
+        "n_items": 3
+      },
+      "oss-20b": {
+        "n_calls": 3,
+        "n_items": 3
+      },
+      "sol": {
+        "n_calls": 3,
+        "n_items": 3
+      }
+    },
+    "credit_note": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "date_format": {
+      "llama-8b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "oss-20b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "sol": {
+        "n_calls": 2,
+        "n_items": 2
+      }
+    },
+    "decoy_reference": {
+      "llama-8b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "oss-20b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "sol": {
+        "n_calls": 2,
+        "n_items": 2
+      }
+    },
+    "default_attendee": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 0,
+        "n_items": 0
+      }
+    },
+    "derived_base": {
+      "llama-8b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "oss-20b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "sol": {
+        "n_calls": 0,
+        "n_items": 0
+      }
+    },
+    "distractor_numbers": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 0,
+        "n_items": 0
+      }
+    },
+    "enum_mapping": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 0,
+        "n_items": 0
+      }
+    },
+    "exception_tier": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 0,
+        "n_items": 0
+      }
+    },
+    "exclusion": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 0,
+        "n_items": 0
+      }
+    },
+    "first_step_only": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 0,
+        "n_items": 0
+      }
+    },
+    "foreign_language": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "format_conversion": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 0,
+        "n_items": 0
+      }
+    },
+    "missing_argument": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 0,
+        "n_items": 0
+      }
+    },
+    "missing_field": {
+      "llama-8b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "oss-20b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "sol": {
+        "n_calls": 2,
+        "n_items": 2
+      }
+    },
+    "number_format": {
+      "llama-8b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "oss-20b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "sol": {
+        "n_calls": 2,
+        "n_items": 2
+      }
+    },
+    "ocr_noise": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "order_of_operations": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 0,
+        "n_items": 0
+      }
+    },
+    "party_confusion": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 1,
+        "n_items": 1
+      }
+    },
+    "policy_override": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 0,
+        "n_items": 0
+      }
+    },
+    "relative_date": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 0,
+        "n_items": 0
+      }
+    },
+    "rounding": {
+      "llama-8b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "oss-20b": {
+        "n_calls": 2,
+        "n_items": 2
+      },
+      "sol": {
+        "n_calls": 0,
+        "n_items": 0
+      }
+    },
+    "similar_tools": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 0,
+        "n_items": 0
+      }
+    },
+    "threshold_minimum": {
+      "llama-8b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "oss-20b": {
+        "n_calls": 1,
+        "n_items": 1
+      },
+      "sol": {
+        "n_calls": 0,
+        "n_items": 0
+      }
+    }
+  }
+}
