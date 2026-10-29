@@ -1,0 +1,177 @@
+{
+  "review_date": "2026-10-29",
+  "freeze_tag": "e06-frozen",
+  "freeze_commit": "ffaf7e3",
+  "run_tag": "frozen_20261029_preflight",
+  "purpose": "Compatibility and transport health; no accuracy evaluation.",
+  "models": {
+    "oss-20b": {
+      "checks": {
+        "exact_three_probes": true,
+        "preflight_only": true,
+        "frozen_request_set_matches": true,
+        "row_fingerprints_match": true,
+        "model_ids_match": true,
+        "expected_host": true,
+        "complete": true,
+        "usage_present_and_below_cap": true,
+        "no_recorded_retries": true,
+        "native_tool_and_valid_schema": true,
+        "tool_existing_validator_passes": true,
+        "invoice_parsed": true,
+        "all_invoice_fields": true,
+        "invoice_existing_validator_passes": true,
+        "rules_parsed": true,
+        "rules_existing_validator_passes": true
+      },
+      "warnings": [],
+      "source_sha256": "da54f72a6831e51c68462510bd2b8cb83ccf3f6927178dc63026932aa28f4f00",
+      "served_by": {
+        "Groq": 3
+      },
+      "max_output_tokens": 174,
+      "estimated_usd": 0.00024412499999999998
+    },
+    "luna": {
+      "checks": {
+        "exact_three_probes": true,
+        "preflight_only": true,
+        "frozen_request_set_matches": true,
+        "row_fingerprints_match": true,
+        "model_ids_match": true,
+        "expected_host": true,
+        "complete": true,
+        "usage_present_and_below_cap": true,
+        "no_recorded_retries": true,
+        "native_tool_and_valid_schema": true,
+        "tool_existing_validator_passes": true,
+        "invoice_parsed": true,
+        "all_invoice_fields": true,
+        "invoice_existing_validator_passes": true,
+        "rules_parsed": true,
+        "rules_existing_validator_passes": true
+      },
+      "warnings": [],
+      "source_sha256": "e26bf9e8dd902e1a76c3da6b035c4432329981fe23ac47e46a9cfaa6cc768803",
+      "served_by": {
+        "OpenAI": 3
+      },
+      "max_output_tokens": 111,
+      "estimated_usd": 0.0002656
+    },
+    "glm-flash": {
+      "checks": {
+        "exact_three_probes": true,
+        "preflight_only": true,
+        "frozen_request_set_matches": true,
+        "row_fingerprints_match": true,
+        "model_ids_match": true,
+        "expected_host": true,
+        "complete": true,
+        "usage_present_and_below_cap": true,
+        "no_recorded_retries": true,
+        "rules_parsed": true,
+        "rules_existing_validator_passes": true,
+        "invoice_parsed": true,
+        "all_invoice_fields": true,
+        "invoice_existing_validator_passes": true,
+        "native_tool_and_valid_schema": true,
+        "tool_existing_validator_passes": true
+      },
+      "warnings": [
+        "inv01: fenced JSON accepted by existing parser"
+      ],
+      "source_sha256": "1167c24a712fb5818415bb83d8c9570cdb72efccba0813ce705fab7f40e496c6",
+      "served_by": {
+        "Z.AI": 3
+      },
+      "max_output_tokens": 116,
+      "estimated_usd": 0.0003851
+    },
+    "oss-120b": {
+      "checks": {
+        "exact_three_probes": true,
+        "preflight_only": true,
+        "frozen_request_set_matches": true,
+        "row_fingerprints_match": true,
+        "model_ids_match": true,
+        "expected_host": true,
+        "complete": true,
+        "usage_present_and_below_cap": true,
+        "no_recorded_retries": true,
+        "native_tool_and_valid_schema": true,
+        "tool_existing_validator_passes": true,
+        "rules_parsed": true,
+        "rules_existing_validator_passes": true,
+        "invoice_parsed": true,
+        "all_invoice_fields": true,
+        "invoice_existing_validator_passes": true
+      },
+      "warnings": [],
+      "source_sha256": "16976216f7e0f3befb034e6baf26430dbf3a430c14f0b9e63dfbfcf5e3094793",
+      "served_by": {
+        "Groq": 3
+      },
+      "max_output_tokens": 202,
+      "estimated_usd": 0.0004768499999999999
+    },
+    "sol": {
+      "checks": {
+        "exact_three_probes": true,
+        "preflight_only": true,
+        "frozen_request_set_matches": true,
+        "row_fingerprints_match": true,
+        "model_ids_match": true,
+        "expected_host": true,
+        "complete": true,
+        "usage_present_and_below_cap": true,
+        "no_recorded_retries": true,
+        "rules_parsed": true,
+        "rules_existing_validator_passes": true,
+        "invoice_parsed": true,
+        "all_invoice_fields": true,
+        "invoice_existing_validator_passes": true,
+        "native_tool_and_valid_schema": true,
+        "tool_existing_validator_passes": true
+      },
+      "warnings": [],
+      "source_sha256": "8196c442e03bdd7c05d63ccffcf7d5eb06cb7a0c0d1cbf132568d8d092d812aa",
+      "served_by": {
+        "OpenAI": 3
+      },
+      "max_output_tokens": 111,
+      "estimated_usd": 0.004562
+    },
+    "glm-flash-t0": {
+      "checks": {
+        "exact_three_probes": true,
+        "preflight_only": true,
+        "frozen_request_set_matches": true,
+        "row_fingerprints_match": true,
+        "model_ids_match": true,
+        "expected_host": true,
+        "complete": true,
+        "usage_present_and_below_cap": true,
+        "no_recorded_retries": true,
+        "rules_parsed": true,
+        "rules_existing_validator_passes": true,
+        "invoice_parsed": true,
+        "all_invoice_fields": true,
+        "invoice_existing_validator_passes": true,
+        "native_tool_and_valid_schema": true,
+        "tool_existing_validator_passes": true
+      },
+      "warnings": [
+        "inv01: fenced JSON accepted by existing parser"
+      ],
+      "source_sha256": "42c6b9bf93b220aad90d37de4643148accfac422d9dcd6e8ca41649b2e136b9f",
+      "served_by": {
+        "Z.AI": 3
+      },
+      "max_output_tokens": 116,
+      "estimated_usd": 0.0003921
+    }
+  },
+  "all_18_passed": true,
+  "estimated_successful_call_usd": 0.006325775
+}

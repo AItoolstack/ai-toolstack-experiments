@@ -1,6 +1,32 @@
-# E06 evidence map — development pilot, 29 October 2026
+# E06 results and claim map — 29 October 2026
 
-The full evaluation has not run. The following figures describe only the six-model pilot
+## Current: completed frozen evaluation
+
+All 1,428 responses are saved. Primary reporting uses 81 new held-out items; the 21
+development examples are reported separately. See [the full report](FULL-RESULTS-2026-10-29.md).
+
+| Supported claim | Number and evidence |
+| --- | --- |
+| The checks missed most incorrect cheap responses | 56/58 passed; held-out `summary-v2.json`, sum `checks_by_version.<cheap>.v2.all` |
+| Agreement improved observed scores at additional cost | 77–80/81, $0.40–$0.62 per 1,000; held-out `cascades.<cheap>.all.agreement` |
+| The fallback also failed | Sol 79/81, $1.5082 per 1,000; held-out `models.sol.all`; raw `inv36` and `tl35` |
+| Close scores are not equal reliability | Paired whole-item intervals in held-out `uncertainty.json`; one Sol run/item |
+| The experiment retained its failures | GLM `rl10` repeat 0 reached 2,000 tokens; GLM-t0 `tl03` returned two calls |
+| Successful-response list-price cost of the evaluation | $0.311058475; `analysis_frozen_20261029/run-health-2026-10-29.json` |
+
+Here “held-out” means `analysis_frozen_20261029_heldout/`. Counts of wrong responses include
+repeats; 58 wrong cheap responses span 19 item IDs, not 58 independent cases. Every numerical
+claim traces to saved summaries/raw responses, with provenance hashes and the run date.
+Tej approved counting the cutoff as a frozen-budget failure before accuracy analysis.
+
+Chart: held-out `figures/e06-cost-accuracy-2026-10-29.png`, with SVG, actual-number alt text
+and caption. Reproduce offline with `python reproduce_full.py`, adding `--figures` for the
+optional Matplotlib chart. Nothing has been pushed or published. The article rewrite awaits
+the required `claude/style-guide.md`.
+
+## Historical development-pilot evidence
+
+The following historical figures describe only the six-model development pilot,
 against the preserved development key. Audit is complete and evaluation-copy key changes
 are logged in `AUDIT-2026-10-29.md`; these figures still use the historical pilot key. They are
 provisional development observations, not final rankings or production accuracy estimates.

@@ -157,3 +157,22 @@ To use function tools, use /v1/responses or set reasoning_effort to 'none'.
 - Final validation passed: 21 regressions, compilation, Ruff, 1,428 scripted answers and
   complete all/held-out/development cascade reports. Original sample/tool bytes and blind
   first-pass answers match their recorded hashes. No new paid calls or publication occurred.
+
+### Completed frozen evaluation and offline results
+
+- Tej completed 1,428 calls. Freeze/configuration/routing/coverage checks pass. GLM `rl10`
+  repeat 0 exhausted 2,000 tokens; the control's `tl03` returned two calls. Tej approved
+  retaining the cutoff as a frozen-budget failure before accuracy inspection. No paid rerun,
+  cap increase, key, item, request or original frozen-scorer change.
+- Successful-response list-price cost is $0.311058475, excluding earlier/preflight calls.
+  No retries or separate API error logs were recorded.
+- Held-out checks catch 2/58 wrong cheap responses and accept 56. Agreement scores 77–80/81
+  at $0.40–$0.62 per 1,000 items; Sol scores 79/81 at $1.51. Do not infer equal reliability.
+- Added the deferred paired whole-item bootstrap, 10,000 draws, seed 6, fixed task mix;
+  its point estimates independently match the frozen scorer. Synthetic tests cover repeat
+  clustering, stratification/pairing, consistently wrong answers and cascade cost.
+- Exported all wrong/accepted answers and count-only kind/trap reports. Added full-result
+  reproduction and a visually checked 2x PNG/SVG chart with Inter, licence and actual-number
+  alt text. All original frozen hashes still verify.
+- Article rewriting awaits the required claude/style-guide.md. No public account write,
+  publication, message, Git push or additional inference call was made by the assistant.

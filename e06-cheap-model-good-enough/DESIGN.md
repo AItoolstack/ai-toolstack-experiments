@@ -1,9 +1,9 @@
 # E06 design: is the cheap model good enough?
 
 Original status at creation: **design for review, 25 Oct 2026; before any real-model run.**
-Current status: three development pilots have run, most recently 21 answers per model for
-the six-model lineup. The 102-item set and independent blind audit are complete.
-The full evaluation has not run. See `PROTOCOL.md` for the dated post-pilot amendment,
+Current status, **29 October 2026**: the 1,428-response frozen evaluation is complete.
+Held-out/development analysis and the paired bootstrap are complete. Tej accepted the
+token-cap exception as a frozen-budget failure. See `PROTOCOL.md` for the dated amendment,
 `CHANGELOG.md` for changes and `PUBLICATION.md` for the maintained article draft.
 The remaining text records the original design; planned counts, prices and costs below are
 design assumptions, not completed results or newly verified billing figures.

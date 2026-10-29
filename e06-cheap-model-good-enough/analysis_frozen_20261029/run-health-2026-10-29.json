@@ -1,0 +1,512 @@
+{
+  "review_date": "2026-10-29",
+  "items_file": "items.jsonl",
+  "run_tag": "frozen_20261029",
+  "run_kind": "evaluation",
+  "items_sha256": "a7dc5037eca492ff55c615b610243eae245c58b6dddff9d458d9bf252754625e",
+  "prices_checked_in_config": "2026-10-25",
+  "price_caveat": "Historical configured list prices; not independently reverified or reconciled to billing.",
+  "cost_caveat": "Successful saved calls only; retries, preflights and earlier development spend are additional.",
+  "projection_caveat": "Task-weighted extrapolation from seven pilot items per task; new policy lengths may differ.",
+  "study_models_without_revised_pilot": [],
+  "study_models": [
+    "oss-20b",
+    "luna",
+    "glm-flash",
+    "oss-120b",
+    "sol",
+    "glm-flash-t0"
+  ],
+  "models": {
+    "glm-flash-t0": {
+      "saved_calls": 102,
+      "coverage_complete": true,
+      "recorded_run_dates": [
+        "2026-10-29"
+      ],
+      "timestamp_caveat": "Raw timestamps contain no UTC offset; date preserved as recorded.",
+      "source_sha256": "1266a55a9642f37dbe470eb825e90598268628491531363fbf8b62982d6e3f24",
+      "current_request_fingerprint_matches": true,
+      "served_by": {
+        "Z.AI": 102
+      },
+      "expected_host_matches": true,
+      "reasoning_tokens_reported": 102,
+      "reasoning_tokens_positive": 40,
+      "usage_complete": true,
+      "max_completion_tokens": 151,
+      "saved_call_estimated_usd": 0.01313125,
+      "over_configured_cap": 0,
+      "problems": {
+        "unparsed": [],
+        "cut_off": [],
+        "text_call": [],
+        "malformed_call": [
+          "tl03"
+        ],
+        "possible_call_text": []
+      },
+      "task_cost_projection": {
+        "invoice": {
+          "pilot_calls": 36,
+          "mean_input_tokens": 308.25,
+          "mean_output_tokens": 121.33333333333333,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.00384855,
+          "projected_usd_one_repeat_double_output": 0.006032549999999999
+        },
+        "tool": {
+          "pilot_calls": 36,
+          "mean_input_tokens": 1134.7777777777778,
+          "mean_output_tokens": 48.138888888888886,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.006994299999999999,
+          "projected_usd_one_repeat_double_output": 0.0078608
+        },
+        "rules": {
+          "pilot_calls": 30,
+          "mean_input_tokens": 374.2,
+          "mean_output_tokens": 40.3,
+          "full_items": 30,
+          "projected_usd_one_repeat": 0.0022884,
+          "projected_usd_one_repeat_double_output": 0.0028928999999999995
+        }
+      },
+      "projected_usd_three_repeats": 0.03939375,
+      "projected_usd_three_repeats_double_output": 0.050358749999999994,
+      "manual_review_selection": {
+        "invoice": [
+          "inv01",
+          "inv02",
+          "inv03"
+        ],
+        "tool": [
+          "tl01",
+          "tl02",
+          "tl03"
+        ],
+        "rules": [
+          "rl01",
+          "rl02",
+          "rl03"
+        ]
+      }
+    },
+    "glm-flash": {
+      "saved_calls": 306,
+      "coverage_complete": true,
+      "recorded_run_dates": [
+        "2026-10-29"
+      ],
+      "timestamp_caveat": "Raw timestamps contain no UTC offset; date preserved as recorded.",
+      "source_sha256": "2e9e8676256757e61d6b6842d106130249f7f0d7e278797434cf2b6c3ff9496b",
+      "current_request_fingerprint_matches": true,
+      "served_by": {
+        "Z.AI": 306
+      },
+      "expected_host_matches": true,
+      "reasoning_tokens_reported": 306,
+      "reasoning_tokens_positive": 108,
+      "usage_complete": true,
+      "max_completion_tokens": 2000,
+      "saved_call_estimated_usd": 0.04021474999999998,
+      "over_configured_cap": 0,
+      "problems": {
+        "unparsed": [
+          "rl10"
+        ],
+        "cut_off": [
+          "rl10"
+        ],
+        "text_call": [],
+        "malformed_call": [],
+        "possible_call_text": []
+      },
+      "task_cost_projection": {
+        "invoice": {
+          "pilot_calls": 108,
+          "mean_input_tokens": 308.25,
+          "mean_output_tokens": 119.48148148148148,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.0038152166666666665,
+          "projected_usd_one_repeat_double_output": 0.005965883333333333
+        },
+        "tool": {
+          "pilot_calls": 108,
+          "mean_input_tokens": 1134.7777777777778,
+          "mean_output_tokens": 45.52777777777778,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.0069473,
+          "projected_usd_one_repeat_double_output": 0.0077668
+        },
+        "rules": {
+          "pilot_calls": 90,
+          "mean_input_tokens": 374.2,
+          "mean_output_tokens": 63.9,
+          "full_items": 30,
+          "projected_usd_one_repeat": 0.0026424,
+          "projected_usd_one_repeat_double_output": 0.0036009
+        }
+      },
+      "projected_usd_three_repeats": 0.040214749999999994,
+      "projected_usd_three_repeats_double_output": 0.05200075,
+      "manual_review_selection": {
+        "invoice": [
+          "inv01",
+          "inv02",
+          "inv03"
+        ],
+        "tool": [
+          "tl01",
+          "tl02",
+          "tl03"
+        ],
+        "rules": [
+          "rl01",
+          "rl02",
+          "rl03"
+        ]
+      }
+    },
+    "luna": {
+      "saved_calls": 306,
+      "coverage_complete": true,
+      "recorded_run_dates": [
+        "2026-10-29"
+      ],
+      "timestamp_caveat": "Raw timestamps contain no UTC offset; date preserved as recorded.",
+      "source_sha256": "f8dfad1826fc379abb3eac25466b13ebc2cfdbc232bd3a340316eb74ecef2bbc",
+      "current_request_fingerprint_matches": true,
+      "served_by": {
+        "OpenAI": 306
+      },
+      "expected_host_matches": true,
+      "reasoning_tokens_reported": 306,
+      "reasoning_tokens_positive": 191,
+      "usage_complete": true,
+      "max_completion_tokens": 291,
+      "saved_call_estimated_usd": 0.02787329999999999,
+      "over_configured_cap": 0,
+      "problems": {
+        "unparsed": [],
+        "cut_off": [],
+        "text_call": [],
+        "malformed_call": [],
+        "possible_call_text": []
+      },
+      "task_cost_projection": {
+        "invoice": {
+          "pilot_calls": 108,
+          "mean_input_tokens": 299.6111111111111,
+          "mean_output_tokens": 138.30555555555554,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.0035680999999999994,
+          "projected_usd_one_repeat_double_output": 0.0060576
+        },
+        "tool": {
+          "pilot_calls": 108,
+          "mean_input_tokens": 632.8611111111111,
+          "mean_output_tokens": 45.05555555555556,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.0030893,
+          "projected_usd_one_repeat_double_output": 0.0039003
+        },
+        "rules": {
+          "pilot_calls": 90,
+          "mean_input_tokens": 368.4,
+          "mean_output_tokens": 101.9,
+          "full_items": 30,
+          "projected_usd_one_repeat": 0.0026336999999999997,
+          "projected_usd_one_repeat_double_output": 0.0041622000000000004
+        }
+      },
+      "projected_usd_three_repeats": 0.027873299999999997,
+      "projected_usd_three_repeats_double_output": 0.042360300000000004,
+      "manual_review_selection": {
+        "invoice": [
+          "inv01",
+          "inv02",
+          "inv03"
+        ],
+        "tool": [
+          "tl01",
+          "tl02",
+          "tl03"
+        ],
+        "rules": [
+          "rl01",
+          "rl02",
+          "rl03"
+        ]
+      }
+    },
+    "oss-120b": {
+      "saved_calls": 306,
+      "coverage_complete": true,
+      "recorded_run_dates": [
+        "2026-10-29"
+      ],
+      "timestamp_caveat": "Raw timestamps contain no UTC offset; date preserved as recorded.",
+      "source_sha256": "d9a1437b60018d98e4796c0b59664d52e7dc450fa785dbea5d7e178567e570c2",
+      "current_request_fingerprint_matches": true,
+      "served_by": {
+        "Groq": 306
+      },
+      "expected_host_matches": true,
+      "reasoning_tokens_reported": 306,
+      "reasoning_tokens_positive": 306,
+      "usage_complete": true,
+      "max_completion_tokens": 394,
+      "saved_call_estimated_usd": 0.05176454999999998,
+      "over_configured_cap": 0,
+      "problems": {
+        "unparsed": [],
+        "cut_off": [],
+        "text_call": [],
+        "malformed_call": [],
+        "possible_call_text": []
+      },
+      "task_cost_projection": {
+        "invoice": {
+          "pilot_calls": 108,
+          "mean_input_tokens": 363.6111111111111,
+          "mean_output_tokens": 209.2314814814815,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.0064829,
+          "projected_usd_one_repeat_double_output": 0.011002300000000001
+        },
+        "tool": {
+          "pilot_calls": 108,
+          "mean_input_tokens": 846.0277777777778,
+          "mean_output_tokens": 76.16666666666667,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.0062137500000000005,
+          "projected_usd_one_repeat_double_output": 0.00785895
+        },
+        "rules": {
+          "pilot_calls": 90,
+          "mean_input_tokens": 438.0888888888889,
+          "mean_output_tokens": 143.7111111111111,
+          "full_items": 30,
+          "projected_usd_one_repeat": 0.0045582,
+          "projected_usd_one_repeat_double_output": 0.007145
+        }
+      },
+      "projected_usd_three_repeats": 0.051764550000000006,
+      "projected_usd_three_repeats_double_output": 0.07801875,
+      "manual_review_selection": {
+        "invoice": [
+          "inv01",
+          "inv02",
+          "inv03"
+        ],
+        "tool": [
+          "tl01",
+          "tl02",
+          "tl03"
+        ],
+        "rules": [
+          "rl01",
+          "rl02",
+          "rl03"
+        ]
+      }
+    },
+    "oss-20b": {
+      "saved_calls": 306,
+      "coverage_complete": true,
+      "recorded_run_dates": [
+        "2026-10-29"
+      ],
+      "timestamp_caveat": "Raw timestamps contain no UTC offset; date preserved as recorded.",
+      "source_sha256": "58494cd73a8dec2470f4dddc5cb58635310b469e014d4134165571e54103ab53",
+      "current_request_fingerprint_matches": true,
+      "served_by": {
+        "Groq": 306
+      },
+      "expected_host_matches": true,
+      "reasoning_tokens_reported": 306,
+      "reasoning_tokens_positive": 306,
+      "usage_complete": true,
+      "max_completion_tokens": 379,
+      "saved_call_estimated_usd": 0.021782625000000003,
+      "over_configured_cap": 0,
+      "problems": {
+        "unparsed": [],
+        "cut_off": [],
+        "text_call": [],
+        "malformed_call": [],
+        "possible_call_text": []
+      },
+      "task_cost_projection": {
+        "invoice": {
+          "pilot_calls": 108,
+          "mean_input_tokens": 363.6111111111111,
+          "mean_output_tokens": 139.94444444444446,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.0024931499999999995,
+          "projected_usd_one_repeat_double_output": 0.00400455
+        },
+        "tool": {
+          "pilot_calls": 108,
+          "mean_input_tokens": 767.8611111111111,
+          "mean_output_tokens": 68.41666666666667,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.002812125,
+          "projected_usd_one_repeat_double_output": 0.003551025
+        },
+        "rules": {
+          "pilot_calls": 90,
+          "mean_input_tokens": 432.4,
+          "mean_output_tokens": 109.18888888888888,
+          "full_items": 30,
+          "projected_usd_one_repeat": 0.0019556,
+          "projected_usd_one_repeat_double_output": 0.0029382999999999996
+        }
+      },
+      "projected_usd_three_repeats": 0.021782625,
+      "projected_usd_three_repeats_double_output": 0.031481625,
+      "manual_review_selection": {
+        "invoice": [
+          "inv01",
+          "inv02",
+          "inv03"
+        ],
+        "tool": [
+          "tl01",
+          "tl02",
+          "tl03"
+        ],
+        "rules": [
+          "rl01",
+          "rl02",
+          "rl03"
+        ]
+      }
+    },
+    "sol": {
+      "saved_calls": 102,
+      "coverage_complete": true,
+      "recorded_run_dates": [
+        "2026-10-29"
+      ],
+      "timestamp_caveat": "Raw timestamps contain no UTC offset; date preserved as recorded.",
+      "source_sha256": "9594a57f7050c1588e3f1d5849beedbb51b37965d5436f83bb53d4b5b11801fe",
+      "current_request_fingerprint_matches": true,
+      "served_by": {
+        "OpenAI": 102
+      },
+      "expected_host_matches": true,
+      "reasoning_tokens_reported": 102,
+      "reasoning_tokens_positive": 16,
+      "usage_complete": true,
+      "max_completion_tokens": 133,
+      "saved_call_estimated_usd": 0.15629199999999996,
+      "over_configured_cap": 0,
+      "problems": {
+        "unparsed": [],
+        "cut_off": [],
+        "text_call": [],
+        "malformed_call": [],
+        "possible_call_text": []
+      },
+      "task_cost_projection": {
+        "invoice": {
+          "pilot_calls": 36,
+          "mean_input_tokens": 299.6111111111111,
+          "mean_output_tokens": 114.66666666666667,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.062852,
+          "projected_usd_one_repeat_double_output": 0.104132
+        },
+        "tool": {
+          "pilot_calls": 36,
+          "mean_input_tokens": 632.8611111111111,
+          "mean_output_tokens": 41.416666666666664,
+          "full_items": 36,
+          "projected_usd_one_repeat": 0.060475999999999995,
+          "projected_usd_one_repeat_double_output": 0.075386
+        },
+        "rules": {
+          "pilot_calls": 30,
+          "mean_input_tokens": 368.4,
+          "mean_output_tokens": 36.2,
+          "full_items": 30,
+          "projected_usd_one_repeat": 0.032964,
+          "projected_usd_one_repeat_double_output": 0.043824
+        }
+      },
+      "projected_usd_three_repeats": 0.46887599999999996,
+      "projected_usd_three_repeats_double_output": 0.670026,
+      "manual_review_selection": {
+        "invoice": [
+          "inv01",
+          "inv02",
+          "inv03"
+        ],
+        "tool": [
+          "tl01",
+          "tl02",
+          "tl03"
+        ],
+        "rules": [
+          "rl01",
+          "rl02",
+          "rl03"
+        ]
+      }
+    }
+  },
+  "hypothetical_usd_saved_models_all_three_repeats": 0.6499049749999999,
+  "hypothetical_usd_saved_models_all_three_repeats_double_output": 0.924246175,
+  "study_projection": {
+    "complete_model_coverage": true,
+    "missing_models": [],
+    "models": {
+      "glm-flash-t0": {
+        "repeats": 1,
+        "calls": 102,
+        "usd": 0.013131249999999999,
+        "usd_double_output": 0.01678625
+      },
+      "glm-flash": {
+        "repeats": 3,
+        "calls": 306,
+        "usd": 0.040214749999999994,
+        "usd_double_output": 0.05200075
+      },
+      "luna": {
+        "repeats": 3,
+        "calls": 306,
+        "usd": 0.027873299999999997,
+        "usd_double_output": 0.042360300000000004
+      },
+      "oss-120b": {
+        "repeats": 3,
+        "calls": 306,
+        "usd": 0.051764550000000006,
+        "usd_double_output": 0.07801875
+      },
+      "oss-20b": {
+        "repeats": 3,
+        "calls": 306,
+        "usd": 0.021782625,
+        "usd_double_output": 0.031481625
+      },
+      "sol": {
+        "repeats": 1,
+        "calls": 102,
+        "usd": 0.156292,
+        "usd_double_output": 0.223342
+      }
+    },
+    "calls": 1428,
+    "usd": 0.311058475,
+    "usd_double_output": 0.443989675,
+    "by_provider_usd": {
+      "openrouter": 0.126893175,
+      "openai": 0.18416529999999998
+    }
+  },
+  "saved_call_estimated_usd": 0.31105847499999995
+}

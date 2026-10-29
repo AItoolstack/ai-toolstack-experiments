@@ -1,0 +1,1853 @@
+{
+  "run_date": "2026-10-29",
+  "cohort": "all",
+  "draws": 10000,
+  "seed": 6,
+  "method": "Task-stratified paired percentile bootstrap of whole items; all repeats kept together.",
+  "provenance": {
+    "items_sha256": "a7dc5037eca492ff55c615b610243eae245c58b6dddff9d458d9bf252754625e",
+    "analysis_sha256": "c4adf0b2fdc3dd4ce7d8bb7cb008d3958310c6c081f8349d06b0316feb0e45a4",
+    "result_sha256": {
+      "oss-20b": "58494cd73a8dec2470f4dddc5cb58635310b469e014d4134165571e54103ab53",
+      "luna": "f8dfad1826fc379abb3eac25466b13ebc2cfdbc232bd3a340316eb74ecef2bbc",
+      "oss-120b": "d9a1437b60018d98e4796c0b59664d52e7dc450fa785dbea5d7e178567e570c2",
+      "sol": "9594a57f7050c1588e3f1d5849beedbb51b37965d5436f83bb53d4b5b11801fe",
+      "glm-flash": "2e9e8676256757e61d6b6842d106130249f7f0d7e278797434cf2b6c3ff9496b",
+      "glm-flash-t0": "1266a55a9642f37dbe470eb825e90598268628491531363fbf8b62982d6e3f24"
+    },
+    "bootstrap_sha256": "112f001ad526a2e38143ad14f557313f551db7bb45cb6a93296740a226ff9ec8"
+  },
+  "overall": {
+    "n_items": 102,
+    "strata": {
+      "invoice": 36,
+      "rules": 30,
+      "tool": 36
+    },
+    "policies": {
+      "oss-20b": {
+        "n_items": 102,
+        "accuracy": 0.9084967320261438,
+        "usd_per_1k": 0.07118504901960787,
+        "escalated": 0.0,
+        "ci95": {
+          "accuracy": [
+            0.8594771241830066,
+            0.9509803921568629
+          ],
+          "usd_per_1k": [
+            0.06848234681372549,
+            0.07396111519607848
+          ],
+          "escalated": [
+            0.0,
+            0.0
+          ]
+        },
+        "vs_sol": {
+          "accuracy_difference_pp": -6.209150326797386,
+          "accuracy_difference_pp_ci95": [
+            -11.437908496732007,
+            -1.3071895424836555
+          ],
+          "cost_difference_usd_per_1k": -1.4610894607843137,
+          "cost_difference_usd_per_1k_ci95": [
+            -1.5029080943627444,
+            -1.4208763051470585
+          ]
+        }
+      },
+      "oss-20b:check": {
+        "n_items": 102,
+        "accuracy": 0.9084967320261438,
+        "usd_per_1k": 0.07118504901960787,
+        "escalated": 0.0,
+        "ci95": {
+          "accuracy": [
+            0.8594771241830066,
+            0.9509803921568629
+          ],
+          "usd_per_1k": [
+            0.06848234681372549,
+            0.07396111519607848
+          ],
+          "escalated": [
+            0.0,
+            0.0
+          ]
+        },
+        "vs_sol": {
+          "accuracy_difference_pp": -6.209150326797386,
+          "accuracy_difference_pp_ci95": [
+            -11.437908496732007,
+            -1.3071895424836555
+          ],
+          "cost_difference_usd_per_1k": -1.4610894607843137,
+          "cost_difference_usd_per_1k_ci95": [
+            -1.5029080943627444,
+            -1.4208763051470585
+          ]
+        }
+      },
+      "oss-20b:agreement": {
+        "n_items": 102,
+        "accuracy": 0.9607843137254902,
+        "usd_per_1k": 0.4611041666666664,
+        "escalated": 0.14705882352941177,
+        "ci95": {
+          "accuracy": [
+            0.9215686274509803,
+            0.9901960784313726
+          ],
+          "usd_per_1k": [
+            0.34828186274509804,
+            0.581900300245098
+          ],
+          "escalated": [
+            0.08823529411764706,
+            0.21568627450980393
+          ]
+        },
+        "vs_sol": {
+          "accuracy_difference_pp": -0.9803921568627416,
+          "accuracy_difference_pp_ci95": [
+            -3.9215686274509887,
+            1.9607843137254943
+          ],
+          "cost_difference_usd_per_1k": -1.0711703431372552,
+          "cost_difference_usd_per_1k_ci95": [
+            -1.1724722181372553,
+            -0.9626698345588238
+          ]
+        }
+      },
+      "luna": {
+        "n_items": 102,
+        "accuracy": 0.96078431372549,
+        "usd_per_1k": 0.09108921568627448,
+        "escalated": 0.0,
+        "ci95": {
+          "accuracy": [
+            0.9281045751633985,
+            0.9869281045751633
+          ],
+          "usd_per_1k": [
+            0.08752017973856208,
+            0.0947298529411764
+          ],
+          "escalated": [
+            0.0,
+            0.0
+          ]
+        },
+        "vs_sol": {
+          "accuracy_difference_pp": -0.9803921568627638,
+          "accuracy_difference_pp_ci95": [
+            -4.575163398692828,
+            2.614379084967311
+          ],
+          "cost_difference_usd_per_1k": -1.441185294117647,
+          "cost_difference_usd_per_1k_ci95": [
+            -1.4829510702614375,
+            -1.4010668055555549
+          ]
+        }
+      },
+      "luna:check": {
+        "n_items": 102,
+        "accuracy": 0.96078431372549,
+        "usd_per_1k": 0.09108921568627448,
+        "escalated": 0.0,
+        "ci95": {
+          "accuracy": [
+            0.9281045751633985,
+            0.9869281045751633
+          ],
+          "usd_per_1k": [
+            0.08752017973856208,
+            0.0947298529411764
+          ],
+          "escalated": [
+            0.0,
+            0.0
+          ]
+        },
+        "vs_sol": {
+          "accuracy_difference_pp": -0.9803921568627638,
+          "accuracy_difference_pp_ci95": [
+            -4.575163398692828,
+            2.614379084967311
+          ],
+          "cost_difference_usd_per_1k": -1.441185294117647,
+          "cost_difference_usd_per_1k_ci95": [
+            -1.4829510702614375,
+            -1.4010668055555549
+          ]
+        }
+      },
+      "luna:agreement": {
+        "n_items": 102,
+        "accuracy": 0.9705882352941176,
+        "usd_per_1k": 0.4034441176470589,
+        "escalated": 0.0784313725490196,
+        "ci95": {
+          "accuracy": [
+            0.9313725490196079,
+            1.0
+          ],
+          "usd_per_1k": [
+            0.3208946078431372,
+            0.4988644852941178
+          ],
+          "escalated": [
+            0.029411764705882353,
+            0.13725490196078433
+          ]
+        },
+        "vs_sol": {
+          "accuracy_difference_pp": 0.0,
+          "accuracy_difference_pp_ci95": [
+            -2.941176470588236,
+            2.941176470588236
+          ],
+          "cost_difference_usd_per_1k": -1.1288303921568628,
+          "cost_difference_usd_per_1k_ci95": [
+            -1.2093849264705883,
+            -1.0375604166666665
+          ]
+        }
+      },
+      "glm-flash": {
+        "n_items": 102,
+        "accuracy": 0.9117647058823529,
+        "usd_per_1k": 0.13142075163398687,
+        "escalated": 0.0,
+        "ci95": {
+          "accuracy": [
+            0.8594771241830066,
+            0.9575163398692811
+          ],
+          "usd_per_1k": [
+            0.12601102124183006,
+            0.13935934232026137
+          ],
+          "escalated": [
+            0.0,
+            0.0
+          ]
+        },
+        "vs_sol": {
+          "accuracy_difference_pp": -5.882352941176472,
+          "accuracy_difference_pp_ci95": [
+            -10.130718954248364,
+            -2.287581699346397
+          ],
+          "cost_difference_usd_per_1k": -1.4008537581699347,
+          "cost_difference_usd_per_1k_ci95": [
+            -1.442024468954249,
+            -1.3606841707516344
+          ]
+        }
+      },
+      "glm-flash:check": {
+        "n_items": 102,
+        "accuracy": 0.9183006535947713,
+        "usd_per_1k": 0.14251879084967314,
+        "escalated": 0.0065359477124183,
+        "ci95": {
+          "accuracy": [
+            0.8660130718954248,
+            0.9640522875816995
+          ],
+          "usd_per_1k": [
+            0.12669716503267972,
+            0.16507023692810457
+          ],
+          "escalated": [
+            0.0,
+            0.01633986928104575
+          ]
+        },
+        "vs_sol": {
+          "accuracy_difference_pp": -5.228758169934633,
+          "accuracy_difference_pp_ci95": [
+            -9.477124183006536,
+            -1.6339869281045805
+          ],
+          "cost_difference_usd_per_1k": -1.3897557189542484,
+          "cost_difference_usd_per_1k_ci95": [
+            -1.431954027777779,
+            -1.3488675776143797
+          ]
+        }
+      },
+      "glm-flash:agreement": {
+        "n_items": 102,
+        "accuracy": 0.9411764705882353,
+        "usd_per_1k": 0.5989877450980391,
+        "escalated": 0.11764705882352941,
+        "ci95": {
+          "accuracy": [
+            0.8921568627450981,
+            0.9803921568627451
+          ],
+          "usd_per_1k": [
+            0.4870844975490195,
+            0.7222506740196076
+          ],
+          "escalated": [
+            0.058823529411764705,
+            0.18627450980392157
+          ]
+        },
+        "vs_sol": {
+          "accuracy_difference_pp": -2.941176470588236,
+          "accuracy_difference_pp_ci95": [
+            -6.8627450980392135,
+            0.0
+          ],
+          "cost_difference_usd_per_1k": -0.9332867647058826,
+          "cost_difference_usd_per_1k_ci95": [
+            -1.0338650980392152,
+            -0.8247988725490207
+          ]
+        }
+      },
+      "oss-120b": {
+        "n_items": 102,
+        "accuracy": 0.9411764705882353,
+        "usd_per_1k": 0.16916519607843136,
+        "escalated": 0.0,
+        "ci95": {
+          "accuracy": [
+            0.8954248366013072,
+            0.9771241830065361
+          ],
+          "usd_per_1k": [
+            0.16270352941176472,
+            0.17569968137254904
+          ],
+          "escalated": [
+            0.0,
+            0.0
+          ]
+        },
+        "vs_sol": {
+          "accuracy_difference_pp": -2.941176470588236,
+          "accuracy_difference_pp_ci95": [
+            -7.516339869281053,
+            1.6339869281045807
+          ],
+          "cost_difference_usd_per_1k": -1.3631093137254904,
+          "cost_difference_usd_per_1k_ci95": [
+            -1.4019762867647054,
+            -1.325479387254902
+          ]
+        }
+      },
+      "oss-120b:check": {
+        "n_items": 102,
+        "accuracy": 0.9411764705882353,
+        "usd_per_1k": 0.16916519607843136,
+        "escalated": 0.0,
+        "ci95": {
+          "accuracy": [
+            0.8954248366013072,
+            0.9771241830065361
+          ],
+          "usd_per_1k": [
+            0.16270352941176472,
+            0.17569968137254904
+          ],
+          "escalated": [
+            0.0,
+            0.0
+          ]
+        },
+        "vs_sol": {
+          "accuracy_difference_pp": -2.941176470588236,
+          "accuracy_difference_pp_ci95": [
+            -7.516339869281053,
+            1.6339869281045807
+          ],
+          "cost_difference_usd_per_1k": -1.3631093137254904,
+          "cost_difference_usd_per_1k_ci95": [
+            -1.4019762867647054,
+            -1.325479387254902
+          ]
+        }
+      },
+      "oss-120b:agreement": {
+        "n_items": 102,
+        "accuracy": 0.9607843137254902,
+        "usd_per_1k": 0.6574955882352941,
+        "escalated": 0.0784313725490196,
+        "ci95": {
+          "accuracy": [
+            0.9215686274509803,
+            0.9901960784313726
+          ],
+          "usd_per_1k": [
+            0.5640422916666664,
+            0.7613850490196076
+          ],
+          "escalated": [
+            0.029411764705882353,
+            0.12745098039215685
+          ]
+        },
+        "vs_sol": {
+          "accuracy_difference_pp": -0.9803921568627416,
+          "accuracy_difference_pp_ci95": [
+            -4.90196078431373,
+            2.941176470588236
+          ],
+          "cost_difference_usd_per_1k": -0.8747789215686276,
+          "cost_difference_usd_per_1k_ci95": [
+            -0.9542873897058816,
+            -0.7866002941176475
+          ]
+        }
+      },
+      "sol": {
+        "n_items": 102,
+        "accuracy": 0.9705882352941176,
+        "usd_per_1k": 1.5322745098039217,
+        "escalated": 0.0,
+        "ci95": {
+          "accuracy": [
+            0.9313725490196079,
+            1.0
+          ],
+          "usd_per_1k": [
+            1.489843137254902,
+            1.5765495098039217
+          ],
+          "escalated": [
+            0.0,
+            0.0
+          ]
+        },
+        "vs_sol": {
+          "accuracy_difference_pp": 0.0,
+          "accuracy_difference_pp_ci95": [
+            0.0,
+            0.0
+          ],
+          "cost_difference_usd_per_1k": 0.0,
+          "cost_difference_usd_per_1k_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "glm-flash-t0": {
+        "n_items": 102,
+        "accuracy": 0.9313725490196079,
+        "usd_per_1k": 0.1287377450980392,
+        "escalated": 0.0,
+        "ci95": {
+          "accuracy": [
+            0.8823529411764706,
+            0.9803921568627451
+          ],
+          "usd_per_1k": [
+            0.12599007352941172,
+            0.13165981617647057
+          ],
+          "escalated": [
+            0.0,
+            0.0
+          ]
+        },
+        "vs_sol": {
+          "accuracy_difference_pp": -3.9215686274509776,
+          "accuracy_difference_pp_ci95": [
+            -7.843137254901967,
+            -0.9803921568627416
+          ],
+          "cost_difference_usd_per_1k": -1.4035367647058825,
+          "cost_difference_usd_per_1k_ci95": [
+            -1.4451674264705876,
+            -1.3633597303921576
+          ]
+        }
+      }
+    }
+  },
+  "tasks": {
+    "invoice": {
+      "n_items": 36,
+      "strata": {
+        "invoice": 36
+      },
+      "policies": {
+        "oss-20b": {
+          "n_items": 36,
+          "accuracy": 0.9814814814814814,
+          "usd_per_1k": 0.06925416666666666,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.9537037037037037,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.0657615625,
+              0.07275357638888888
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": 3.703703703703698,
+            "accuracy_difference_pp_ci95": [
+              -1.85185185185186,
+              11.111111111111105
+            ],
+            "cost_difference_usd_per_1k": -1.676634722222222,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.7014139409722218,
+              -1.6535699305555558
+            ]
+          }
+        },
+        "oss-20b:check": {
+          "n_items": 36,
+          "accuracy": 0.9814814814814814,
+          "usd_per_1k": 0.06925416666666666,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.9537037037037037,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.0657615625,
+              0.07275357638888888
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": 3.703703703703698,
+            "accuracy_difference_pp_ci95": [
+              -1.85185185185186,
+              11.111111111111105
+            ],
+            "cost_difference_usd_per_1k": -1.676634722222222,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.7014139409722218,
+              -1.6535699305555558
+            ]
+          }
+        },
+        "oss-20b:agreement": {
+          "n_items": 36,
+          "accuracy": 0.9722222222222222,
+          "usd_per_1k": 0.3034291666666666,
+          "escalated": 0.05555555555555555,
+          "ci95": {
+            "accuracy": [
+              0.9166666666666666,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.2007761979166667,
+              0.4520451909722223
+            ],
+            "escalated": [
+              0.0,
+              0.1388888888888889
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": 2.777777777777779,
+            "accuracy_difference_pp_ci95": [
+              0.0,
+              8.333333333333337
+            ],
+            "cost_difference_usd_per_1k": -1.442459722222222,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.5511576562500002,
+              -1.2909790625000006
+            ]
+          }
+        },
+        "luna": {
+          "n_items": 36,
+          "accuracy": 0.9907407407407409,
+          "usd_per_1k": 0.09911388888888888,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.9722222222222222,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.093823125,
+              0.10465208333333335
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": 4.62962962962965,
+            "accuracy_difference_pp_ci95": [
+              0.0,
+              12.037037037037035
+            ],
+            "cost_difference_usd_per_1k": -1.6467749999999997,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.6712282638888896,
+              -1.6235734259259258
+            ]
+          }
+        },
+        "luna:check": {
+          "n_items": 36,
+          "accuracy": 0.9907407407407409,
+          "usd_per_1k": 0.09911388888888888,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.9722222222222222,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.093823125,
+              0.10465208333333335
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": 4.62962962962965,
+            "accuracy_difference_pp_ci95": [
+              0.0,
+              12.037037037037035
+            ],
+            "cost_difference_usd_per_1k": -1.6467749999999997,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.6712282638888896,
+              -1.6235734259259258
+            ]
+          }
+        },
+        "luna:agreement": {
+          "n_items": 36,
+          "accuracy": 0.9722222222222222,
+          "usd_per_1k": 0.34445277777777783,
+          "escalated": 0.027777777777777776,
+          "ci95": {
+            "accuracy": [
+              0.9166666666666666,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.2824052083333334,
+              0.4551484027777778
+            ],
+            "escalated": [
+              0.0,
+              0.08333333333333333
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": 2.777777777777779,
+            "accuracy_difference_pp_ci95": [
+              0.0,
+              8.333333333333337
+            ],
+            "cost_difference_usd_per_1k": -1.4014361111111109,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.470239791666667,
+              -1.286017847222222
+            ]
+          }
+        },
+        "glm-flash": {
+          "n_items": 36,
+          "accuracy": 0.9074074074074076,
+          "usd_per_1k": 0.10597824074074075,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.8055555555555556,
+              0.9907407407407407
+            ],
+            "usd_per_1k": [
+              0.10346431712962965,
+              0.10856497685185185
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -3.703703703703687,
+            "accuracy_difference_pp_ci95": [
+              -10.185185185185187,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -1.6399106481481478,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.6645831134259257,
+              -1.6168901273148146
+            ]
+          }
+        },
+        "glm-flash:check": {
+          "n_items": 36,
+          "accuracy": 0.9074074074074076,
+          "usd_per_1k": 0.10597824074074075,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.8055555555555556,
+              0.9907407407407407
+            ],
+            "usd_per_1k": [
+              0.10346431712962965,
+              0.10856497685185185
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -3.703703703703687,
+            "accuracy_difference_pp_ci95": [
+              -10.185185185185187,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -1.6399106481481478,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.6645831134259257,
+              -1.6168901273148146
+            ]
+          }
+        },
+        "glm-flash:agreement": {
+          "n_items": 36,
+          "accuracy": 0.9166666666666666,
+          "usd_per_1k": 0.4174902777777777,
+          "escalated": 0.05555555555555555,
+          "ci95": {
+            "accuracy": [
+              0.8055555555555556,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.31244982638888885,
+              0.5705583680555553
+            ],
+            "escalated": [
+              0.0,
+              0.1388888888888889
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -2.777777777777779,
+            "accuracy_difference_pp_ci95": [
+              -8.333333333333337,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -1.328398611111111,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.4357642013888894,
+              -1.1765129166666668
+            ]
+          }
+        },
+        "oss-120b": {
+          "n_items": 36,
+          "accuracy": 0.9722222222222222,
+          "usd_per_1k": 0.18008055555555552,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.9166666666666666,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.17453329861111105,
+              0.18585993055555552
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": 2.777777777777779,
+            "accuracy_difference_pp_ci95": [
+              -5.555555555555558,
+              13.888888888888884
+            ],
+            "cost_difference_usd_per_1k": -1.565808333333333,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.590121180555556,
+              -1.5428540277777778
+            ]
+          }
+        },
+        "oss-120b:check": {
+          "n_items": 36,
+          "accuracy": 0.9722222222222222,
+          "usd_per_1k": 0.18008055555555552,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.9166666666666666,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.17453329861111105,
+              0.18585993055555552
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": 2.777777777777779,
+            "accuracy_difference_pp_ci95": [
+              -5.555555555555558,
+              13.888888888888884
+            ],
+            "cost_difference_usd_per_1k": -1.565808333333333,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.590121180555556,
+              -1.5428540277777778
+            ]
+          }
+        },
+        "oss-120b:agreement": {
+          "n_items": 36,
+          "accuracy": 0.9722222222222222,
+          "usd_per_1k": 0.5402416666666664,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.9166666666666666,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.5235998958333334,
+              0.5575797916666667
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": 2.777777777777779,
+            "accuracy_difference_pp_ci95": [
+              -5.555555555555558,
+              13.888888888888884
+            ],
+            "cost_difference_usd_per_1k": -1.2056472222222223,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.2285590277777778,
+              -1.1832027430555554
+            ]
+          }
+        },
+        "sol": {
+          "n_items": 36,
+          "accuracy": 0.9444444444444444,
+          "usd_per_1k": 1.7458888888888886,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.8611111111111112,
+              1.0
+            ],
+            "usd_per_1k": [
+              1.7208333333333337,
+              1.7724444444444447
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": 0.0,
+            "accuracy_difference_pp_ci95": [
+              0.0,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": 0.0,
+            "cost_difference_usd_per_1k_ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "glm-flash-t0": {
+          "n_items": 36,
+          "accuracy": 0.9166666666666666,
+          "usd_per_1k": 0.10690416666666666,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.8055555555555556,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.1044290972222222,
+              0.10947916666666664
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -2.777777777777779,
+            "accuracy_difference_pp_ci95": [
+              -8.333333333333337,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -1.638984722222222,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.6639085069444448,
+              -1.6154911458333332
+            ]
+          }
+        }
+      }
+    },
+    "rules": {
+      "n_items": 30,
+      "strata": {
+        "rules": 30
+      },
+      "policies": {
+        "oss-20b": {
+          "n_items": 30,
+          "accuracy": 0.9222222222222223,
+          "usd_per_1k": 0.06518666666666667,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.8444444444444443,
+              0.9888888888888888
+            ],
+            "usd_per_1k": [
+              0.05849983333333333,
+              0.07247587499999998
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -7.777777777777772,
+            "accuracy_difference_pp_ci95": [
+              -15.555555555555568,
+              -1.1111111111111183
+            ],
+            "cost_difference_usd_per_1k": -1.0336133333333333,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.1350026875,
+              -0.9371039999999997
+            ]
+          }
+        },
+        "oss-20b:check": {
+          "n_items": 30,
+          "accuracy": 0.9222222222222223,
+          "usd_per_1k": 0.06518666666666667,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.8444444444444443,
+              0.9888888888888888
+            ],
+            "usd_per_1k": [
+              0.05849983333333333,
+              0.07247587499999998
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -7.777777777777772,
+            "accuracy_difference_pp_ci95": [
+              -15.555555555555568,
+              -1.1111111111111183
+            ],
+            "cost_difference_usd_per_1k": -1.0336133333333333,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.1350026875,
+              -0.9371039999999997
+            ]
+          }
+        },
+        "oss-20b:agreement": {
+          "n_items": 30,
+          "accuracy": 1.0,
+          "usd_per_1k": 0.40242666666666654,
+          "escalated": 0.16666666666666666,
+          "ci95": {
+            "accuracy": [
+              1.0,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.2379662916666667,
+              0.597503625
+            ],
+            "escalated": [
+              0.03333333333333333,
+              0.3
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": 0.0,
+            "accuracy_difference_pp_ci95": [
+              0.0,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -0.6963733333333335,
+            "cost_difference_usd_per_1k_ci95": [
+              -0.8600854791666669,
+              -0.5180656666666663
+            ]
+          }
+        },
+        "luna": {
+          "n_items": 30,
+          "accuracy": 0.9777777777777777,
+          "usd_per_1k": 0.08779,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.9444444444444445,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.07981097222222223,
+              0.0962888888888889
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -2.2222222222222254,
+            "accuracy_difference_pp_ci95": [
+              -5.5555555555555465,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -1.01101,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.1119847777777778,
+              -0.9149203611111111
+            ]
+          }
+        },
+        "luna:check": {
+          "n_items": 30,
+          "accuracy": 0.9777777777777777,
+          "usd_per_1k": 0.08779,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.9444444444444445,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.07981097222222223,
+              0.0962888888888889
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -2.2222222222222254,
+            "accuracy_difference_pp_ci95": [
+              -5.5555555555555465,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -1.01101,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.1119847777777778,
+              -0.9149203611111111
+            ]
+          }
+        },
+        "luna:agreement": {
+          "n_items": 30,
+          "accuracy": 1.0,
+          "usd_per_1k": 0.3249033333333333,
+          "escalated": 0.06666666666666667,
+          "ci95": {
+            "accuracy": [
+              1.0,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.2564956666666667,
+              0.41394033333333324
+            ],
+            "escalated": [
+              0.0,
+              0.16666666666666666
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": 0.0,
+            "accuracy_difference_pp_ci95": [
+              0.0,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -0.7738966666666667,
+            "cost_difference_usd_per_1k_ci95": [
+              -0.8979643333333333,
+              -0.6394561666666664
+            ]
+          }
+        },
+        "glm-flash": {
+          "n_items": 30,
+          "accuracy": 0.9,
+          "usd_per_1k": 0.08807999999999999,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.8,
+              0.9777777777777779
+            ],
+            "usd_per_1k": [
+              0.07211624999999998,
+              0.11407412499999998
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -9.999999999999998,
+            "accuracy_difference_pp_ci95": [
+              -19.999999999999996,
+              -2.2222222222222143
+            ],
+            "cost_difference_usd_per_1k": -1.01072,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.1130700416666666,
+              -0.9149616527777776
+            ]
+          }
+        },
+        "glm-flash:check": {
+          "n_items": 30,
+          "accuracy": 0.9111111111111111,
+          "usd_per_1k": 0.1031022222222222,
+          "escalated": 0.01111111111111111,
+          "ci95": {
+            "accuracy": [
+              0.8111111111111111,
+              0.9888888888888889
+            ],
+            "usd_per_1k": [
+              0.07211624999999998,
+              0.1591610138888888
+            ],
+            "escalated": [
+              0.0,
+              0.03333333333333333
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -8.888888888888891,
+            "accuracy_difference_pp_ci95": [
+              -18.88888888888889,
+              -1.1111111111111072
+            ],
+            "cost_difference_usd_per_1k": -0.9956977777777778,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.1035920555555552,
+              -0.892409125
+            ]
+          }
+        },
+        "glm-flash:agreement": {
+          "n_items": 30,
+          "accuracy": 0.9666666666666667,
+          "usd_per_1k": 0.46304000000000006,
+          "escalated": 0.13333333333333333,
+          "ci95": {
+            "accuracy": [
+              0.9,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.27235775,
+              0.7038969583333333
+            ],
+            "escalated": [
+              0.03333333333333333,
+              0.26666666666666666
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -3.3333333333333326,
+            "accuracy_difference_pp_ci95": [
+              -9.999999999999998,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -0.6357599999999999,
+            "cost_difference_usd_per_1k_ci95": [
+              -0.8046003750000004,
+              -0.43783429166666704
+            ]
+          }
+        },
+        "oss-120b": {
+          "n_items": 30,
+          "accuracy": 0.9888888888888889,
+          "usd_per_1k": 0.15194000000000007,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.9666666666666667,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.13647720833333335,
+              0.16863666666666668
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -1.1111111111111072,
+            "accuracy_difference_pp_ci95": [
+              -3.3333333333333326,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -0.9468599999999999,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.0419782083333335,
+              -0.8574141250000001
+            ]
+          }
+        },
+        "oss-120b:check": {
+          "n_items": 30,
+          "accuracy": 0.9888888888888889,
+          "usd_per_1k": 0.15194000000000007,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.9666666666666667,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.13647720833333335,
+              0.16863666666666668
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -1.1111111111111072,
+            "accuracy_difference_pp_ci95": [
+              -3.3333333333333326,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -0.9468599999999999,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.0419782083333335,
+              -0.8574141250000001
+            ]
+          }
+        },
+        "oss-120b:agreement": {
+          "n_items": 30,
+          "accuracy": 1.0,
+          "usd_per_1k": 0.4981533333333335,
+          "escalated": 0.03333333333333333,
+          "ci95": {
+            "accuracy": [
+              1.0,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.415955,
+              0.6129512499999997
+            ],
+            "escalated": [
+              0.0,
+              0.1
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": 0.0,
+            "accuracy_difference_pp_ci95": [
+              0.0,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -0.6006466666666666,
+            "cost_difference_usd_per_1k_ci95": [
+              -0.6998617083333332,
+              -0.4891664583333329
+            ]
+          }
+        },
+        "sol": {
+          "n_items": 30,
+          "accuracy": 1.0,
+          "usd_per_1k": 1.0988,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              1.0,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.9983883333333333,
+              1.2056666666666667
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": 0.0,
+            "accuracy_difference_pp_ci95": [
+              0.0,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": 0.0,
+            "cost_difference_usd_per_1k_ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "glm-flash-t0": {
+          "n_items": 30,
+          "accuracy": 0.9333333333333333,
+          "usd_per_1k": 0.07628,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.8333333333333334,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.07035324999999999,
+              0.08247345833333332
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -6.666666666666665,
+            "accuracy_difference_pp_ci95": [
+              -16.666666666666664,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -1.02252,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.1242298333333332,
+              -0.9257861666666668
+            ]
+          }
+        }
+      }
+    },
+    "tool": {
+      "n_items": 36,
+      "strata": {
+        "tool": 36
+      },
+      "policies": {
+        "oss-20b": {
+          "n_items": 36,
+          "accuracy": 0.8240740740740741,
+          "usd_per_1k": 0.07811458333333333,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.7037037037037037,
+              0.9351851851851851
+            ],
+            "usd_per_1k": [
+              0.07455133680555555,
+              0.08207440972222223
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -14.814814814814813,
+            "accuracy_difference_pp_ci95": [
+              -26.851851851851837,
+              -4.629629629629639
+            ],
+            "cost_difference_usd_per_1k": -1.6017743055555558,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.679844618055556,
+              -1.5285900173611109
+            ]
+          }
+        },
+        "oss-20b:check": {
+          "n_items": 36,
+          "accuracy": 0.8240740740740741,
+          "usd_per_1k": 0.07811458333333333,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.7037037037037037,
+              0.9351851851851851
+            ],
+            "usd_per_1k": [
+              0.07455133680555555,
+              0.08207440972222223
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -14.814814814814813,
+            "accuracy_difference_pp_ci95": [
+              -26.851851851851837,
+              -4.629629629629639
+            ],
+            "cost_difference_usd_per_1k": -1.6017743055555558,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.679844618055556,
+              -1.5285900173611109
+            ]
+          }
+        },
+        "oss-20b:agreement": {
+          "n_items": 36,
+          "accuracy": 0.9166666666666666,
+          "usd_per_1k": 0.6676770833333331,
+          "escalated": 0.2222222222222222,
+          "ci95": {
+            "accuracy": [
+              0.8055555555555556,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.4046474479166667,
+              0.9543610069444441
+            ],
+            "escalated": [
+              0.08333333333333333,
+              0.3611111111111111
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -5.555555555555558,
+            "accuracy_difference_pp_ci95": [
+              -13.888888888888884,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -1.0122118055555562,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.2302130208333335,
+              -0.7742242013888889
+            ]
+          }
+        },
+        "luna": {
+          "n_items": 36,
+          "accuracy": 0.9166666666666666,
+          "usd_per_1k": 0.0858138888888889,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.8333333333333333,
+              0.9814814814814815
+            ],
+            "usd_per_1k": [
+              0.08117664351851854,
+              0.09085930555555556
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -5.555555555555558,
+            "accuracy_difference_pp_ci95": [
+              -13.888888888888884,
+              0.9259259259259189
+            ],
+            "cost_difference_usd_per_1k": -1.5940750000000004,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.6712726620370377,
+              -1.5216881944444443
+            ]
+          }
+        },
+        "luna:check": {
+          "n_items": 36,
+          "accuracy": 0.9166666666666666,
+          "usd_per_1k": 0.0858138888888889,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.8333333333333333,
+              0.9814814814814815
+            ],
+            "usd_per_1k": [
+              0.08117664351851854,
+              0.09085930555555556
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -5.555555555555558,
+            "accuracy_difference_pp_ci95": [
+              -13.888888888888884,
+              0.9259259259259189
+            ],
+            "cost_difference_usd_per_1k": -1.5940750000000004,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.6712726620370377,
+              -1.5216881944444443
+            ]
+          }
+        },
+        "luna:agreement": {
+          "n_items": 36,
+          "accuracy": 0.9444444444444444,
+          "usd_per_1k": 0.5278861111111111,
+          "escalated": 0.1388888888888889,
+          "ci95": {
+            "accuracy": [
+              0.8611111111111112,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.3130915972222222,
+              0.7694059722222224
+            ],
+            "escalated": [
+              0.027777777777777776,
+              0.25
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -2.777777777777779,
+            "accuracy_difference_pp_ci95": [
+              -8.333333333333337,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -1.1520027777777782,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.3369972916666668,
+              -0.9415208333333335
+            ]
+          }
+        },
+        "glm-flash": {
+          "n_items": 36,
+          "accuracy": 0.9259259259259258,
+          "usd_per_1k": 0.19298055555555557,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.8425925925925926,
+              0.9907407407407409
+            ],
+            "usd_per_1k": [
+              0.18840042824074077,
+              0.1979412268518519
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -4.629629629629639,
+            "accuracy_difference_pp_ci95": [
+              -11.111111111111116,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -1.4869083333333337,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.5635018634259252,
+              -1.4146874305555557
+            ]
+          }
+        },
+        "glm-flash:check": {
+          "n_items": 36,
+          "accuracy": 0.9351851851851851,
+          "usd_per_1k": 0.2119064814814815,
+          "escalated": 0.009259259259259259,
+          "ci95": {
+            "accuracy": [
+              0.8518518518518517,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.18882857638888892,
+              0.25310017361111115
+            ],
+            "escalated": [
+              0.0,
+              0.027777777777777776
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -3.703703703703709,
+            "accuracy_difference_pp_ci95": [
+              -10.185185185185174,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -1.4679824074074077,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.5448305671296294,
+              -1.396709884259259
+            ]
+          }
+        },
+        "glm-flash:agreement": {
+          "n_items": 36,
+          "accuracy": 0.9444444444444444,
+          "usd_per_1k": 0.893775,
+          "escalated": 0.16666666666666666,
+          "ci95": {
+            "accuracy": [
+              0.8611111111111112,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.6707814583333332,
+              1.1515217361111112
+            ],
+            "escalated": [
+              0.05555555555555555,
+              0.3055555555555556
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -2.777777777777779,
+            "accuracy_difference_pp_ci95": [
+              -8.333333333333337,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -0.7861138888888892,
+            "cost_difference_usd_per_1k_ci95": [
+              -0.9894569791666669,
+              -0.560586215277778
+            ]
+          }
+        },
+        "oss-120b": {
+          "n_items": 36,
+          "accuracy": 0.8703703703703703,
+          "usd_per_1k": 0.17260416666666667,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.7592592592592592,
+              0.9629629629629631
+            ],
+            "usd_per_1k": [
+              0.1619513541666667,
+              0.18393420138888886
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -10.185185185185187,
+            "accuracy_difference_pp_ci95": [
+              -20.370370370370374,
+              -2.777777777777768
+            ],
+            "cost_difference_usd_per_1k": -1.5072847222222225,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.580723611111111,
+              -1.4368886805555559
+            ]
+          }
+        },
+        "oss-120b:check": {
+          "n_items": 36,
+          "accuracy": 0.8703703703703703,
+          "usd_per_1k": 0.17260416666666667,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.7592592592592592,
+              0.9629629629629631
+            ],
+            "usd_per_1k": [
+              0.1619513541666667,
+              0.18393420138888886
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -10.185185185185187,
+            "accuracy_difference_pp_ci95": [
+              -20.370370370370374,
+              -2.777777777777768
+            ],
+            "cost_difference_usd_per_1k": -1.5072847222222225,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.580723611111111,
+              -1.4368886805555559
+            ]
+          }
+        },
+        "oss-120b:agreement": {
+          "n_items": 36,
+          "accuracy": 0.9166666666666666,
+          "usd_per_1k": 0.9075347222222222,
+          "escalated": 0.19444444444444445,
+          "ci95": {
+            "accuracy": [
+              0.8055555555555556,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.6586508680555557,
+              1.1925540972222222
+            ],
+            "escalated": [
+              0.08333333333333333,
+              0.3333333333333333
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -5.555555555555558,
+            "accuracy_difference_pp_ci95": [
+              -13.888888888888884,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -0.772354166666667,
+            "cost_difference_usd_per_1k_ci95": [
+              -0.9794521874999996,
+              -0.5397741319444445
+            ]
+          }
+        },
+        "sol": {
+          "n_items": 36,
+          "accuracy": 0.9722222222222222,
+          "usd_per_1k": 1.6798888888888892,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.9166666666666666,
+              1.0
+            ],
+            "usd_per_1k": [
+              1.6038333333333337,
+              1.7611125000000003
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": 0.0,
+            "accuracy_difference_pp_ci95": [
+              0.0,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": 0.0,
+            "cost_difference_usd_per_1k_ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "glm-flash-t0": {
+          "n_items": 36,
+          "accuracy": 0.9444444444444444,
+          "usd_per_1k": 0.19428611111111113,
+          "escalated": 0.0,
+          "ci95": {
+            "accuracy": [
+              0.8611111111111112,
+              1.0
+            ],
+            "usd_per_1k": [
+              0.18894163194444447,
+              0.20025555555555555
+            ],
+            "escalated": [
+              0.0,
+              0.0
+            ]
+          },
+          "vs_sol": {
+            "accuracy_difference_pp": -2.777777777777779,
+            "accuracy_difference_pp_ci95": [
+              -8.333333333333337,
+              0.0
+            ],
+            "cost_difference_usd_per_1k": -1.485602777777778,
+            "cost_difference_usd_per_1k_ci95": [
+              -1.561125208333334,
+              -1.4139578819444447
+            ]
+          }
+        }
+      }
+    }
+  },
+  "limits": [
+    "Item bootstrap does not capture all template/policy-document dependence.",
+    "One Sol response per item; its sampling variation is unmeasured.",
+    "Intervals do not establish production reliability or equivalence."
+  ]
+}

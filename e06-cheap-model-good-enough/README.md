@@ -11,10 +11,20 @@ see [its health review](PILOT-REVIEW-2026-10-29.md).
 `run-pilot.ps1` separates the paid preflight and pilot stages; each pilot model runs once
 per item. The historical three-model results below remain development evidence.
 
-**Full-set update:** 102 items are built and independently audited; 17 items changed during
-audit. See [the audit record](AUDIT-2026-10-29.md). The full evaluation has not run.
-`run-full.ps1` verifies the freeze before paid preflight/evaluation calls. Report the 81
-held-out items separately from the 21 development examples.
+**Completed evaluation, 29 October 2026:** all 1,428 responses are saved. See
+[the results](RESULTS.md), [full analysis](FULL-RESULTS-2026-10-29.md) and
+[health exceptions](FULL-RUN-HEALTH-2026-10-29.md). The audited set was frozen before
+evaluation. Report the 81 held-out items separately from the 21 development examples.
+
+Reproduce full saved-result analysis without credentials or inference:
+
+```text
+python reproduce_full.py
+python reproduce_full.py --figures
+```
+
+The second command needs optional chart dependencies from requirements-dev.txt. The
+historical pilot notebook and results below remain preserved. Nothing has been published.
 
 **Status, 25 October 2026: development pilot only.** The revised pilot has 21 synthetic items,
 one repeat each, across three models. The planned 102-item evaluation has not been built or run.

@@ -1,5 +1,10 @@
 # E06 publication source
 
+**Latest, 29 October 2026:** the full evaluation and analysis are complete. Current evidence
+is in `FULL-RESULTS-2026-10-29.md` and the frozen-run cohort summaries. Chart and uncertainty
+intervals are ready. The canonical article body still needs rewriting with the required
+`claude/style-guide.md`, which has not been supplied. Nothing has been pushed or published.
+
 The canonical AI Tool Stack draft lives in the publication workspace:
 
 [Can simple checks make cheap AI reliable?](../../../ai-tool-stack-site/content/blog/system-layers/can-simple-checks-make-cheap-ai-reliable/ghost-pack.md)

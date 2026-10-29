@@ -117,3 +117,17 @@ Independent blind answering, label review and four source re-audits are complete
 Four calendar-owner cases accept both attendee conventions and are contested. Ambiguous
 required dates instead require clarification. No system prompt was tuned per model.
 Use separate held-out/development summaries. Original sample keys and pilot rows are preserved.
+
+## 29 October 2026 — completed evaluation and health exception
+
+Tej ran all 1,428 calls. One GLM response reached the frozen 2,000-token cap with no visible
+answer; the control returned two native calls once. After health review and before accuracy
+inspection, Tej explicitly selected “Count it as a frozen-budget failure and continue
+analysis”. Preserve both rows without a cap increase, replacement, exclusion or paid rerun.
+See `FULL-RUN-HEALTH-2026-10-29.md`.
+
+The deferred bootstrap plan was recorded in `ANALYSIS-PLAN-2026-10-29.md` before accuracy
+inspection. The supplement uses 10,000 seeded, task-stratified whole-item draws, keeping
+repeats together, and independently verifies all point estimates against the frozen scorer.
+That scorer, all keys and requests remain unchanged. This is a reporting supplement, not
+a new experimental arm. See `FULL-RESULTS-2026-10-29.md` for claims and limits.
