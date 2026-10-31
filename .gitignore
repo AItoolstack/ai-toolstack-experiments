@@ -4,3 +4,9 @@ __pycache__/
 results-dry*/
 analysis-dry*/
 .ipynb_checkpoints/
+
+# E06: unpublished drafts and local publishing notes stay out of the public repo
+e06-cheap-model-good-enough/POST-DRAFT-*.md
+e06-cheap-model-good-enough/PUBLICATION.md
+_merge-backup-*/
+_private/

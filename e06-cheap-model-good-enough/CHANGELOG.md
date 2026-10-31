@@ -185,5 +185,12 @@ To use function tools, use /v1/responses or set reasoning_effort to 'none'.
   tl34 r0-r2) with 10 false alarms, all correct declines on tl17.
 - Found while reviewing: 26 of the 29 held-out invoices come from one template ("Alder Quay Workshop N Ltd", ~300
   characters, labelled fields). The invoice result is not evidence about messy invoices; the post says so.
-- `POST-DRAFT-2026-10-31.md`: the E6 post, escalation framing. Opens on oss-20b tl21 r1 instead of the pre-registered
+- The E6 post draft (escalation framing) was written; it stays out of this repo until it is published. Opens on oss-20b tl21 r1 instead of the pre-registered
   worked-example rule's first pick (glm-flash inv22); the deviation is disclosed in its Limits.
+
+## 31 Oct 2026: folder tidied for readers (no change to items, keys, code or results)
+- Pilots, preflights and working notes moved under `development/` (with a README). The frozen run, its analysis,
+  the audit and the design stay at the top level. `freeze.py --check`, the 24 tests and `reproduce_full.py` pass;
+  re-generated numbers match the committed ones apart from the last floating-point digit and line endings.
+- README rewritten as a guide for readers. The unpublished post draft and local publishing notes
+  (`PUBLICATION.md`) are no longer tracked.

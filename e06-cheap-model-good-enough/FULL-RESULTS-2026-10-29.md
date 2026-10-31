@@ -138,9 +138,9 @@ pilot notebook remains historical; the new script covers the full study.
 
 ## Publication status and limits
 
-Everything remains local and unpublished. Public code/data links need checking after Tej
-publishes the local results. The article still contains the old pilot body, marked stale;
-its rewrite awaits `claude/style-guide.md`. Its §11 checklist has not passed.
+Code, items and every saved answer are published in this folder (31 October 2026). The
+write-up on ai-toolstack.com is in preparation. Material from before the freeze (pilots,
+preflights, working notes) is under `development/` and is not part of the result.
 
 Keep these limits near claims: one author, one independent AI auditor, templated invoices,
 short fictional policies, a shared prompt per task, different hosts, one Sol/control repeat,
