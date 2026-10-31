@@ -1,4 +1,4 @@
-"""E06 post visuals (31 Oct 2026): test flow, mistakes caught, cost. 400-unit canvas shown at 480 px, min font 15.
+"""E06 post visuals (31 Oct 2026): mistakes caught and cost (the flow is in make_flow.py). 400-unit canvas shown at 480 px, min font 15.
 
 Numbers come from analysis_frozen_20261029_heldout (summary-v2.json) and, for "caught", from the frozen
 scorer applied to each cheap model's first answer (repeat 0): 20 wrong; the check caught 1, agreement 13.
@@ -60,23 +60,7 @@ def header(s, title, sub):
     s.para(PAD, sub, W - 2 * PAD, 15, MUTED, False, 21)
     s.y += 12
 
-# ---------------------------------------------------------------- 1. flow
-s = Svg(); header(s, "How each answer was tested", "Three tasks: invoices, tool calls, refund amounts.")
-def step(title, body, **kw):
-    s.begin_box(); s.box(title, body, **kw)
-def arr(): y = s.y; s.y += 26; s.arrow(W / 2, y + 2, s.y - 2)
-step(None, "81 tasks, each with one right answer written down before any model saw it")
-arr()
-step(None, "A cheap model answers each task three times. Sol, the expensive model, answers once.")
-arr()
-s.para(PAD, "Then one of two rules decides whether to keep the cheap answer:", W - 2 * PAD, 15, MUTED, False, 21); s.y += 8
-step("Route 1: the code check", "Keep the cheap answer if the JSON parses, the totals add up and the tool and its arguments exist. If not, use Sol’s answer.")
-s.y += 10
-step("Route 2: asking three times", "Keep the cheap answer if all three answers match. If they differ, use Sol’s answer.",
-     fill=GREEN_BG, stroke=GREEN, title_fill=GREEN)
-arr()
-step(None, "Code marks every final answer against the written one. No AI judge.")
-open("e06-test-flow-2026-10-31.svg", "w").write(s.svg())
+# The test-flow diagram is drawn by make_flow.py.
 
 # ---------------------------------------------------------------- 2. caught
 s = Svg(); header(s, "Asking three times caught the mistakes the check missed",
