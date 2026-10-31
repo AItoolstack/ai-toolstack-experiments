@@ -15,6 +15,8 @@ Two ways of deciding when to escalate to Sol were compared:
 
 All items are fictional. Nothing comes from an employer or client.
 
+Write-up: [I didn’t need the expensive model. I needed to know when to call it.](https://www.ai-toolstack.com/blog/when-to-call-the-expensive-model/) (1 Nov 2026).
+
 ## Result (full run, 29 Oct 2026; 81 held-out items)
 
 | | Correct | Escalated to Sol | USD per 1,000 items |
