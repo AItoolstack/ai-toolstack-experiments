@@ -194,3 +194,9 @@ To use function tools, use /v1/responses or set reasoning_effort to 'none'.
   re-generated numbers match the committed ones apart from the last floating-point digit and line endings.
 - README rewritten as a guide for readers. The unpublished post draft and local publishing notes
   (`PUBLICATION.md`) are no longer tracked.
+
+## 31 Oct 2026: figures for the write-up (no change to items, keys, code or results)
+- `figures-post/`: three visuals for the post (test flow, mistakes caught, cost), their generator and
+  `caught_counts.py`. Counting each cheap model's first answer on the held-out items: 20 wrong; the frozen
+  check caught 1 (the empty, token-capped GLM rl10 answer); the agreement rule escalated 13 of them, and also
+  escalated 19 right answers. Exploratory, computed after the results were read.

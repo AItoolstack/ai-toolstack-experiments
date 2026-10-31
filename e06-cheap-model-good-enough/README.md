@@ -47,6 +47,7 @@ All items are fictional. Nothing comes from an employer or client.
 | `analysis_frozen_20261029_heldout/posthoc-2026-10-31.json` | **Exploratory, added after the results were read:** latency, cost at volume, one extra check ("no tool call and no question") |
 | `blind-audit-2026-10-29/`, `audit-review-2026-10-29/` | The audit's raw answers and resolutions |
 | `FREEZE.json` | Hashes of the items, keys, prompts, code and audit at freeze time (tag `e06-frozen`) |
+| `figures-post/` | The three visuals used in the write-up, their generator and `caught_counts.py` (exploratory) |
 | `development/` | Pilots and notes from before the freeze. Kept for the record; not part of the result |
 
 **Held-out vs development.** The 21 development items were seen during the pilots, so the headline numbers use only the 81 items written afterwards. The 21 are reported separately.
