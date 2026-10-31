@@ -1,0 +1,181 @@
+{
+  "cohort": "heldout",
+  "items": 81,
+  "posthoc": true,
+  "added": "2026-10-31",
+  "latency_alone": {
+    "oss-20b": {
+      "median": 0.7,
+      "p90": 1.14
+    },
+    "luna": {
+      "median": 2.72,
+      "p90": 4.31
+    },
+    "glm-flash": {
+      "median": 2.28,
+      "p90": 5.36
+    },
+    "oss-120b": {
+      "median": 0.66,
+      "p90": 0.88
+    },
+    "sol": {
+      "median": 2.44,
+      "p90": 3.48
+    }
+  },
+  "latency_cascades": {
+    "oss-20b": {
+      "agreement_parallel": [
+        0.94,
+        2.86
+      ],
+      "agreement_sequential": [
+        2.22,
+        4.38
+      ],
+      "check": [
+        0.7,
+        1.14
+      ]
+    },
+    "luna": {
+      "agreement_parallel": [
+        3.53,
+        5.45
+      ],
+      "agreement_sequential": [
+        8.85,
+        11.6
+      ],
+      "check": [
+        2.72,
+        4.31
+      ]
+    },
+    "glm-flash": {
+      "agreement_parallel": [
+        4.48,
+        6.73
+      ],
+      "agreement_sequential": [
+        10.11,
+        14.29
+      ],
+      "check": [
+        2.28,
+        5.36
+      ]
+    },
+    "oss-120b": {
+      "agreement_parallel": [
+        0.78,
+        1.14
+      ],
+      "agreement_sequential": [
+        2.06,
+        2.7800000000000002
+      ],
+      "check": [
+        0.66,
+        0.88
+      ]
+    }
+  },
+  "action_claim_check": {
+    "oss-20b": {
+      "responses": 243,
+      "wrong": 20,
+      "caught_by_frozen_check": 0,
+      "extra_caught": 4,
+      "extra_false_alarms": 3,
+      "cascade_correct": 227.0,
+      "cascade_usd_per_1k": 0.12154454732510298,
+      "examples": [
+        "tl34 r0",
+        "tl21 r1",
+        "tl34 r1",
+        "tl34 r2"
+      ]
+    },
+    "luna": {
+      "responses": 243,
+      "wrong": 8,
+      "caught_by_frozen_check": 0,
+      "extra_caught": 0,
+      "extra_false_alarms": 3,
+      "cascade_correct": 235.0,
+      "cascade_usd_per_1k": 0.10717818930041151,
+      "examples": []
+    },
+    "glm-flash": {
+      "responses": 243,
+      "wrong": 20,
+      "caught_by_frozen_check": 2,
+      "extra_caught": 0,
+      "extra_false_alarms": 1,
+      "cascade_correct": 225.0,
+      "cascade_usd_per_1k": 0.15095185185185173,
+      "examples": []
+    },
+    "oss-120b": {
+      "responses": 243,
+      "wrong": 10,
+      "caught_by_frozen_check": 0,
+      "extra_caught": 3,
+      "extra_false_alarms": 3,
+      "cascade_correct": 236.0,
+      "cascade_usd_per_1k": 0.21010061728395057,
+      "examples": [
+        "tl34 r0",
+        "tl34 r1",
+        "tl34 r2"
+      ]
+    }
+  },
+  "cost_at_volume": {
+    "sol alone": {
+      "per_1k": 1.5081728395061729,
+      "per_100k": 150.81728395061728,
+      "per_1m": 1508.172839506173
+    },
+    "oss-20b + agreement": {
+      "per_1k": 0.40327561728395056,
+      "per_100k": 40.327561728395054,
+      "per_1m": 403.27561728395057
+    },
+    "luna + agreement": {
+      "per_1k": 0.40652222222222223,
+      "per_100k": 40.65222222222222,
+      "per_1m": 406.52222222222224
+    },
+    "glm-flash + agreement": {
+      "per_1k": 0.6067074074074075,
+      "per_100k": 60.67074074074075,
+      "per_1m": 606.7074074074075
+    },
+    "oss-120b + agreement": {
+      "per_1k": 0.6192648148148148,
+      "per_100k": 61.926481481481474,
+      "per_1m": 619.2648148148147
+    }
+  },
+  "errors_by_task": {
+    "tool": {
+      "wrong_argument": 15,
+      "no_call_when_should_call": 8,
+      "called_when_should_ask": 12,
+      "wrong_tool": 4
+    },
+    "rules": {
+      "wrong_amount": 15,
+      "unparsed": 1,
+      "cut_off": 1
+    },
+    "invoice": {
+      "invoice_date": 4,
+      "due_date": 7
+    }
+  }
+}

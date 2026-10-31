@@ -176,3 +176,14 @@ To use function tools, use /v1/responses or set reasoning_effort to 'none'.
   alt text. All original frozen hashes still verify.
 - Article rewriting awaits the required claude/style-guide.md. No public account write,
   publication, message, Git push or additional inference call was made by the assistant.
+
+## 31 Oct 2026: post-hoc analysis and post draft (no new calls; frozen items, keys, scorer and results unchanged)
+- `analyse_posthoc.py` (new) writes `analysis_frozen_20261029_heldout/posthoc-2026-10-31.json`. Everything in it was
+  designed after the frozen results were read and is labelled exploratory: latency alone and per cascade (parallel and
+  sequential), cost at 100k and 1M items, wrong answers by task, and one extra check ("tool reply with no call and no
+  question"): on held-out answers it caught 7 false or promised ticket actions (oss-20b tl21 r1, tl34 r0-r2; oss-120b
+  tl34 r0-r2) with 10 false alarms, all correct declines on tl17.
+- Found while reviewing: 26 of the 29 held-out invoices come from one template ("Alder Quay Workshop N Ltd", ~300
+  characters, labelled fields). The invoice result is not evidence about messy invoices; the post says so.
+- `POST-DRAFT-2026-10-31.md`: the E6 post, escalation framing. Opens on oss-20b tl21 r1 instead of the pre-registered
+  worked-example rule's first pick (glm-flash inv22); the deviation is disclosed in its Limits.

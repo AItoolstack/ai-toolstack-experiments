@@ -10,8 +10,10 @@ keys in a `.env` file, which is git-ignored and never committed (see each folder
 | # | Experiment | Question | Write-up |
 |---|---|---|---|
 | E01 | [LLM judge consistency](e01-llm-judge-consistency/) | Do AI judges agree with themselves, and with each other? | [Write-up](https://www.ai-toolstack.com/blog/evaluation-is-an-engineering-problem/) |
+| E06 | [Cheap models and code checks](e06-cheap-model-good-enough/) | Which incorrect answers pass simple checks, and when does fallback help? | Full run 29 Oct 2026 ([results](e06-cheap-model-good-enough/FULL-RESULTS-2026-10-29.md)); write-up in draft |
 
 All documents and data in this repo are synthetic or public. Nothing comes from an employer or client.
+E06 chart generation uses optional Matplotlib dependencies; its runner, analysis and tests remain standard-library only.
 
 ## Licence
 Code: MIT (see `LICENSE`). Items and results: CC BY 4.0. Please link back if you reuse them.
