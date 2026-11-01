@@ -17,6 +17,7 @@ REVIEW_FILES = [
     "analysis_e2.py",
     "freeze.py",
     "test_e02.py",
+    "pilot_fixtures.py",
     "README.md",
     "REVIEW-CHECKLIST.md",
     "run-pilot.ps1",

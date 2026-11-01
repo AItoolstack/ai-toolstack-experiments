@@ -343,7 +343,7 @@ def write_reports(out, spec, summary, example, ledger_rows):
         else "Status: approved offline evaluation; modelled failure scenarios, not observed provider reliability.",
         "",
         f"Cohort: {spec['cohort']}; {len(spec['item_ids'])} distinct items; "
-        f"{len(spec['seeds'])} seeds; {len(spec['tracks'])} replay tracks.",
+        f"seeds: {len(spec['seeds'])}; replay tracks: {len(spec['tracks'])}.",
         f"Verified {ledger_rows:,} ledger records by deterministic replay. API calls: 0.",
         "",
         "The table below is one specified scenario: independent 20% timeout, zero-numeric defaults.",
@@ -396,6 +396,20 @@ def write_reports(out, spec, summary, example, ledger_rows):
         "",
     ]
     filename = "PILOT-REPORT.md" if pilot else "FULL-RESULTS.md"
+    if pilot:
+        injected = sum(
+            summary[s["id"]]["zero_numeric"]["all"]["default"]["initial_injected_tasks"] for s in spec["scenarios"]
+        )
+        lines += [
+            "## Diagnostic coverage",
+            "",
+            f"Initial injected-failure records across the paired pilot scenarios: {injected}.",
+            "Scenario records share draws and items; they are not independent observations.",
+            "The seed and study scenarios were preserved. Separate forced scripts exercise the failure paths:",
+            "see ../scripted-diagnostics/DIAGNOSTICS.md and its paired example.json.",
+            "Those scripted fixtures are excluded from the statistical summaries above.",
+            "",
+        ]
     (out / filename).write_text("\n".join(lines), encoding="utf-8", newline="\n")
     if not pilot:
         claims, handover = (

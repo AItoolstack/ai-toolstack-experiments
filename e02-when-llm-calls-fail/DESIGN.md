@@ -223,3 +223,25 @@ and post handover are generated only after approved evaluation; no blog post is 
 ## Changes after review
 
 None. No full-run review or approval has happened yet.
+
+## Development amendment after the first pilot: 1 November 2026
+
+The fixed ten-item seed triggered **zero initial injected failures** at all three rates.
+The highest-rate probability of this for ten independent initial calls is 0.8^10 (about
+10.7%); rates and failure types reuse initial draws, so the 46 scenarios do not provide
+46 independent opportunities to avoid that outcome. Do not change seeds to obtain a
+more interesting pilot. No full-cohort E02 outcomes were inspected.
+
+Preserve the original snapshot and pilot under `development/initial-pilot/`; their exact
+original sources are in commit `c095dcb`. Add a separate `pilot_fixtures.py` diagnostic:
+ten development items x five failure types x four policies x three scripted schedules
+(initial primary failure only; every primary call fails; every call fails) = 600 records.
+These are deterministic fixtures, not estimated failure probabilities. They use the
+zero-numeric default, do not enter the 46 study scenarios, and never enter uncertainty
+or publication results. The fixed concrete diagnostic example is inv01 + timeout for all
+three schedules and four policies. Production replay never supplies the fixture override.
+
+The new review snapshot also includes the fixture source/test, the pilot-script step and
+an SVG line-ending/whitespace normalization fix. The statistical protocol, seeds, data,
+response pair, recovery limits and metrics are unchanged. Rerun the same probabilistic
+pilot against the new snapshot and verify its summary is identical to the archived one.

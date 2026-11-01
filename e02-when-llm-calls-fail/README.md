@@ -18,12 +18,13 @@ No business tools execute. All task data is fictional; no employer or client dat
 | --- | --- |
 | [DESIGN.md](DESIGN.md) | Question, hypotheses, defaults, failure model, limits, freeze and review gate |
 | [development/pilot-analysis/PILOT-REPORT.md](development/pilot-analysis/PILOT-REPORT.md) | Reviewable 10-item pilot and links to every result |
+| [development/scripted-diagnostics/DIAGNOSTICS.md](development/scripted-diagnostics/DIAGNOSTICS.md) | Forced failure paths and concrete paired examples; excluded from statistical results |
 | [REVIEW-CHECKLIST.md](REVIEW-CHECKLIST.md) | The concrete decisions to review before a full run |
 | [config.json](config.json) | All scenarios, seeds, limits and cohort choices |
 | [INPUT-HEALTH.json](INPUT-HEALTH.json) | Coverage and observable health of all 1,428 existing responses |
 | [FREEZE.json](FREEZE.json) | Hash-pinned review snapshot, explicitly not evaluation approval |
 | `development/pilot-run/` | Complete deterministic, resumable pilot ledger, compressed by scenario |
-| `development/pilot-analysis/example.json` | One concrete trace: task, gold, outputs, attempts and source lines |
+| `development/scripted-diagnostics/example.json` | Concrete forced traces: task, gold, outputs, attempts and source lines |
 | `analysis_e2.py`, `test_e02.py` | Code scoring, whole-item uncertainty and integrity tests |
 | `figures-post/make_figures.py` | Flow diagram; charts gated on approved full evaluation |
 
@@ -66,6 +67,7 @@ python freeze.py --check
 python -m unittest test_e02 -v
 python run.py --dry-run
 python analyse.py
+python pilot_fixtures.py
 python freeze.py --check
 ```
 
@@ -73,6 +75,12 @@ python freeze.py --check
 It produces 3,680 records: 46 scenarios x 10 items x 4 policies x 2 default variants.
 It uses one seed/track. Its 200-draw item intervals are diagnostic only.
 You can inspect compressed ledgers with Python's built-in `gzip` module.
+
+The fixed ten-item pilot happened to inject **zero failures**, including at 20%. We retained
+the seed and archived the original snapshot in `development/initial-pilot/`. An explicit
+development amendment adds 600 separate scripted diagnostics to exercise transient,
+persistent-primary and shared failures. Read their DIAGNOSTICS.md and example.json to
+review what users see. These fixtures never enter the statistical summaries or study rates.
 
 The input builder checks E06's original freeze, coverage, distinct IDs, cohort partition,
 tokens, timing and observable faults. It creates an index; it never rewrites E06's tasks.

@@ -85,23 +85,26 @@ def attempt_event(task, source, model, role, index, injected, cfg, ref):
     }
 
 
-def simulate(task, ident, track, seed, scenario, design, variant, primary, fallback, refs, cfg):
+def simulate(
+    task, ident, track, seed, scenario, design, variant, primary, fallback, refs, cfg, injection_schedule=None
+):
     """Recovery gets no gold labels and no scorer. A saved wrong answer can be accepted."""
     if design not in cfg["designs"]:
         raise ValueError(design)
+    schedule = injection_schedule or should_inject
     events, backoff = [], 0.0
     output = None
     for index in range(cfg["primary_attempt_limits"][design]):
         if index:
             backoff += cfg["backoff_seconds"][index - 1]
-        kind = scenario["failure"] if should_inject(scenario, seed, ident, track, "primary", index) else None
+        kind = scenario["failure"] if schedule(scenario, seed, ident, track, "primary", index) else None
         event = attempt_event(task, primary, cfg["primary"], "primary", index, kind, cfg, refs[0])
         events.append(event)
         if event["observed_failure"] is None:
             output = {"kind": "source", "model": cfg["primary"], "repeat": track}
             break
     if output is None and design == "fallback":
-        kind = scenario["failure"] if should_inject(scenario, seed, ident, track, "fallback", 0) else None
+        kind = scenario["failure"] if schedule(scenario, seed, ident, track, "fallback", 0) else None
         event = attempt_event(task, fallback, cfg["fallback"], "fallback", 0, kind, cfg, refs[1])
         events.append(event)
         if event["observed_failure"] is None:

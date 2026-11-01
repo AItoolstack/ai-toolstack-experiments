@@ -70,6 +70,12 @@ def save(plt, fig, basename, caption, metadata):
     # No bbox_inches='tight': preserve the exact 400-unit canvas and 960px width.
     fig.savefig(HERE / f"{basename}.png", dpi=240)
     fig.savefig(HERE / f"{basename}.svg", metadata={"Date": None})
+    svg = HERE / f"{basename}.svg"
+    svg.write_text(
+        "\n".join(line.rstrip() for line in svg.read_text(encoding="utf-8").splitlines()) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
     (HERE / f"{basename}.txt").write_text(caption + "\n", encoding="utf-8", newline="\n")
     write_json(HERE / f"{basename}.json", metadata)
     plt.close(fig)

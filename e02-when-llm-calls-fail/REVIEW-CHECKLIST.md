@@ -4,7 +4,9 @@ Status: pending Tej's review. The supplied brief says "Stop and wait for Tej's y
 the design and 10-item pilot. No full evaluation or approval record exists yet.
 
 Read DESIGN.md and development/pilot-analysis/PILOT-REPORT.md, then inspect example.json
-for what all four designs actually present on one shared failure schedule.
+for any selected probabilistic trace. The fixed seed triggered no failures: use
+development/scripted-diagnostics/DIAGNOSTICS.md and its example.json for the separate,
+explicitly forced failure paths. The original pilot is preserved under development/initial-pilot/.
 
 The choices needing review are:
 
@@ -21,7 +23,8 @@ The choices needing review are:
 - Are reused E06 cohorts and their template dependence acceptable, with no new synthetic tasks?
 
 Expected evidence before approval: original E06 freeze verified; 102 items/1,428 responses
-accounted for; E02 tests and freeze check pass; 3,680 pilot records replay exactly; no keys,
+accounted for; E02 tests and freeze check pass; 3,680 pilot records replay exactly; 600
+scripted diagnostic records round-trip; the seeded summary matches the archived original; no keys,
 network calls, business-tool execution or held-out E02 outcome analysis occurred.
 
 If changes are needed, record them in DESIGN.md before a new snapshot and pilot. Approval

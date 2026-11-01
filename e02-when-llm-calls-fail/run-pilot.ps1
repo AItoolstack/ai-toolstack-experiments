@@ -11,6 +11,8 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Pilot failed' }
     python analyse.py
     if ($LASTEXITCODE -ne 0) { throw 'Pilot analysis failed' }
+    python pilot_fixtures.py
+    if ($LASTEXITCODE -ne 0) { throw 'Scripted diagnostic fixtures failed' }
     python freeze.py --check
     if ($LASTEXITCODE -ne 0) { throw 'Review sources changed during pilot' }
 } finally {

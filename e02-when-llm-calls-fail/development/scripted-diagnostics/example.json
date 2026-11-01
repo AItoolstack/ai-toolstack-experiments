@@ -1,0 +1,813 @@
+{
+  "examples": [
+    {
+      "grade": "wrong",
+      "record": {
+        "accepted_response_usd": 0.0,
+        "backoff_seconds": 0.0,
+        "calls": 1,
+        "cost_high_usd": 5.85e-05,
+        "cost_low_usd": 0.0,
+        "design": "default",
+        "events": [
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          }
+        ],
+        "item": "inv01",
+        "latency_seconds": 30.0,
+        "output": {
+          "kind": "default",
+          "variant": "zero_numeric"
+        },
+        "scenario": "first_primary_only",
+        "seed": 20261101,
+        "status": "completed",
+        "task": "invoice",
+        "track": 0,
+        "variant": "zero_numeric"
+      },
+      "visible_response": {
+        "content": "{\"amount_due\":0,\"currency\":null,\"due_date\":null,\"gross_total\":0,\"invoice_date\":null,\"invoice_number\":null,\"is_credit_note\":false,\"net_total\":0,\"supplier_name\":null,\"tax_total\":0}",
+        "finish_reason": "stop",
+        "tool_calls": []
+      }
+    },
+    {
+      "grade": "correct",
+      "record": {
+        "accepted_response_usd": 5.85e-05,
+        "backoff_seconds": 1.0,
+        "calls": 2,
+        "cost_high_usd": 0.000117,
+        "cost_low_usd": 5.85e-05,
+        "design": "retry",
+        "events": [
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          },
+          {
+            "accepted_response_usd": 5.85e-05,
+            "attempt": 1,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 5.85e-05,
+            "injected": null,
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": null,
+            "role": "primary",
+            "seconds": 0.95,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          }
+        ],
+        "item": "inv01",
+        "latency_seconds": 31.95,
+        "output": {
+          "kind": "source",
+          "model": "oss-20b",
+          "repeat": 0
+        },
+        "scenario": "first_primary_only",
+        "seed": 20261101,
+        "status": "completed",
+        "task": "invoice",
+        "track": 0,
+        "variant": "zero_numeric"
+      },
+      "visible_response": {
+        "content": "{\"supplier_name\":\"NORTHGATE PRINT LTD\",\"invoice_number\":\"NP-20417\",\"invoice_date\":\"2026-10-02\",\"due_date\":\"2026-11-01\",\"currency\":\"GBP\",\"net_total\":347.0,\"tax_total\":69.4,\"gross_total\":416.4,\"amount_due\":416.4,\"is_credit_note\":false}",
+        "finish_reason": "stop",
+        "tool_calls": []
+      }
+    },
+    {
+      "grade": "correct",
+      "record": {
+        "accepted_response_usd": 5.85e-05,
+        "backoff_seconds": 1.0,
+        "calls": 2,
+        "cost_high_usd": 0.000117,
+        "cost_low_usd": 5.85e-05,
+        "design": "fallback",
+        "events": [
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          },
+          {
+            "accepted_response_usd": 5.85e-05,
+            "attempt": 1,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 5.85e-05,
+            "injected": null,
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": null,
+            "role": "primary",
+            "seconds": 0.95,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          }
+        ],
+        "item": "inv01",
+        "latency_seconds": 31.95,
+        "output": {
+          "kind": "source",
+          "model": "oss-20b",
+          "repeat": 0
+        },
+        "scenario": "first_primary_only",
+        "seed": 20261101,
+        "status": "completed",
+        "task": "invoice",
+        "track": 0,
+        "variant": "zero_numeric"
+      },
+      "visible_response": {
+        "content": "{\"supplier_name\":\"NORTHGATE PRINT LTD\",\"invoice_number\":\"NP-20417\",\"invoice_date\":\"2026-10-02\",\"due_date\":\"2026-11-01\",\"currency\":\"GBP\",\"net_total\":347.0,\"tax_total\":69.4,\"gross_total\":416.4,\"amount_due\":416.4,\"is_credit_note\":false}",
+        "finish_reason": "stop",
+        "tool_calls": []
+      }
+    },
+    {
+      "grade": "correct",
+      "record": {
+        "accepted_response_usd": 5.85e-05,
+        "backoff_seconds": 1.0,
+        "calls": 2,
+        "cost_high_usd": 0.000117,
+        "cost_low_usd": 5.85e-05,
+        "design": "say_so",
+        "events": [
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          },
+          {
+            "accepted_response_usd": 5.85e-05,
+            "attempt": 1,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 5.85e-05,
+            "injected": null,
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": null,
+            "role": "primary",
+            "seconds": 0.95,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          }
+        ],
+        "item": "inv01",
+        "latency_seconds": 31.95,
+        "output": {
+          "kind": "source",
+          "model": "oss-20b",
+          "repeat": 0
+        },
+        "scenario": "first_primary_only",
+        "seed": 20261101,
+        "status": "completed",
+        "task": "invoice",
+        "track": 0,
+        "variant": "zero_numeric"
+      },
+      "visible_response": {
+        "content": "{\"supplier_name\":\"NORTHGATE PRINT LTD\",\"invoice_number\":\"NP-20417\",\"invoice_date\":\"2026-10-02\",\"due_date\":\"2026-11-01\",\"currency\":\"GBP\",\"net_total\":347.0,\"tax_total\":69.4,\"gross_total\":416.4,\"amount_due\":416.4,\"is_credit_note\":false}",
+        "finish_reason": "stop",
+        "tool_calls": []
+      }
+    },
+    {
+      "grade": "wrong",
+      "record": {
+        "accepted_response_usd": 0.0,
+        "backoff_seconds": 0.0,
+        "calls": 1,
+        "cost_high_usd": 5.85e-05,
+        "cost_low_usd": 0.0,
+        "design": "default",
+        "events": [
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          }
+        ],
+        "item": "inv01",
+        "latency_seconds": 30.0,
+        "output": {
+          "kind": "default",
+          "variant": "zero_numeric"
+        },
+        "scenario": "all_primary",
+        "seed": 20261101,
+        "status": "completed",
+        "task": "invoice",
+        "track": 0,
+        "variant": "zero_numeric"
+      },
+      "visible_response": {
+        "content": "{\"amount_due\":0,\"currency\":null,\"due_date\":null,\"gross_total\":0,\"invoice_date\":null,\"invoice_number\":null,\"is_credit_note\":false,\"net_total\":0,\"supplier_name\":null,\"tax_total\":0}",
+        "finish_reason": "stop",
+        "tool_calls": []
+      }
+    },
+    {
+      "grade": "wrong",
+      "record": {
+        "accepted_response_usd": 0.0,
+        "backoff_seconds": 3.0,
+        "calls": 3,
+        "cost_high_usd": 0.00017549999999999998,
+        "cost_low_usd": 0.0,
+        "design": "retry",
+        "events": [
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          },
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 1,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          },
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 2,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          }
+        ],
+        "item": "inv01",
+        "latency_seconds": 93.0,
+        "output": {
+          "kind": "default",
+          "variant": "zero_numeric"
+        },
+        "scenario": "all_primary",
+        "seed": 20261101,
+        "status": "completed",
+        "task": "invoice",
+        "track": 0,
+        "variant": "zero_numeric"
+      },
+      "visible_response": {
+        "content": "{\"amount_due\":0,\"currency\":null,\"due_date\":null,\"gross_total\":0,\"invoice_date\":null,\"invoice_number\":null,\"is_credit_note\":false,\"net_total\":0,\"supplier_name\":null,\"tax_total\":0}",
+        "finish_reason": "stop",
+        "tool_calls": []
+      }
+    },
+    {
+      "grade": "correct",
+      "record": {
+        "accepted_response_usd": 0.001814,
+        "backoff_seconds": 1.0,
+        "calls": 3,
+        "cost_high_usd": 0.001931,
+        "cost_low_usd": 0.001814,
+        "design": "fallback",
+        "events": [
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          },
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 1,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          },
+          {
+            "accepted_response_usd": 0.001814,
+            "attempt": 0,
+            "cost_high_usd": 0.001814,
+            "cost_low_usd": 0.001814,
+            "injected": null,
+            "model": "sol",
+            "native_fault": null,
+            "observed_failure": null,
+            "role": "fallback",
+            "seconds": 2.22,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/sol.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          }
+        ],
+        "item": "inv01",
+        "latency_seconds": 63.22,
+        "output": {
+          "kind": "source",
+          "model": "sol",
+          "repeat": 0
+        },
+        "scenario": "all_primary",
+        "seed": 20261101,
+        "status": "completed",
+        "task": "invoice",
+        "track": 0,
+        "variant": "zero_numeric"
+      },
+      "visible_response": {
+        "content": "{\n  \"supplier_name\": \"NORTHGATE PRINT LTD\",\n  \"invoice_number\": \"NP-20417\",\n  \"invoice_date\": \"2026-10-02\",\n  \"due_date\": \"2026-11-01\",\n  \"currency\": \"GBP\",\n  \"net_total\": 347.00,\n  \"tax_total\": 69.40,\n  \"gross_total\": 416.40,\n  \"amount_due\": 416.40,\n  \"is_credit_note\": false\n}",
+        "finish_reason": "stop",
+        "tool_calls": []
+      }
+    },
+    {
+      "grade": "couldnt_check",
+      "record": {
+        "accepted_response_usd": 0.0,
+        "backoff_seconds": 1.0,
+        "calls": 2,
+        "cost_high_usd": 0.000117,
+        "cost_low_usd": 0.0,
+        "design": "say_so",
+        "events": [
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          },
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 1,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          }
+        ],
+        "item": "inv01",
+        "latency_seconds": 61.0,
+        "output": {
+          "kind": "unavailable",
+          "message": "Couldn't check. No result is available."
+        },
+        "scenario": "all_primary",
+        "seed": 20261101,
+        "status": "couldnt_check",
+        "task": "invoice",
+        "track": 0,
+        "variant": "zero_numeric"
+      },
+      "visible_response": {
+        "content": "Couldn't check. No result is available.",
+        "finish_reason": null,
+        "tool_calls": []
+      }
+    },
+    {
+      "grade": "wrong",
+      "record": {
+        "accepted_response_usd": 0.0,
+        "backoff_seconds": 0.0,
+        "calls": 1,
+        "cost_high_usd": 5.85e-05,
+        "cost_low_usd": 0.0,
+        "design": "default",
+        "events": [
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          }
+        ],
+        "item": "inv01",
+        "latency_seconds": 30.0,
+        "output": {
+          "kind": "default",
+          "variant": "zero_numeric"
+        },
+        "scenario": "all_calls",
+        "seed": 20261101,
+        "status": "completed",
+        "task": "invoice",
+        "track": 0,
+        "variant": "zero_numeric"
+      },
+      "visible_response": {
+        "content": "{\"amount_due\":0,\"currency\":null,\"due_date\":null,\"gross_total\":0,\"invoice_date\":null,\"invoice_number\":null,\"is_credit_note\":false,\"net_total\":0,\"supplier_name\":null,\"tax_total\":0}",
+        "finish_reason": "stop",
+        "tool_calls": []
+      }
+    },
+    {
+      "grade": "wrong",
+      "record": {
+        "accepted_response_usd": 0.0,
+        "backoff_seconds": 3.0,
+        "calls": 3,
+        "cost_high_usd": 0.00017549999999999998,
+        "cost_low_usd": 0.0,
+        "design": "retry",
+        "events": [
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          },
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 1,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          },
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 2,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          }
+        ],
+        "item": "inv01",
+        "latency_seconds": 93.0,
+        "output": {
+          "kind": "default",
+          "variant": "zero_numeric"
+        },
+        "scenario": "all_calls",
+        "seed": 20261101,
+        "status": "completed",
+        "task": "invoice",
+        "track": 0,
+        "variant": "zero_numeric"
+      },
+      "visible_response": {
+        "content": "{\"amount_due\":0,\"currency\":null,\"due_date\":null,\"gross_total\":0,\"invoice_date\":null,\"invoice_number\":null,\"is_credit_note\":false,\"net_total\":0,\"supplier_name\":null,\"tax_total\":0}",
+        "finish_reason": "stop",
+        "tool_calls": []
+      }
+    },
+    {
+      "grade": "couldnt_check",
+      "record": {
+        "accepted_response_usd": 0.0,
+        "backoff_seconds": 1.0,
+        "calls": 3,
+        "cost_high_usd": 0.001931,
+        "cost_low_usd": 0.0,
+        "design": "fallback",
+        "events": [
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          },
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 1,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          },
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 0.001814,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "sol",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "fallback",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/sol.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          }
+        ],
+        "item": "inv01",
+        "latency_seconds": 91.0,
+        "output": {
+          "kind": "unavailable",
+          "message": "Couldn't check. No result is available."
+        },
+        "scenario": "all_calls",
+        "seed": 20261101,
+        "status": "couldnt_check",
+        "task": "invoice",
+        "track": 0,
+        "variant": "zero_numeric"
+      },
+      "visible_response": {
+        "content": "Couldn't check. No result is available.",
+        "finish_reason": null,
+        "tool_calls": []
+      }
+    },
+    {
+      "grade": "couldnt_check",
+      "record": {
+        "accepted_response_usd": 0.0,
+        "backoff_seconds": 1.0,
+        "calls": 2,
+        "cost_high_usd": 0.000117,
+        "cost_low_usd": 0.0,
+        "design": "say_so",
+        "events": [
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          },
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 1,
+            "cost_high_usd": 5.85e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 1
+            },
+            "source_repeat": 0
+          }
+        ],
+        "item": "inv01",
+        "latency_seconds": 61.0,
+        "output": {
+          "kind": "unavailable",
+          "message": "Couldn't check. No result is available."
+        },
+        "scenario": "all_calls",
+        "seed": 20261101,
+        "status": "couldnt_check",
+        "task": "invoice",
+        "track": 0,
+        "variant": "zero_numeric"
+      },
+      "visible_response": {
+        "content": "Couldn't check. No result is available.",
+        "finish_reason": null,
+        "tool_calls": []
+      }
+    }
+  ],
+  "status": "SCRIPTED_DEVELOPMENT_FIXTURE_NOT_STATISTICAL_EVIDENCE",
+  "synthetic_task": {
+    "document": "NORTHGATE PRINT LTD\nUnit 4, Calder Park, Wakefield WF2 7AA\nVAT Reg: GB 284 1193 07\n\nINVOICE\nInvoice no: NP-20417\nDate: 2 October 2026\nPayment due: 1 November 2026\n\nBill to: Harrow & Finch Studio, 18 Leeming Street, Leeds LS2 7BD\n\nDescription              Qty    Unit     Amount\nA2 posters, gloss        200    1.15     230.00\nFoam board mounting       12    8.50     102.00\nDelivery                   1   15.00      15.00\n\nSubtotal                                 347.00\nVAT @ 20%                                 69.40\nTotal                                   \u00a3416.40\nAmount due                              \u00a3416.40",
+    "gold": {
+      "amount_due": 416.4,
+      "currency": "GBP",
+      "due_date": "2026-11-01",
+      "gross_total": 416.4,
+      "invoice_date": "2026-10-02",
+      "invoice_number": "NP-20417",
+      "is_credit_note": false,
+      "net_total": 347.0,
+      "supplier_name": "Northgate Print Ltd",
+      "tax_total": 69.4
+    },
+    "id": "inv01",
+    "kind": "clear",
+    "task": "invoice",
+    "traps": []
+  }
+}

@@ -10,6 +10,9 @@ It tests the design and accounting. It is not evidence for a publication headlin
 - `pilot-analysis/summary.json`: all scenario/task/policy counts and modelled accounting.
 - `pilot-analysis/uncertainty.json`: diagnostic 200-draw paired item intervals.
 - `pilot-analysis/verification.json`: all input/run/output hashes and replay verification.
+- `scripted-diagnostics/`: 600 forced fixture records, their report and fixed inv01 example;
+  excluded from all probabilistic estimates. Added after the seeded pilot triggered no failures.
+- `initial-pilot/`: preserved first snapshot and pilot from commit c095dcb, before that amendment.
 
 Do not pool scenarios or default variants into a production-rate claim. The original
 E06 development/held-out split is preserved; E02 has not created new independent examples.

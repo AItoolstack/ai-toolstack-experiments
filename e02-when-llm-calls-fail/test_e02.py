@@ -12,6 +12,7 @@ import freeze
 from analysis_e2 import METRICS, bootstrap_vectors, outcome, score_records, verified_rows
 from e2core import canonical, config, default_response, detect, load_inputs, sha, write_json
 from engine import scenarios, should_inject, simulate, uniform
+from pilot_fixtures import diagnostic_rows
 from run import execute, run_spec
 
 
@@ -176,6 +177,35 @@ class RecoveryTests(unittest.TestCase):
         self.assertEqual(self.data.health["glm-flash"]["observable_faults"]["cutoff"], 1)
         self.assertEqual(len(list(scenarios(self.cfg))), 46)
         self.assertLessEqual(set(self.cfg["pilot_ids"]), set(self.data.cohorts["development"]))
+
+    def test_scripted_diagnostics_exercise_recovery_without_changing_study_schedules(self):
+        rows = list(diagnostic_rows(self.data, self.cfg))
+        self.assertEqual(len(rows), 600)
+        self.assertEqual({r["item"] for r in rows}, set(self.cfg["pilot_ids"]))
+        expected = {
+            "first_primary_only": {
+                "default": (1, "default"),
+                "retry": (2, "source"),
+                "fallback": (2, "source"),
+                "say_so": (2, "source"),
+            },
+            "all_primary": {
+                "default": (1, "default"),
+                "retry": (3, "default"),
+                "fallback": (3, "source"),
+                "say_so": (2, "unavailable"),
+            },
+            "all_calls": {
+                "default": (1, "default"),
+                "retry": (3, "default"),
+                "fallback": (3, "unavailable"),
+                "say_so": (2, "unavailable"),
+            },
+        }
+        for row in rows:
+            self.assertEqual((row["calls"], row["output"]["kind"]), expected[row["scenario"]][row["design"]])
+            self.assertIsNotNone(row["events"][0]["injected"])
+        self.assertEqual(len(list(scenarios(self.cfg))), 46)
 
     def test_resume_hash_guard_and_changed_spec_guard(self):
         spec = run_spec(self.data, self.cfg, True, "development", "test-review")
