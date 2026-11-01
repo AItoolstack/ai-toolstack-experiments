@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="288pt" height="403.2pt" viewBox="0 0 288 403.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 403.2
+L 288 403.2
+L 288 0
+L 0 0
+z
+" style="fill: #fcfbf9"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 144 95.04
+L 144 110.16
+" clip-path="url(#p87a2f5b2d9)" style="fill: none; stroke: #4a5160; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 36 110.16
+L 252 110.16
+" clip-path="url(#p87a2f5b2d9)" style="fill: none; stroke: #4a5160; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 15.84px; font-family: 'Inter Variable'; text-anchor: start; fill: #1a1d24" x="11.52" y="24.305625" transform="rotate(-0 11.52 24.305625)">When an LLM call fails</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: start; fill: #4a5160" x="11.52" y="46.868063" transform="rotate(-0 11.52 46.868063)">Four designs, following the failure path.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 12.96px; font-family: 'Inter Variable'; text-anchor: middle; fill: #1a1d24" x="144" y="84.031875" transform="rotate(-0 144 84.031875)">Failed call</text>
+   </g>
+   <g id="patch_2">
+    <path d="M 36 112.162588
+Q 36 121.321792 36 129.362963
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+    <path d="M 38.16 125.042963
+L 36 129.362963
+L 33.84 125.042963
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: middle; fill: #1a1d24" x="36" y="150.426562" transform="rotate(-0 36 150.426562)">Default</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 108 112.162588
+Q 108 121.321792 108 129.362963
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+    <path d="M 110.16 125.042963
+L 108 129.362963
+L 105.84 125.042963
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: middle; fill: #1a1d24" x="108" y="150.405469" transform="rotate(-0 108 150.405469)">Retry</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 180 112.162588
+Q 180 121.321792 180 129.362963
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+    <path d="M 182.16 125.042963
+L 180 129.362963
+L 177.84 125.042963
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: middle; fill: #1a1d24" x="180" y="150.426562" transform="rotate(-0 180 150.426562)">Fallback</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 252 112.162588
+Q 252 121.321792 252 129.362963
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+    <path d="M 254.16 125.042963
+L 252 129.362963
+L 249.84 125.042963
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: middle; fill: #1a1d24" x="252" y="150.458625" transform="rotate(-0 252 150.458625)">Say so</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 108 163.283906
+Q 108 169.920578 108 175.439216
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+    <path d="M 110.16 171.119216
+L 108 175.439216
+L 105.84 171.119216
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; fill: #1a1d24" transform="translate(94.542187 193.286461)">Retry</text>
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; fill: #1a1d24" transform="translate(87.21675 205.486664)">up to 2x</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 180 163.283906
+Q 180 169.920578 180 175.439216
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+    <path d="M 182.16 171.119216
+L 180 175.439216
+L 177.84 171.119216
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; fill: #1a1d24" transform="translate(166.542188 193.352906)">Retry</text>
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; fill: #1a1d24" transform="translate(167.338687 205.420219)">once</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 252 163.283906
+Q 252 169.920578 252 175.439216
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+    <path d="M 254.16 171.119216
+L 252 175.439216
+L 249.84 171.119216
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; fill: #1a1d24" transform="translate(238.542188 193.352906)">Retry</text>
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; fill: #1a1d24" transform="translate(239.338687 205.420219)">once</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 36 163.279731
+Q 36 229.678161 36 294.958556
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+    <path d="M 38.16 290.638556
+L 36 294.958556
+L 33.84 290.638556
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 108 220.876436
+Q 108 258.47689 108 294.95931
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+    <path d="M 110.16 290.63931
+L 108 294.95931
+L 105.84 290.63931
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 180 220.883906
+Q 180 227.520578 180 233.039216
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+    <path d="M 182.16 228.719216
+L 180 233.039216
+L 177.84 228.719216
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; fill: #8f5a0e" transform="translate(158.776313 250.974)">Fallback</text>
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; fill: #8f5a0e" transform="translate(167.338687 262.999125)">once</text>
+   </g>
+   <g id="patch_12">
+    <path d="M 180 278.48127
+Q 180 287.282994 180 294.966685
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+    <path d="M 182.16 290.646685
+L 180 294.966685
+L 177.84 290.646685
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 252 220.876436
+Q 252 258.47689 252 294.95931
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+    <path d="M 254.16 290.63931
+L 252 294.95931
+L 249.84 290.63931
+" style="fill: none; stroke: #4a5160; stroke-linecap: round"/>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 11.52px; font-family: 'Inter Variable'; fill: #8f5a0e" transform="translate(16.4331 318.4416)">Default</text>
+    <text style="font-weight: 700; font-size: 11.52px; font-family: 'Inter Variable'; fill: #8f5a0e" transform="translate(21.3696 331.2684)">value</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: middle; fill: #4a5160" x="36" y="357.119719" transform="rotate(-0 36 357.119719)">Completed</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 11.52px; font-family: 'Inter Variable'; fill: #8f5a0e" transform="translate(88.4331 318.4416)">Default</text>
+    <text style="font-weight: 700; font-size: 11.52px; font-family: 'Inter Variable'; fill: #8f5a0e" transform="translate(93.3696 331.2684)">value</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: middle; fill: #4a5160" x="108" y="357.119719" transform="rotate(-0 108 357.119719)">Completed</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 11.52px; font-family: 'Inter Variable'; fill: #2d6b45" transform="translate(165.5433 318.4416)">Can't</text>
+    <text style="font-weight: 700; font-size: 11.52px; font-family: 'Inter Variable'; fill: #2d6b45" transform="translate(163.494 331.2684)">check</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: middle; fill: #4a5160" x="180" y="357.195656" transform="rotate(-0 180 357.195656)">Explicit</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 11.52px; font-family: 'Inter Variable'; fill: #2d6b45" transform="translate(237.5433 318.4416)">Can't</text>
+    <text style="font-weight: 700; font-size: 11.52px; font-family: 'Inter Variable'; fill: #2d6b45" transform="translate(235.494 331.2684)">check</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: middle; fill: #4a5160" x="252" y="357.195656" transform="rotate(-0 252 357.195656)">Explicit</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: start; fill: #4a5160" x="11.52" y="388.005469" transform="rotate(-0 11.52 388.005469)">A usable response ends recovery early.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p87a2f5b2d9">
+   <rect x="0" y="0" width="288" height="403.2"/>
+  </clipPath>
+ </defs>
+</svg>

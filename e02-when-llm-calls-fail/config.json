@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "primary": "oss-20b",
+  "fallback": "sol",
+  "primary_tracks": [0, 1, 2],
+  "seeds": [20261101, 20261102, 20261103, 20261104, 20261105, 20261106, 20261107, 20261108, 20261109, 20261110],
+  "pilot_ids": ["inv01", "inv02", "inv03", "inv04", "tl01", "tl02", "tl03", "rl01", "rl02", "rl03"],
+  "rates": [0.01, 0.05, 0.2],
+  "failure_types": ["rate_limit", "timeout", "cutoff", "malformed_json", "empty"],
+  "regimes": ["independent", "persistent_primary", "persistent_shared"],
+  "designs": ["default", "retry", "fallback", "say_so"],
+  "default_variants": ["zero_numeric", "all_null"],
+  "primary_attempt_limits": {"default": 1, "retry": 3, "fallback": 2, "say_so": 2},
+  "backoff_seconds": [1, 2],
+  "rate_limit_seconds": 0.2,
+  "timeout_seconds": 30,
+  "cutoff_output_tokens": 2000,
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261102
+}

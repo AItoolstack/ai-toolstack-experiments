@@ -1,0 +1,2 @@
+# Optional, figures only. The harness and tests require only Python 3.10+ stdlib.
+matplotlib>=3.8,<4

@@ -1,0 +1,2 @@
+# Freeze checks hash bytes. Preserve this folder on Windows/Linux checkouts.
+* -text

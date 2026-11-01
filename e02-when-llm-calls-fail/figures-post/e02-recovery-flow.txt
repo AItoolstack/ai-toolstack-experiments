@@ -1,0 +1,1 @@
+Failure paths for four recovery designs. A usable response ends recovery early. Default and exhausted retries emit completed defaults; fallback and say-so emit explicit couldn't-check results on exhaustion.

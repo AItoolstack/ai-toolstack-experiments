@@ -1,0 +1,59 @@
+{
+  "development_items": 21,
+  "distinct_items": 102,
+  "heldout_items": 81,
+  "input_sha256": {
+    "AUDIT-2026-10-29.md": "1af96dbfe85d125456e711de25905f6527628bf3cbd517c6eb19e42c87286728",
+    "FREEZE.json": "7d32d468426cb770111eb23daf1b36c828f7a37a34ca5511783a0b0874f4e714",
+    "FULL-RUN-HEALTH-2026-10-29.md": "43eac7ef63b42c22fa78290a321d24981f3740d037ca21ac390d2ebaeaf3ff4f",
+    "analyse.py": "c4adf0b2fdc3dd4ce7d8bb7cb008d3958310c6c081f8349d06b0316feb0e45a4",
+    "audit-review-2026-10-29/audit-resolution.json": "75a396fa203948a7d9b600c252cbbf191c83d516db46c1fca41958788444a979",
+    "build_items.py": "807f38b328aba557b0575c576e39abc40c6c677490203bcf978eea71488f6664",
+    "chart-assets/Inter-LICENSE.txt": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+    "chart-assets/InterVariable.ttf": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf",
+    "common.py": "cdc2cc6e46076df42112ca0f51c606bbbc95c2afeb4de336a6c994efcbdc0cac",
+    "dataset-manifest.json": "29efba53d66ce12a83aadcec7481a4d1b0d2be89698320753d38163d2a8eb75e",
+    "evaluation_items.py": "811e89a512b9f1aee4cd6b33fad4464ed000c225b80b9ddb5846c41226cefaed",
+    "items.jsonl": "a7dc5037eca492ff55c615b610243eae245c58b6dddff9d458d9bf252754625e",
+    "items_samples.jsonl": "261a0cf43df8626f5051e98a79f3ae0ae60f6836c70c6db88e009c91a8445923",
+    "policies.py": "7d50d3d954070b25fd83317b51a63305c23c89eae0ebe33135f959103a66cf32",
+    "results_frozen_20261029/glm-flash-t0.jsonl": "1266a55a9642f37dbe470eb825e90598268628491531363fbf8b62982d6e3f24",
+    "results_frozen_20261029/glm-flash.jsonl": "2e9e8676256757e61d6b6842d106130249f7f0d7e278797434cf2b6c3ff9496b",
+    "results_frozen_20261029/luna.jsonl": "f8dfad1826fc379abb3eac25466b13ebc2cfdbc232bd3a340316eb74ecef2bbc",
+    "results_frozen_20261029/oss-120b.jsonl": "d9a1437b60018d98e4796c0b59664d52e7dc450fa785dbea5d7e178567e570c2",
+    "results_frozen_20261029/oss-20b.jsonl": "58494cd73a8dec2470f4dddc5cb58635310b469e014d4134165571e54103ab53",
+    "results_frozen_20261029/sol.jsonl": "9594a57f7050c1588e3f1d5849beedbb51b37965d5436f83bb53d4b5b11801fe",
+    "tools.json": "3b343db6268f223207e3bcef261dc59dcb6d74a62c273616eea05138f20a38ab"
+  },
+  "models": {
+    "glm-flash": {
+      "observable_faults": {
+        "cutoff": 1
+      },
+      "rows": 306
+    },
+    "glm-flash-t0": {
+      "observable_faults": {
+        "several_calls": 1
+      },
+      "rows": 102
+    },
+    "luna": {
+      "observable_faults": {},
+      "rows": 306
+    },
+    "oss-120b": {
+      "observable_faults": {},
+      "rows": 306
+    },
+    "oss-20b": {
+      "observable_faults": {},
+      "rows": 306
+    },
+    "sol": {
+      "observable_faults": {},
+      "rows": 102
+    }
+  },
+  "note": "Observable response health only; no E02 evaluation scores inspected."
+}
