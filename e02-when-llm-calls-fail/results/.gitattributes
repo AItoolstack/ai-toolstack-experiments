@@ -1,0 +1,3 @@
+# Machine-generated ledgers remain available, with a quieter default GitHub diff.
+*.json linguist-generated=true
+*.gz binary linguist-generated=true
