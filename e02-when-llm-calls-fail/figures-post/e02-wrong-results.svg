@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="288pt" height="320.4pt" viewBox="0 0 288 320.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 320.4
+L 288 320.4
+L 288 0
+L 0 0
+z
+" style="fill: #fcfbf9"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 15.84px; font-family: 'Inter Variable'; text-anchor: start; fill: #1a1d24" x="11.52" y="24.212813" transform="rotate(-0 11.52 24.212813)">Wrong results shown</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11.52px; font-family: 'Inter Variable'; text-anchor: start; fill: #4a5160" x="11.52" y="47.7927" transform="rotate(-0 11.52 47.7927)">Independent 20% timeouts</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: start; fill: #4a5160" x="11.52" y="66.186563" transform="rotate(-0 11.52 66.186563)">Per 1,000 tasks; 95% item intervals</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: start; fill: #4a5160" x="11.52" y="265.734563" transform="rotate(-0 11.52 265.734563)">Synthetic tasks; repeated saved answers.</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: start; fill: #4a5160" x="11.52" y="284.51025" transform="rotate(-0 11.52 284.51025)">Unverified tool defaults shown separately</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: start; fill: #4a5160" x="11.52" y="303.132375" transform="rotate(-0 11.52 303.132375)">in the accompanying results table.</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_2">
+    <path d="M 72 233.892
+L 270.72 233.892
+L 270.72 86.508
+L 72 86.508
+z
+" style="fill: #fcfbf9"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 72 233.892
+L 72 86.508
+" clip-path="url(#p979717fc5e)" style="fill: none; stroke: #d9d6cf; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_7">
+      <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: middle; fill: #4a5160" x="72" y="246.749" transform="rotate(-0 72 246.749)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 152.750769 233.892
+L 152.750769 86.508
+" clip-path="url(#p979717fc5e)" style="fill: none; stroke: #d9d6cf; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_8">
+      <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: middle; fill: #4a5160" x="152.750769" y="246.749" transform="rotate(-0 152.750769 246.749)">150</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 233.501538 233.892
+L 233.501538 86.508
+" clip-path="url(#p979717fc5e)" style="fill: none; stroke: #d9d6cf; stroke-opacity: 0.6; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_9">
+      <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: middle; fill: #4a5160" x="233.501538" y="246.749" transform="rotate(-0 233.501538 246.749)">300</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7"/>
+     <g id="text_10">
+      <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: end; fill: #1a1d24" x="67" y="106.376149" transform="rotate(-0 67 106.376149)">Default</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8"/>
+     <g id="text_11">
+      <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: end; fill: #1a1d24" x="67" y="144.877716" transform="rotate(-0 67 144.877716)">Retry</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9"/>
+     <g id="text_12">
+      <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: end; fill: #1a1d24" x="67" y="183.379284" transform="rotate(-0 67 183.379284)">Fallback</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10"/>
+     <g id="text_13">
+      <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: end; fill: #1a1d24" x="67" y="221.934007" transform="rotate(-0 67 221.934007)">Say so</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 72 93.207273
+L 200.049231 93.207273
+L 200.049231 111.688025
+L 72 111.688025
+z
+" clip-path="url(#p979717fc5e)" style="fill: #e0a946"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 72 131.70884
+L 119.630769 131.70884
+L 119.630769 150.189592
+L 72 150.189592
+z
+" clip-path="url(#p979717fc5e)" style="fill: #1a1d24"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 72 170.210408
+L 114.978462 170.210408
+L 114.978462 188.69116
+L 72 188.69116
+z
+" clip-path="url(#p979717fc5e)" style="fill: #1a1d24"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 72 208.711975
+L 114.313846 208.711975
+L 114.313846 227.192727
+L 72 227.192727
+z
+" clip-path="url(#p979717fc5e)" style="fill: #2d6b45"/>
+   </g>
+   <g id="line2d_11">
+    <path d="M 177.009231 102.447649
+L 224.861538 102.447649
+" clip-path="url(#p979717fc5e)" style="fill: none; stroke: #8f5a0e; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_12">
+    <path d="M 177.009231 97.827461
+L 177.009231 107.067837
+" clip-path="url(#p979717fc5e)" style="fill: none; stroke: #8f5a0e; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_13">
+    <path d="M 224.861538 97.827461
+L 224.861538 107.067837
+" clip-path="url(#p979717fc5e)" style="fill: none; stroke: #8f5a0e; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_14">
+    <path d="M 93.489231 140.949216
+L 148.430769 140.949216
+" clip-path="url(#p979717fc5e)" style="fill: none; stroke: #8f5a0e; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_15">
+    <path d="M 93.489231 136.329028
+L 93.489231 145.569404
+" clip-path="url(#p979717fc5e)" style="fill: none; stroke: #8f5a0e; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_16">
+    <path d="M 148.430769 136.329028
+L 148.430769 145.569404
+" clip-path="url(#p979717fc5e)" style="fill: none; stroke: #8f5a0e; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_17">
+    <path d="M 89.28 179.450784
+L 143.113846 179.450784
+" clip-path="url(#p979717fc5e)" style="fill: none; stroke: #8f5a0e; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_18">
+    <path d="M 89.28 174.830596
+L 89.28 184.070972
+" clip-path="url(#p979717fc5e)" style="fill: none; stroke: #8f5a0e; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_19">
+    <path d="M 143.113846 174.830596
+L 143.113846 184.070972
+" clip-path="url(#p979717fc5e)" style="fill: none; stroke: #8f5a0e; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_20">
+    <path d="M 89.058462 217.952351
+L 142.006154 217.952351
+" clip-path="url(#p979717fc5e)" style="fill: none; stroke: #8f5a0e; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_21">
+    <path d="M 89.058462 213.332163
+L 89.058462 222.572539
+" clip-path="url(#p979717fc5e)" style="fill: none; stroke: #8f5a0e; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_22">
+    <path d="M 142.006154 213.332163
+L 142.006154 222.572539
+" clip-path="url(#p979717fc5e)" style="fill: none; stroke: #8f5a0e; stroke-linecap: square"/>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: start; fill: #1a1d24" x="229.829538" y="105.274211" transform="rotate(-0 229.829538 105.274211)">237.9</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: start; fill: #1a1d24" x="153.398769" y="143.775779" transform="rotate(-0 153.398769 143.775779)">88.5</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: start; fill: #1a1d24" x="148.081846" y="182.277346" transform="rotate(-0 148.081846 182.277346)">79.8</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10.8px; font-family: 'Inter Variable'; text-anchor: start; fill: #1a1d24" x="146.974154" y="220.778914" transform="rotate(-0 146.974154 220.778914)">78.6</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p979717fc5e">
+   <rect x="72" y="86.508" width="198.72" height="147.384"/>
+  </clipPath>
+ </defs>
+</svg>

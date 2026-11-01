@@ -1,0 +1,35 @@
+{
+  "api_calls": 0,
+  "approval_sha256": "3be51a4baaedcba5e3e3828e83844bff35d9c47b2f3b962bde449a63ab3fa1d1",
+  "cohorts": {
+    "development": {
+      "independent_bootstrap_draws": 10000,
+      "rows": 231840,
+      "shards": 460,
+      "summary_groups": 1472,
+      "verification_sha256": "21aa2f5565882983d9e63ba3e1b01d6758837f617f8ed704f0aec666f199870c"
+    },
+    "heldout": {
+      "independent_bootstrap_draws": 10000,
+      "rows": 894240,
+      "shards": 460,
+      "summary_groups": 1472,
+      "verification_sha256": "3889eb0264d9dcac00657b58ebad20df567fa77ce14763b9592f6a1c1fd1a444"
+    }
+  },
+  "figures_sha256": {
+    "e02-recovery-flow.json": "52049a5640afdb75694d44d371b8f2f0e34fa8f0729ae031550fb1503f8535d9",
+    "e02-recovery-flow.png": "9266144396253ab680a786672a2fbfb069fb9933834d6f393241a8c87c0a90ca",
+    "e02-recovery-flow.svg": "a1710c479894d1b4f3230e1f157c085fca34de49898317c9cfb61c6cf63c5f12",
+    "e02-recovery-flow.txt": "337add6108bc84a6526d420f42a48791d65e3e37c26874960481e6ec69726db7",
+    "e02-wrong-results.json": "109c04e96b7a6b7b0ddaf82a0306e4d489b195c190273783bfff8050e539b2d4",
+    "e02-wrong-results.png": "062f9bf7138d8ebf22277ae179cd002562eae38d7bb85db485a4f99483e63099",
+    "e02-wrong-results.svg": "b9e158767c3e9142d0def00cb7640b3a2a6f69b4a2cc235c83866c20bdc6e147",
+    "e02-wrong-results.txt": "9785a66c3883028854ccfaf1b1b866ff49d8b66105af9b65a3464787996966cc"
+  },
+  "note": "Independent audit of all ledger schedules/terminals/accounting and representative paired CIs. No new experiment, no changed protocol, and no production inference.",
+  "reporting_sha256": "c9a996e8132e94ae04064c679b604ecc9af49ce8535ed10fd80d69de5d1a859f",
+  "review_sha256": "86c22d3b87bc964f7ef92f56199111a6eba2ae9b084446482ddd8e082bfc2879",
+  "status": "PASS",
+  "verifier_sha256": "340a023cff13221e3a02592b15ece2b5c3861caa606066d4c91b031bd36fcd0b"
+}

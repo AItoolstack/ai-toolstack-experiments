@@ -1,0 +1,1 @@
+Wrong completed results per 1,000 tasks under assumed independent 20% timeouts; zero-numeric defaults; reused E06 held-out cohort. Default: 237.86; Retry: 88.48; Fallback: 79.84; Say so: 78.60. Intervals resample whole items and do not capture failure-model or template uncertainty. Unverified tool no-ops are excluded from wrong and reported separately.

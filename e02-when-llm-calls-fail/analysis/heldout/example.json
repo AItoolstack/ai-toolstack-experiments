@@ -1,0 +1,272 @@
+{
+  "paired_designs": [
+    {
+      "grade": "wrong",
+      "record": {
+        "accepted_response_usd": 0.0,
+        "backoff_seconds": 0.0,
+        "calls": 1,
+        "cost_high_usd": 5.3775e-05,
+        "cost_low_usd": 0.0,
+        "design": "default",
+        "events": [
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 5.3775e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 210
+            },
+            "source_repeat": 2
+          }
+        ],
+        "item": "inv08",
+        "latency_seconds": 30.0,
+        "output": {
+          "kind": "default",
+          "variant": "zero_numeric"
+        },
+        "scenario": "independent-05-timeout",
+        "seed": 20261107,
+        "status": "completed",
+        "task": "invoice",
+        "track": 2,
+        "variant": "zero_numeric"
+      },
+      "visible_response": {
+        "content": "{\"amount_due\":0,\"currency\":null,\"due_date\":null,\"gross_total\":0,\"invoice_date\":null,\"invoice_number\":null,\"is_credit_note\":false,\"net_total\":0,\"supplier_name\":null,\"tax_total\":0}",
+        "finish_reason": "stop",
+        "tool_calls": []
+      }
+    },
+    {
+      "grade": "correct",
+      "record": {
+        "accepted_response_usd": 5.3775e-05,
+        "backoff_seconds": 1.0,
+        "calls": 2,
+        "cost_high_usd": 0.00010755,
+        "cost_low_usd": 5.3775e-05,
+        "design": "retry",
+        "events": [
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 5.3775e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 210
+            },
+            "source_repeat": 2
+          },
+          {
+            "accepted_response_usd": 5.3775e-05,
+            "attempt": 1,
+            "cost_high_usd": 5.3775e-05,
+            "cost_low_usd": 5.3775e-05,
+            "injected": null,
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": null,
+            "role": "primary",
+            "seconds": 0.44,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 210
+            },
+            "source_repeat": 2
+          }
+        ],
+        "item": "inv08",
+        "latency_seconds": 31.44,
+        "output": {
+          "kind": "source",
+          "model": "oss-20b",
+          "repeat": 2
+        },
+        "scenario": "independent-05-timeout",
+        "seed": 20261107,
+        "status": "completed",
+        "task": "invoice",
+        "track": 2,
+        "variant": "zero_numeric"
+      },
+      "visible_response": {
+        "content": "{\"supplier_name\":\"Alder Quay Workshop 8 Ltd\",\"invoice_number\":\"AQ-0008\",\"invoice_date\":\"2026-10-02\",\"due_date\":\"2026-11-01\",\"currency\":\"GBP\",\"net_total\":204.0,\"tax_total\":40.8,\"gross_total\":244.8,\"amount_due\":244.8,\"is_credit_note\":false}",
+        "finish_reason": "stop",
+        "tool_calls": []
+      }
+    },
+    {
+      "grade": "correct",
+      "record": {
+        "accepted_response_usd": 5.3775e-05,
+        "backoff_seconds": 1.0,
+        "calls": 2,
+        "cost_high_usd": 0.00010755,
+        "cost_low_usd": 5.3775e-05,
+        "design": "fallback",
+        "events": [
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 5.3775e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 210
+            },
+            "source_repeat": 2
+          },
+          {
+            "accepted_response_usd": 5.3775e-05,
+            "attempt": 1,
+            "cost_high_usd": 5.3775e-05,
+            "cost_low_usd": 5.3775e-05,
+            "injected": null,
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": null,
+            "role": "primary",
+            "seconds": 0.44,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 210
+            },
+            "source_repeat": 2
+          }
+        ],
+        "item": "inv08",
+        "latency_seconds": 31.44,
+        "output": {
+          "kind": "source",
+          "model": "oss-20b",
+          "repeat": 2
+        },
+        "scenario": "independent-05-timeout",
+        "seed": 20261107,
+        "status": "completed",
+        "task": "invoice",
+        "track": 2,
+        "variant": "zero_numeric"
+      },
+      "visible_response": {
+        "content": "{\"supplier_name\":\"Alder Quay Workshop 8 Ltd\",\"invoice_number\":\"AQ-0008\",\"invoice_date\":\"2026-10-02\",\"due_date\":\"2026-11-01\",\"currency\":\"GBP\",\"net_total\":204.0,\"tax_total\":40.8,\"gross_total\":244.8,\"amount_due\":244.8,\"is_credit_note\":false}",
+        "finish_reason": "stop",
+        "tool_calls": []
+      }
+    },
+    {
+      "grade": "correct",
+      "record": {
+        "accepted_response_usd": 5.3775e-05,
+        "backoff_seconds": 1.0,
+        "calls": 2,
+        "cost_high_usd": 0.00010755,
+        "cost_low_usd": 5.3775e-05,
+        "design": "say_so",
+        "events": [
+          {
+            "accepted_response_usd": 0.0,
+            "attempt": 0,
+            "cost_high_usd": 5.3775e-05,
+            "cost_low_usd": 0.0,
+            "injected": "timeout",
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": "timeout",
+            "role": "primary",
+            "seconds": 30,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 210
+            },
+            "source_repeat": 2
+          },
+          {
+            "accepted_response_usd": 5.3775e-05,
+            "attempt": 1,
+            "cost_high_usd": 5.3775e-05,
+            "cost_low_usd": 5.3775e-05,
+            "injected": null,
+            "model": "oss-20b",
+            "native_fault": null,
+            "observed_failure": null,
+            "role": "primary",
+            "seconds": 0.44,
+            "source": {
+              "file": "../e06-cheap-model-good-enough/results_frozen_20261029/oss-20b.jsonl",
+              "line": 210
+            },
+            "source_repeat": 2
+          }
+        ],
+        "item": "inv08",
+        "latency_seconds": 31.44,
+        "output": {
+          "kind": "source",
+          "model": "oss-20b",
+          "repeat": 2
+        },
+        "scenario": "independent-05-timeout",
+        "seed": 20261107,
+        "status": "completed",
+        "task": "invoice",
+        "track": 2,
+        "variant": "zero_numeric"
+      },
+      "visible_response": {
+        "content": "{\"supplier_name\":\"Alder Quay Workshop 8 Ltd\",\"invoice_number\":\"AQ-0008\",\"invoice_date\":\"2026-10-02\",\"due_date\":\"2026-11-01\",\"currency\":\"GBP\",\"net_total\":204.0,\"tax_total\":40.8,\"gross_total\":244.8,\"amount_due\":244.8,\"is_credit_note\":false}",
+        "finish_reason": "stop",
+        "tool_calls": []
+      }
+    }
+  ],
+  "selection": {
+    "item": "inv08",
+    "scenario": "independent-05-timeout",
+    "seed": 20261107,
+    "track": 2,
+    "variant": "zero_numeric"
+  },
+  "synthetic_task": {
+    "document": "Supplier / issuer: Alder Quay Workshop 8 Ltd\nBill to: Moss Lantern Studio Ltd\nDocument country: UK; currency GBP\nInvoice no: AQ-0008\nDate: 2026-10-02\nDue date: 2026-11-01\nOne workshop service, quantity 1; net line amount 204.00 GBP\nNet: 204.00 GBP\nTax (20.00%): 40.80 GBP\nTotal: 244.80 GBP\nAmount due: 244.80 GBP",
+    "gold": {
+      "amount_due": 244.8,
+      "currency": "GBP",
+      "due_date": "2026-11-01",
+      "gross_total": 244.8,
+      "invoice_date": "2026-10-02",
+      "invoice_number": "AQ-0008",
+      "is_credit_note": false,
+      "net_total": 204.0,
+      "supplier_name": "Alder Quay Workshop 8 Ltd",
+      "tax_total": 40.8
+    },
+    "id": "inv08",
+    "kind": "clear",
+    "task": "invoice",
+    "traps": []
+  }
+}

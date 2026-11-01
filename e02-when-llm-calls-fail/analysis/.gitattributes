@@ -1,0 +1,3 @@
+# Root reader reports and code stay reviewable; detailed numerical exports are generated.
+*.json linguist-generated=true
+*.jsonl linguist-generated=true

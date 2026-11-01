@@ -1,0 +1,4 @@
+# Preserve the pilot record while keeping generated numerical dumps collapsed on GitHub.
+*.json linguist-generated=true
+*.jsonl linguist-generated=true
+*.gz binary linguist-generated=true

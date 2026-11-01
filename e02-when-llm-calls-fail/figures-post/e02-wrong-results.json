@@ -1,0 +1,19 @@
+{
+  "canvas_units": [
+    400,
+    445
+  ],
+  "display_width_px": 480,
+  "font_sha256": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf",
+  "minimum_type_units": 15,
+  "png_width_px": 960,
+  "source_path": "scenarios.independent-20-timeout.zero_numeric.all.<design>.point.wrong_per_1000",
+  "summary_sha256": "f8ee6a46a146d7ffc682deb429c4ecde894fc73cfb3d1561f740457f9a821c94",
+  "uncertainty_sha256": "c938504634be310c91032271d5f3b974fd93db089cc6210e0e5334328311ddf6",
+  "values": {
+    "default": 237.86008230452674,
+    "fallback": 79.83539094650206,
+    "retry": 88.47736625514402,
+    "say_so": 78.60082304526749
+  }
+}

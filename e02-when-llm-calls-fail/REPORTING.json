@@ -1,0 +1,18 @@
+{
+  "analysis_verification_sha256": {
+    "development": "21aa2f5565882983d9e63ba3e1b01d6758837f617f8ed704f0aec666f199870c",
+    "heldout": "3889eb0264d9dcac00657b58ebad20df567fa77ce14763b9592f6a1c1fd1a444"
+  },
+  "note": "Approved protocol/code unchanged. This supplement formats existing frozen metrics and sources.",
+  "outputs": {
+    "FIGURE-CAPTIONS.md": "e3606504b7e38979b9b6046ba361b724da955db8f41afb1db23fdb140a5967b0",
+    "FULL-RESULTS.md": "e954e2f8803aa850350004639245058a4eeb0bd09c101372d5d6967a79519c71",
+    "HANDOVER-FOR-POST.md": "cc9674cd7e235368e5a4d40bf16acbb94df1fc58cb45d8bacf20fed0a42c16e5",
+    "README-RESULTS.md": "bb228dac4dacd5df1556a407244f746df9df7483d28fd29d3109938426a609da",
+    "RESULTS.md": "d6eadf342b3fbbee0467cc5ec1a8ce70741a4950ff92f6bfe346a5fb780e6ab6",
+    "claims.json": "2183a17700f52ff702bc7a02d2fe2c8fb4b76d996f55c329077d88ce51064cd4"
+  },
+  "report_source_sha256": "19cc81d7b00cc4acef3446230717c47fb545b91fefbd8f39f4a307b69687aab7",
+  "review_sha256": "86c22d3b87bc964f7ef92f56199111a6eba2ae9b084446482ddd8e082bfc2879",
+  "status": "COMPLETED_REPORTING_ONLY_SUPPLEMENT"
+}
