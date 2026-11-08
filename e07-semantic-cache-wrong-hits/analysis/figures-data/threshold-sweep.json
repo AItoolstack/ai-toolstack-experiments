@@ -1,0 +1,7944 @@
+{
+  "local": [
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 92
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 29
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 86
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 30
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 27
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 92
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 29
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 86
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 30
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 27
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 89,
+          "denominator": 360,
+          "served": 271,
+          "useful": 92,
+          "wrong": 179
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "near_miss": {
+          "abstained": 9,
+          "denominator": 180,
+          "served": 171,
+          "useful": 0,
+          "wrong": 171
+        },
+        "negation": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "number_date": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "paraphrase": {
+          "abstained": 28,
+          "denominator": 120,
+          "served": 92,
+          "useful": 92,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "unrelated": {
+          "abstained": 52,
+          "denominator": 60,
+          "served": 8,
+          "useful": 0,
+          "wrong": 8
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 181,
+          "denominator": 360,
+          "served": 179,
+          "useful": 92,
+          "wrong": 87
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 95,
+          "denominator": 180,
+          "served": 85,
+          "useful": 0,
+          "wrong": 85
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 28,
+          "denominator": 120,
+          "served": 92,
+          "useful": 92,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "unrelated": {
+          "abstained": 58,
+          "denominator": 60,
+          "served": 2,
+          "useful": 0,
+          "wrong": 2
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 91,
+          "denominator": 360,
+          "served": 269,
+          "useful": 90,
+          "wrong": 179
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "near_miss": {
+          "abstained": 9,
+          "denominator": 180,
+          "served": 171,
+          "useful": 0,
+          "wrong": 171
+        },
+        "negation": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "number_date": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "paraphrase": {
+          "abstained": 30,
+          "denominator": 120,
+          "served": 90,
+          "useful": 90,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "unrelated": {
+          "abstained": 52,
+          "denominator": 60,
+          "served": 8,
+          "useful": 0,
+          "wrong": 8
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 183,
+          "denominator": 360,
+          "served": 177,
+          "useful": 90,
+          "wrong": 87
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 95,
+          "denominator": 180,
+          "served": 85,
+          "useful": 0,
+          "wrong": 85
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 30,
+          "denominator": 120,
+          "served": 90,
+          "useful": 90,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "unrelated": {
+          "abstained": 58,
+          "denominator": 60,
+          "served": 2,
+          "useful": 0,
+          "wrong": 2
+        }
+      },
+      "threshold": 0.8
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 92
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 29
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 86
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 30
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 27
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 92
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 29
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 86
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 30
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 27
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 95,
+          "denominator": 360,
+          "served": 265,
+          "useful": 87,
+          "wrong": 178
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "near_miss": {
+          "abstained": 9,
+          "denominator": 180,
+          "served": 171,
+          "useful": 0,
+          "wrong": 171
+        },
+        "negation": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "number_date": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "paraphrase": {
+          "abstained": 33,
+          "denominator": 120,
+          "served": 87,
+          "useful": 87,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "unrelated": {
+          "abstained": 53,
+          "denominator": 60,
+          "served": 7,
+          "useful": 0,
+          "wrong": 7
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 187,
+          "denominator": 360,
+          "served": 173,
+          "useful": 87,
+          "wrong": 86
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 95,
+          "denominator": 180,
+          "served": 85,
+          "useful": 0,
+          "wrong": 85
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 33,
+          "denominator": 120,
+          "served": 87,
+          "useful": 87,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "unrelated": {
+          "abstained": 59,
+          "denominator": 60,
+          "served": 1,
+          "useful": 0,
+          "wrong": 1
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 97,
+          "denominator": 360,
+          "served": 263,
+          "useful": 85,
+          "wrong": 178
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "near_miss": {
+          "abstained": 9,
+          "denominator": 180,
+          "served": 171,
+          "useful": 0,
+          "wrong": 171
+        },
+        "negation": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "number_date": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "paraphrase": {
+          "abstained": 35,
+          "denominator": 120,
+          "served": 85,
+          "useful": 85,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "unrelated": {
+          "abstained": 53,
+          "denominator": 60,
+          "served": 7,
+          "useful": 0,
+          "wrong": 7
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 189,
+          "denominator": 360,
+          "served": 171,
+          "useful": 85,
+          "wrong": 86
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 95,
+          "denominator": 180,
+          "served": 85,
+          "useful": 0,
+          "wrong": 85
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 35,
+          "denominator": 120,
+          "served": 85,
+          "useful": 85,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "unrelated": {
+          "abstained": 59,
+          "denominator": 60,
+          "served": 1,
+          "useful": 0,
+          "wrong": 1
+        }
+      },
+      "threshold": 0.81
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 92
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 29
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 86
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 30
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 27
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 92
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 29
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 86
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 30
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 27
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 100,
+          "denominator": 360,
+          "served": 260,
+          "useful": 83,
+          "wrong": 177
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "near_miss": {
+          "abstained": 9,
+          "denominator": 180,
+          "served": 171,
+          "useful": 0,
+          "wrong": 171
+        },
+        "negation": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "number_date": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "paraphrase": {
+          "abstained": 37,
+          "denominator": 120,
+          "served": 83,
+          "useful": 83,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "unrelated": {
+          "abstained": 54,
+          "denominator": 60,
+          "served": 6,
+          "useful": 0,
+          "wrong": 6
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 192,
+          "denominator": 360,
+          "served": 168,
+          "useful": 83,
+          "wrong": 85
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 95,
+          "denominator": 180,
+          "served": 85,
+          "useful": 0,
+          "wrong": 85
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 37,
+          "denominator": 120,
+          "served": 83,
+          "useful": 83,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 101,
+          "denominator": 360,
+          "served": 259,
+          "useful": 82,
+          "wrong": 177
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "near_miss": {
+          "abstained": 9,
+          "denominator": 180,
+          "served": 171,
+          "useful": 0,
+          "wrong": 171
+        },
+        "negation": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "number_date": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "paraphrase": {
+          "abstained": 38,
+          "denominator": 120,
+          "served": 82,
+          "useful": 82,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "unrelated": {
+          "abstained": 54,
+          "denominator": 60,
+          "served": 6,
+          "useful": 0,
+          "wrong": 6
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 193,
+          "denominator": 360,
+          "served": 167,
+          "useful": 82,
+          "wrong": 85
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 95,
+          "denominator": 180,
+          "served": 85,
+          "useful": 0,
+          "wrong": 85
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 38,
+          "denominator": 120,
+          "served": 82,
+          "useful": 82,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.82
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 91
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 29
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 85
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 30
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 26
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 91
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 29
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 85
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 30
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 26
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 104,
+          "denominator": 360,
+          "served": 256,
+          "useful": 81,
+          "wrong": 175
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "near_miss": {
+          "abstained": 11,
+          "denominator": 180,
+          "served": 169,
+          "useful": 0,
+          "wrong": 169
+        },
+        "negation": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "number_date": {
+          "abstained": 4,
+          "denominator": 30,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "paraphrase": {
+          "abstained": 39,
+          "denominator": 120,
+          "served": 81,
+          "useful": 81,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 54,
+          "denominator": 60,
+          "served": 6,
+          "useful": 0,
+          "wrong": 6
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 195,
+          "denominator": 360,
+          "served": 165,
+          "useful": 81,
+          "wrong": 84
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 96,
+          "denominator": 180,
+          "served": 84,
+          "useful": 0,
+          "wrong": 84
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 39,
+          "denominator": 120,
+          "served": 81,
+          "useful": 81,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 105,
+          "denominator": 360,
+          "served": 255,
+          "useful": 80,
+          "wrong": 175
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "near_miss": {
+          "abstained": 11,
+          "denominator": 180,
+          "served": 169,
+          "useful": 0,
+          "wrong": 169
+        },
+        "negation": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "number_date": {
+          "abstained": 4,
+          "denominator": 30,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "paraphrase": {
+          "abstained": 40,
+          "denominator": 120,
+          "served": 80,
+          "useful": 80,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 54,
+          "denominator": 60,
+          "served": 6,
+          "useful": 0,
+          "wrong": 6
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 196,
+          "denominator": 360,
+          "served": 164,
+          "useful": 80,
+          "wrong": 84
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 96,
+          "denominator": 180,
+          "served": 84,
+          "useful": 0,
+          "wrong": 84
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 40,
+          "denominator": 120,
+          "served": 80,
+          "useful": 80,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.83
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 91
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 29
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 85
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 30
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 26
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 91
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 29
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 85
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 30
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 26
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 110,
+          "denominator": 360,
+          "served": 250,
+          "useful": 75,
+          "wrong": 175
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "near_miss": {
+          "abstained": 11,
+          "denominator": 180,
+          "served": 169,
+          "useful": 0,
+          "wrong": 169
+        },
+        "negation": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "number_date": {
+          "abstained": 4,
+          "denominator": 30,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "paraphrase": {
+          "abstained": 45,
+          "denominator": 120,
+          "served": 75,
+          "useful": 75,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 54,
+          "denominator": 60,
+          "served": 6,
+          "useful": 0,
+          "wrong": 6
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 201,
+          "denominator": 360,
+          "served": 159,
+          "useful": 75,
+          "wrong": 84
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 96,
+          "denominator": 180,
+          "served": 84,
+          "useful": 0,
+          "wrong": 84
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 45,
+          "denominator": 120,
+          "served": 75,
+          "useful": 75,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 113,
+          "denominator": 360,
+          "served": 247,
+          "useful": 72,
+          "wrong": 175
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "near_miss": {
+          "abstained": 11,
+          "denominator": 180,
+          "served": 169,
+          "useful": 0,
+          "wrong": 169
+        },
+        "negation": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "number_date": {
+          "abstained": 4,
+          "denominator": 30,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "paraphrase": {
+          "abstained": 48,
+          "denominator": 120,
+          "served": 72,
+          "useful": 72,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 54,
+          "denominator": 60,
+          "served": 6,
+          "useful": 0,
+          "wrong": 6
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "all": {
+          "abstained": 204,
+          "denominator": 360,
+          "served": 156,
+          "useful": 72,
+          "wrong": 84
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 96,
+          "denominator": 180,
+          "served": 84,
+          "useful": 0,
+          "wrong": 84
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 48,
+          "denominator": 120,
+          "served": 72,
+          "useful": 72,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.84
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 88
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 29
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 82
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 29
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 88
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 29
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 82
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 29
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "all": {
+          "abstained": 119,
+          "denominator": 360,
+          "served": 241,
+          "useful": 70,
+          "wrong": 171
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "near_miss": {
+          "abstained": 15,
+          "denominator": 180,
+          "served": 165,
+          "useful": 0,
+          "wrong": 165
+        },
+        "negation": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 50,
+          "denominator": 120,
+          "served": 70,
+          "useful": 70,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 54,
+          "denominator": 60,
+          "served": 6,
+          "useful": 0,
+          "wrong": 6
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "all": {
+          "abstained": 207,
+          "denominator": 360,
+          "served": 153,
+          "useful": 70,
+          "wrong": 83
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 97,
+          "denominator": 180,
+          "served": 83,
+          "useful": 0,
+          "wrong": 83
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 50,
+          "denominator": 120,
+          "served": 70,
+          "useful": 70,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "all": {
+          "abstained": 120,
+          "denominator": 360,
+          "served": 240,
+          "useful": 69,
+          "wrong": 171
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "near_miss": {
+          "abstained": 15,
+          "denominator": 180,
+          "served": 165,
+          "useful": 0,
+          "wrong": 165
+        },
+        "negation": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 51,
+          "denominator": 120,
+          "served": 69,
+          "useful": 69,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 54,
+          "denominator": 60,
+          "served": 6,
+          "useful": 0,
+          "wrong": 6
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 1,
+          "denominator": 30,
+          "served": 29,
+          "useful": 0,
+          "wrong": 29
+        },
+        "all": {
+          "abstained": 208,
+          "denominator": 360,
+          "served": 152,
+          "useful": 69,
+          "wrong": 83
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 97,
+          "denominator": 180,
+          "served": 83,
+          "useful": 0,
+          "wrong": 83
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 51,
+          "denominator": 120,
+          "served": 69,
+          "useful": 69,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.85
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 85
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 27
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 79
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 28
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 85
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 27
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 79
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 28
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "all": {
+          "abstained": 129,
+          "denominator": 360,
+          "served": 231,
+          "useful": 65,
+          "wrong": 166
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "near_miss": {
+          "abstained": 20,
+          "denominator": 180,
+          "served": 160,
+          "useful": 0,
+          "wrong": 160
+        },
+        "negation": {
+          "abstained": 2,
+          "denominator": 30,
+          "served": 28,
+          "useful": 0,
+          "wrong": 28
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 55,
+          "denominator": 120,
+          "served": 65,
+          "useful": 65,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 54,
+          "denominator": 60,
+          "served": 6,
+          "useful": 0,
+          "wrong": 6
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "all": {
+          "abstained": 214,
+          "denominator": 360,
+          "served": 146,
+          "useful": 65,
+          "wrong": 81
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 99,
+          "denominator": 180,
+          "served": 81,
+          "useful": 0,
+          "wrong": 81
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 55,
+          "denominator": 120,
+          "served": 65,
+          "useful": 65,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "all": {
+          "abstained": 130,
+          "denominator": 360,
+          "served": 230,
+          "useful": 64,
+          "wrong": 166
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "near_miss": {
+          "abstained": 20,
+          "denominator": 180,
+          "served": 160,
+          "useful": 0,
+          "wrong": 160
+        },
+        "negation": {
+          "abstained": 2,
+          "denominator": 30,
+          "served": 28,
+          "useful": 0,
+          "wrong": 28
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 56,
+          "denominator": 120,
+          "served": 64,
+          "useful": 64,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 54,
+          "denominator": 60,
+          "served": 6,
+          "useful": 0,
+          "wrong": 6
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "all": {
+          "abstained": 215,
+          "denominator": 360,
+          "served": 145,
+          "useful": 64,
+          "wrong": 81
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 99,
+          "denominator": 180,
+          "served": 81,
+          "useful": 0,
+          "wrong": 81
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 56,
+          "denominator": 120,
+          "served": 64,
+          "useful": 64,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.86
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 82
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 26
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 78
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 28
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 4
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 82
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 26
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 78
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 28
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 4
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "all": {
+          "abstained": 134,
+          "denominator": 360,
+          "served": 226,
+          "useful": 63,
+          "wrong": 163
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 4,
+          "denominator": 30,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "near_miss": {
+          "abstained": 21,
+          "denominator": 180,
+          "served": 159,
+          "useful": 0,
+          "wrong": 159
+        },
+        "negation": {
+          "abstained": 2,
+          "denominator": 30,
+          "served": 28,
+          "useful": 0,
+          "wrong": 28
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 57,
+          "denominator": 120,
+          "served": 63,
+          "useful": 63,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 56,
+          "denominator": 60,
+          "served": 4,
+          "useful": 0,
+          "wrong": 4
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "all": {
+          "abstained": 216,
+          "denominator": 360,
+          "served": 144,
+          "useful": 63,
+          "wrong": 81
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 99,
+          "denominator": 180,
+          "served": 81,
+          "useful": 0,
+          "wrong": 81
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 57,
+          "denominator": 120,
+          "served": 63,
+          "useful": 63,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "all": {
+          "abstained": 135,
+          "denominator": 360,
+          "served": 225,
+          "useful": 62,
+          "wrong": 163
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 4,
+          "denominator": 30,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "near_miss": {
+          "abstained": 21,
+          "denominator": 180,
+          "served": 159,
+          "useful": 0,
+          "wrong": 159
+        },
+        "negation": {
+          "abstained": 2,
+          "denominator": 30,
+          "served": 28,
+          "useful": 0,
+          "wrong": 28
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 58,
+          "denominator": 120,
+          "served": 62,
+          "useful": 62,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 56,
+          "denominator": 60,
+          "served": 4,
+          "useful": 0,
+          "wrong": 4
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "all": {
+          "abstained": 217,
+          "denominator": 360,
+          "served": 143,
+          "useful": 62,
+          "wrong": 81
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 99,
+          "denominator": 180,
+          "served": 81,
+          "useful": 0,
+          "wrong": 81
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 58,
+          "denominator": 120,
+          "served": 62,
+          "useful": 62,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.87
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 81
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 25
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 77
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 28
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 4
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 81
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 25
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 77
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 28
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 4
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 4,
+          "denominator": 30,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "all": {
+          "abstained": 141,
+          "denominator": 360,
+          "served": 219,
+          "useful": 58,
+          "wrong": 161
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "near_miss": {
+          "abstained": 23,
+          "denominator": 180,
+          "served": 157,
+          "useful": 0,
+          "wrong": 157
+        },
+        "negation": {
+          "abstained": 2,
+          "denominator": 30,
+          "served": 28,
+          "useful": 0,
+          "wrong": 28
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 62,
+          "denominator": 120,
+          "served": 58,
+          "useful": 58,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 56,
+          "denominator": 60,
+          "served": 4,
+          "useful": 0,
+          "wrong": 4
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 4,
+          "denominator": 30,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "all": {
+          "abstained": 222,
+          "denominator": 360,
+          "served": 138,
+          "useful": 58,
+          "wrong": 80
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 100,
+          "denominator": 180,
+          "served": 80,
+          "useful": 0,
+          "wrong": 80
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 62,
+          "denominator": 120,
+          "served": 58,
+          "useful": 58,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 4,
+          "denominator": 30,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "all": {
+          "abstained": 141,
+          "denominator": 360,
+          "served": 219,
+          "useful": 58,
+          "wrong": 161
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "near_miss": {
+          "abstained": 23,
+          "denominator": 180,
+          "served": 157,
+          "useful": 0,
+          "wrong": 157
+        },
+        "negation": {
+          "abstained": 2,
+          "denominator": 30,
+          "served": 28,
+          "useful": 0,
+          "wrong": 28
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 62,
+          "denominator": 120,
+          "served": 58,
+          "useful": 58,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 56,
+          "denominator": 60,
+          "served": 4,
+          "useful": 0,
+          "wrong": 4
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 4,
+          "denominator": 30,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "all": {
+          "abstained": 222,
+          "denominator": 360,
+          "served": 138,
+          "useful": 58,
+          "wrong": 80
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 100,
+          "denominator": 180,
+          "served": 80,
+          "useful": 0,
+          "wrong": 80
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 62,
+          "denominator": 120,
+          "served": 58,
+          "useful": 58,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.88
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 79
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 75
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 27
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 4
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 79
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 75
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 27
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 4
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "all": {
+          "abstained": 148,
+          "denominator": 360,
+          "served": 212,
+          "useful": 54,
+          "wrong": 158
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "near_miss": {
+          "abstained": 26,
+          "denominator": 180,
+          "served": 154,
+          "useful": 0,
+          "wrong": 154
+        },
+        "negation": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 66,
+          "denominator": 120,
+          "served": 54,
+          "useful": 54,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 56,
+          "denominator": 60,
+          "served": 4,
+          "useful": 0,
+          "wrong": 4
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "all": {
+          "abstained": 227,
+          "denominator": 360,
+          "served": 133,
+          "useful": 54,
+          "wrong": 79
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 101,
+          "denominator": 180,
+          "served": 79,
+          "useful": 0,
+          "wrong": 79
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 66,
+          "denominator": 120,
+          "served": 54,
+          "useful": 54,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "all": {
+          "abstained": 148,
+          "denominator": 360,
+          "served": 212,
+          "useful": 54,
+          "wrong": 158
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "near_miss": {
+          "abstained": 26,
+          "denominator": 180,
+          "served": 154,
+          "useful": 0,
+          "wrong": 154
+        },
+        "negation": {
+          "abstained": 3,
+          "denominator": 30,
+          "served": 27,
+          "useful": 0,
+          "wrong": 27
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 66,
+          "denominator": 120,
+          "served": 54,
+          "useful": 54,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 56,
+          "denominator": 60,
+          "served": 4,
+          "useful": 0,
+          "wrong": 4
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "all": {
+          "abstained": 227,
+          "denominator": 360,
+          "served": 133,
+          "useful": 54,
+          "wrong": 79
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 101,
+          "denominator": 180,
+          "served": 79,
+          "useful": 0,
+          "wrong": 79
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 66,
+          "denominator": 120,
+          "served": 54,
+          "useful": 54,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.89
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 72
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 22
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 71
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 25
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 1
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 72
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 22
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 71
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 25
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 1
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "all": {
+          "abstained": 164,
+          "denominator": 360,
+          "served": 196,
+          "useful": 45,
+          "wrong": 151
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 8,
+          "denominator": 30,
+          "served": 22,
+          "useful": 0,
+          "wrong": 22
+        },
+        "near_miss": {
+          "abstained": 30,
+          "denominator": 180,
+          "served": 150,
+          "useful": 0,
+          "wrong": 150
+        },
+        "negation": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 75,
+          "denominator": 120,
+          "served": 45,
+          "useful": 45,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 59,
+          "denominator": 60,
+          "served": 1,
+          "useful": 0,
+          "wrong": 1
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "all": {
+          "abstained": 236,
+          "denominator": 360,
+          "served": 124,
+          "useful": 45,
+          "wrong": 79
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 101,
+          "denominator": 180,
+          "served": 79,
+          "useful": 0,
+          "wrong": 79
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 75,
+          "denominator": 120,
+          "served": 45,
+          "useful": 45,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "all": {
+          "abstained": 164,
+          "denominator": 360,
+          "served": 196,
+          "useful": 45,
+          "wrong": 151
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 8,
+          "denominator": 30,
+          "served": 22,
+          "useful": 0,
+          "wrong": 22
+        },
+        "near_miss": {
+          "abstained": 30,
+          "denominator": 180,
+          "served": 150,
+          "useful": 0,
+          "wrong": 150
+        },
+        "negation": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 75,
+          "denominator": 120,
+          "served": 45,
+          "useful": 45,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 59,
+          "denominator": 60,
+          "served": 1,
+          "useful": 0,
+          "wrong": 1
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "all": {
+          "abstained": 236,
+          "denominator": 360,
+          "served": 124,
+          "useful": 45,
+          "wrong": 79
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 101,
+          "denominator": 180,
+          "served": 79,
+          "useful": 0,
+          "wrong": 79
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 75,
+          "denominator": 120,
+          "served": 45,
+          "useful": 45,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.9
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 70
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 21
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 70
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 25
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 70
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 21
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 70
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 25
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "all": {
+          "abstained": 174,
+          "denominator": 360,
+          "served": 186,
+          "useful": 38,
+          "wrong": 148
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 9,
+          "denominator": 30,
+          "served": 21,
+          "useful": 0,
+          "wrong": 21
+        },
+        "near_miss": {
+          "abstained": 32,
+          "denominator": 180,
+          "served": 148,
+          "useful": 0,
+          "wrong": 148
+        },
+        "negation": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 82,
+          "denominator": 120,
+          "served": 38,
+          "useful": 38,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "all": {
+          "abstained": 244,
+          "denominator": 360,
+          "served": 116,
+          "useful": 38,
+          "wrong": 78
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 102,
+          "denominator": 180,
+          "served": 78,
+          "useful": 0,
+          "wrong": 78
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 82,
+          "denominator": 120,
+          "served": 38,
+          "useful": 38,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "all": {
+          "abstained": 174,
+          "denominator": 360,
+          "served": 186,
+          "useful": 38,
+          "wrong": 148
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 9,
+          "denominator": 30,
+          "served": 21,
+          "useful": 0,
+          "wrong": 21
+        },
+        "near_miss": {
+          "abstained": 32,
+          "denominator": 180,
+          "served": 148,
+          "useful": 0,
+          "wrong": 148
+        },
+        "negation": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 82,
+          "denominator": 120,
+          "served": 38,
+          "useful": 38,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "all": {
+          "abstained": 244,
+          "denominator": 360,
+          "served": 116,
+          "useful": 38,
+          "wrong": 78
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 102,
+          "denominator": 180,
+          "served": 78,
+          "useful": 0,
+          "wrong": 78
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 82,
+          "denominator": 120,
+          "served": 38,
+          "useful": 38,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.91
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 63
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 17
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 63
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 22
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 63
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 17
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 63
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 22
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "all": {
+          "abstained": 189,
+          "denominator": 360,
+          "served": 171,
+          "useful": 33,
+          "wrong": 138
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 13,
+          "denominator": 30,
+          "served": 17,
+          "useful": 0,
+          "wrong": 17
+        },
+        "near_miss": {
+          "abstained": 42,
+          "denominator": 180,
+          "served": 138,
+          "useful": 0,
+          "wrong": 138
+        },
+        "negation": {
+          "abstained": 8,
+          "denominator": 30,
+          "served": 22,
+          "useful": 0,
+          "wrong": 22
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 87,
+          "denominator": 120,
+          "served": 33,
+          "useful": 33,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 9,
+          "denominator": 30,
+          "served": 21,
+          "useful": 0,
+          "wrong": 21
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "all": {
+          "abstained": 252,
+          "denominator": 360,
+          "served": 108,
+          "useful": 33,
+          "wrong": 75
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 105,
+          "denominator": 180,
+          "served": 75,
+          "useful": 0,
+          "wrong": 75
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 87,
+          "denominator": 120,
+          "served": 33,
+          "useful": 33,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 9,
+          "denominator": 30,
+          "served": 21,
+          "useful": 0,
+          "wrong": 21
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "all": {
+          "abstained": 189,
+          "denominator": 360,
+          "served": 171,
+          "useful": 33,
+          "wrong": 138
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 13,
+          "denominator": 30,
+          "served": 17,
+          "useful": 0,
+          "wrong": 17
+        },
+        "near_miss": {
+          "abstained": 42,
+          "denominator": 180,
+          "served": 138,
+          "useful": 0,
+          "wrong": 138
+        },
+        "negation": {
+          "abstained": 8,
+          "denominator": 30,
+          "served": 22,
+          "useful": 0,
+          "wrong": 22
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 87,
+          "denominator": 120,
+          "served": 33,
+          "useful": 33,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 9,
+          "denominator": 30,
+          "served": 21,
+          "useful": 0,
+          "wrong": 21
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "all": {
+          "abstained": 252,
+          "denominator": 360,
+          "served": 108,
+          "useful": 33,
+          "wrong": 75
+        },
+        "direction_word_order": {
+          "abstained": 0,
+          "denominator": 30,
+          "served": 30,
+          "useful": 0,
+          "wrong": 30
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 105,
+          "denominator": 180,
+          "served": 75,
+          "useful": 0,
+          "wrong": 75
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 87,
+          "denominator": 120,
+          "served": 33,
+          "useful": 33,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 9,
+          "denominator": 30,
+          "served": 21,
+          "useful": 0,
+          "wrong": 21
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.92
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 57
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 12
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 57
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 21
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 57
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 12
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 57
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 21
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "all": {
+          "abstained": 204,
+          "denominator": 360,
+          "served": 156,
+          "useful": 28,
+          "wrong": 128
+        },
+        "direction_word_order": {
+          "abstained": 2,
+          "denominator": 30,
+          "served": 28,
+          "useful": 0,
+          "wrong": 28
+        },
+        "entity_id": {
+          "abstained": 18,
+          "denominator": 30,
+          "served": 12,
+          "useful": 0,
+          "wrong": 12
+        },
+        "near_miss": {
+          "abstained": 52,
+          "denominator": 180,
+          "served": 128,
+          "useful": 0,
+          "wrong": 128
+        },
+        "negation": {
+          "abstained": 9,
+          "denominator": 30,
+          "served": 21,
+          "useful": 0,
+          "wrong": 21
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 92,
+          "denominator": 120,
+          "served": 28,
+          "useful": 28,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 11,
+          "denominator": 30,
+          "served": 19,
+          "useful": 0,
+          "wrong": 19
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "all": {
+          "abstained": 261,
+          "denominator": 360,
+          "served": 99,
+          "useful": 28,
+          "wrong": 71
+        },
+        "direction_word_order": {
+          "abstained": 2,
+          "denominator": 30,
+          "served": 28,
+          "useful": 0,
+          "wrong": 28
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 109,
+          "denominator": 180,
+          "served": 71,
+          "useful": 0,
+          "wrong": 71
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 92,
+          "denominator": 120,
+          "served": 28,
+          "useful": 28,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 11,
+          "denominator": 30,
+          "served": 19,
+          "useful": 0,
+          "wrong": 19
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "all": {
+          "abstained": 204,
+          "denominator": 360,
+          "served": 156,
+          "useful": 28,
+          "wrong": 128
+        },
+        "direction_word_order": {
+          "abstained": 2,
+          "denominator": 30,
+          "served": 28,
+          "useful": 0,
+          "wrong": 28
+        },
+        "entity_id": {
+          "abstained": 18,
+          "denominator": 30,
+          "served": 12,
+          "useful": 0,
+          "wrong": 12
+        },
+        "near_miss": {
+          "abstained": 52,
+          "denominator": 180,
+          "served": 128,
+          "useful": 0,
+          "wrong": 128
+        },
+        "negation": {
+          "abstained": 9,
+          "denominator": 30,
+          "served": 21,
+          "useful": 0,
+          "wrong": 21
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 92,
+          "denominator": 120,
+          "served": 28,
+          "useful": 28,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 11,
+          "denominator": 30,
+          "served": 19,
+          "useful": 0,
+          "wrong": 19
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "all": {
+          "abstained": 261,
+          "denominator": 360,
+          "served": 99,
+          "useful": 28,
+          "wrong": 71
+        },
+        "direction_word_order": {
+          "abstained": 2,
+          "denominator": 30,
+          "served": 28,
+          "useful": 0,
+          "wrong": 28
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 109,
+          "denominator": 180,
+          "served": 71,
+          "useful": 0,
+          "wrong": 71
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 92,
+          "denominator": 120,
+          "served": 28,
+          "useful": 28,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 11,
+          "denominator": 30,
+          "served": 19,
+          "useful": 0,
+          "wrong": 19
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.93
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 52
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 9
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 52
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 19
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 52
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 9
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 52
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 19
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 24
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 8,
+          "denominator": 30,
+          "served": 22,
+          "useful": 0,
+          "wrong": 22
+        },
+        "all": {
+          "abstained": 223,
+          "denominator": 360,
+          "served": 137,
+          "useful": 22,
+          "wrong": 115
+        },
+        "direction_word_order": {
+          "abstained": 4,
+          "denominator": 30,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "entity_id": {
+          "abstained": 21,
+          "denominator": 30,
+          "served": 9,
+          "useful": 0,
+          "wrong": 9
+        },
+        "near_miss": {
+          "abstained": 65,
+          "denominator": 180,
+          "served": 115,
+          "useful": 0,
+          "wrong": 115
+        },
+        "negation": {
+          "abstained": 11,
+          "denominator": 30,
+          "served": 19,
+          "useful": 0,
+          "wrong": 19
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 98,
+          "denominator": 120,
+          "served": 22,
+          "useful": 22,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 15,
+          "denominator": 30,
+          "served": 15,
+          "useful": 0,
+          "wrong": 15
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 8,
+          "denominator": 30,
+          "served": 22,
+          "useful": 0,
+          "wrong": 22
+        },
+        "all": {
+          "abstained": 275,
+          "denominator": 360,
+          "served": 85,
+          "useful": 22,
+          "wrong": 63
+        },
+        "direction_word_order": {
+          "abstained": 4,
+          "denominator": 30,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 117,
+          "denominator": 180,
+          "served": 63,
+          "useful": 0,
+          "wrong": 63
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 98,
+          "denominator": 120,
+          "served": 22,
+          "useful": 22,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 15,
+          "denominator": 30,
+          "served": 15,
+          "useful": 0,
+          "wrong": 15
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 8,
+          "denominator": 30,
+          "served": 22,
+          "useful": 0,
+          "wrong": 22
+        },
+        "all": {
+          "abstained": 223,
+          "denominator": 360,
+          "served": 137,
+          "useful": 22,
+          "wrong": 115
+        },
+        "direction_word_order": {
+          "abstained": 4,
+          "denominator": 30,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "entity_id": {
+          "abstained": 21,
+          "denominator": 30,
+          "served": 9,
+          "useful": 0,
+          "wrong": 9
+        },
+        "near_miss": {
+          "abstained": 65,
+          "denominator": 180,
+          "served": 115,
+          "useful": 0,
+          "wrong": 115
+        },
+        "negation": {
+          "abstained": 11,
+          "denominator": 30,
+          "served": 19,
+          "useful": 0,
+          "wrong": 19
+        },
+        "number_date": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "paraphrase": {
+          "abstained": 98,
+          "denominator": 120,
+          "served": 22,
+          "useful": 22,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 15,
+          "denominator": 30,
+          "served": 15,
+          "useful": 0,
+          "wrong": 15
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 8,
+          "denominator": 30,
+          "served": 22,
+          "useful": 0,
+          "wrong": 22
+        },
+        "all": {
+          "abstained": 275,
+          "denominator": 360,
+          "served": 85,
+          "useful": 22,
+          "wrong": 63
+        },
+        "direction_word_order": {
+          "abstained": 4,
+          "denominator": 30,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 117,
+          "denominator": 180,
+          "served": 63,
+          "useful": 0,
+          "wrong": 63
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 98,
+          "denominator": 120,
+          "served": 22,
+          "useful": 22,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 15,
+          "denominator": 30,
+          "served": 15,
+          "useful": 0,
+          "wrong": 15
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.94
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 46
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 8
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 46
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 15
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 23
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 46
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 8
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 46
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 15
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 23
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 9,
+          "denominator": 30,
+          "served": 21,
+          "useful": 0,
+          "wrong": 21
+        },
+        "all": {
+          "abstained": 244,
+          "denominator": 360,
+          "served": 116,
+          "useful": 11,
+          "wrong": 105
+        },
+        "direction_word_order": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "entity_id": {
+          "abstained": 22,
+          "denominator": 30,
+          "served": 8,
+          "useful": 0,
+          "wrong": 8
+        },
+        "near_miss": {
+          "abstained": 75,
+          "denominator": 180,
+          "served": 105,
+          "useful": 0,
+          "wrong": 105
+        },
+        "negation": {
+          "abstained": 15,
+          "denominator": 30,
+          "served": 15,
+          "useful": 0,
+          "wrong": 15
+        },
+        "number_date": {
+          "abstained": 7,
+          "denominator": 30,
+          "served": 23,
+          "useful": 0,
+          "wrong": 23
+        },
+        "paraphrase": {
+          "abstained": 109,
+          "denominator": 120,
+          "served": 11,
+          "useful": 11,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 17,
+          "denominator": 30,
+          "served": 13,
+          "useful": 0,
+          "wrong": 13
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 9,
+          "denominator": 30,
+          "served": 21,
+          "useful": 0,
+          "wrong": 21
+        },
+        "all": {
+          "abstained": 290,
+          "denominator": 360,
+          "served": 70,
+          "useful": 11,
+          "wrong": 59
+        },
+        "direction_word_order": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 121,
+          "denominator": 180,
+          "served": 59,
+          "useful": 0,
+          "wrong": 59
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 109,
+          "denominator": 120,
+          "served": 11,
+          "useful": 11,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 17,
+          "denominator": 30,
+          "served": 13,
+          "useful": 0,
+          "wrong": 13
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 9,
+          "denominator": 30,
+          "served": 21,
+          "useful": 0,
+          "wrong": 21
+        },
+        "all": {
+          "abstained": 244,
+          "denominator": 360,
+          "served": 116,
+          "useful": 11,
+          "wrong": 105
+        },
+        "direction_word_order": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "entity_id": {
+          "abstained": 22,
+          "denominator": 30,
+          "served": 8,
+          "useful": 0,
+          "wrong": 8
+        },
+        "near_miss": {
+          "abstained": 75,
+          "denominator": 180,
+          "served": 105,
+          "useful": 0,
+          "wrong": 105
+        },
+        "negation": {
+          "abstained": 15,
+          "denominator": 30,
+          "served": 15,
+          "useful": 0,
+          "wrong": 15
+        },
+        "number_date": {
+          "abstained": 7,
+          "denominator": 30,
+          "served": 23,
+          "useful": 0,
+          "wrong": 23
+        },
+        "paraphrase": {
+          "abstained": 109,
+          "denominator": 120,
+          "served": 11,
+          "useful": 11,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 17,
+          "denominator": 30,
+          "served": 13,
+          "useful": 0,
+          "wrong": 13
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 9,
+          "denominator": 30,
+          "served": 21,
+          "useful": 0,
+          "wrong": 21
+        },
+        "all": {
+          "abstained": 290,
+          "denominator": 360,
+          "served": 70,
+          "useful": 11,
+          "wrong": 59
+        },
+        "direction_word_order": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 121,
+          "denominator": 180,
+          "served": 59,
+          "useful": 0,
+          "wrong": 59
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 109,
+          "denominator": 120,
+          "served": 11,
+          "useful": 11,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 17,
+          "denominator": 30,
+          "served": 13,
+          "useful": 0,
+          "wrong": 13
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.95
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 41
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 41
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 12
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 23
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 41
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 41
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 12
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 23
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 12,
+          "denominator": 30,
+          "served": 18,
+          "useful": 0,
+          "wrong": 18
+        },
+        "all": {
+          "abstained": 257,
+          "denominator": 360,
+          "served": 103,
+          "useful": 7,
+          "wrong": 96
+        },
+        "direction_word_order": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "entity_id": {
+          "abstained": 24,
+          "denominator": 30,
+          "served": 6,
+          "useful": 0,
+          "wrong": 6
+        },
+        "near_miss": {
+          "abstained": 84,
+          "denominator": 180,
+          "served": 96,
+          "useful": 0,
+          "wrong": 96
+        },
+        "negation": {
+          "abstained": 18,
+          "denominator": 30,
+          "served": 12,
+          "useful": 0,
+          "wrong": 12
+        },
+        "number_date": {
+          "abstained": 7,
+          "denominator": 30,
+          "served": 23,
+          "useful": 0,
+          "wrong": 23
+        },
+        "paraphrase": {
+          "abstained": 113,
+          "denominator": 120,
+          "served": 7,
+          "useful": 7,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 18,
+          "denominator": 30,
+          "served": 12,
+          "useful": 0,
+          "wrong": 12
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 12,
+          "denominator": 30,
+          "served": 18,
+          "useful": 0,
+          "wrong": 18
+        },
+        "all": {
+          "abstained": 298,
+          "denominator": 360,
+          "served": 62,
+          "useful": 7,
+          "wrong": 55
+        },
+        "direction_word_order": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 125,
+          "denominator": 180,
+          "served": 55,
+          "useful": 0,
+          "wrong": 55
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 113,
+          "denominator": 120,
+          "served": 7,
+          "useful": 7,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 18,
+          "denominator": 30,
+          "served": 12,
+          "useful": 0,
+          "wrong": 12
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 12,
+          "denominator": 30,
+          "served": 18,
+          "useful": 0,
+          "wrong": 18
+        },
+        "all": {
+          "abstained": 257,
+          "denominator": 360,
+          "served": 103,
+          "useful": 7,
+          "wrong": 96
+        },
+        "direction_word_order": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "entity_id": {
+          "abstained": 24,
+          "denominator": 30,
+          "served": 6,
+          "useful": 0,
+          "wrong": 6
+        },
+        "near_miss": {
+          "abstained": 84,
+          "denominator": 180,
+          "served": 96,
+          "useful": 0,
+          "wrong": 96
+        },
+        "negation": {
+          "abstained": 18,
+          "denominator": 30,
+          "served": 12,
+          "useful": 0,
+          "wrong": 12
+        },
+        "number_date": {
+          "abstained": 7,
+          "denominator": 30,
+          "served": 23,
+          "useful": 0,
+          "wrong": 23
+        },
+        "paraphrase": {
+          "abstained": 113,
+          "denominator": 120,
+          "served": 7,
+          "useful": 7,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 18,
+          "denominator": 30,
+          "served": 12,
+          "useful": 0,
+          "wrong": 12
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 12,
+          "denominator": 30,
+          "served": 18,
+          "useful": 0,
+          "wrong": 18
+        },
+        "all": {
+          "abstained": 298,
+          "denominator": 360,
+          "served": 62,
+          "useful": 7,
+          "wrong": 55
+        },
+        "direction_word_order": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 125,
+          "denominator": 180,
+          "served": 55,
+          "useful": 0,
+          "wrong": 55
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 113,
+          "denominator": 120,
+          "served": 7,
+          "useful": 7,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 18,
+          "denominator": 30,
+          "served": 12,
+          "useful": 0,
+          "wrong": 12
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.96
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 34
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 2
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 34
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 10
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 22
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 34
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 2
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 34
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 10
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 22
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 20,
+          "denominator": 30,
+          "served": 10,
+          "useful": 0,
+          "wrong": 10
+        },
+        "all": {
+          "abstained": 280,
+          "denominator": 360,
+          "served": 80,
+          "useful": 4,
+          "wrong": 76
+        },
+        "direction_word_order": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "entity_id": {
+          "abstained": 28,
+          "denominator": 30,
+          "served": 2,
+          "useful": 0,
+          "wrong": 2
+        },
+        "near_miss": {
+          "abstained": 104,
+          "denominator": 180,
+          "served": 76,
+          "useful": 0,
+          "wrong": 76
+        },
+        "negation": {
+          "abstained": 20,
+          "denominator": 30,
+          "served": 10,
+          "useful": 0,
+          "wrong": 10
+        },
+        "number_date": {
+          "abstained": 8,
+          "denominator": 30,
+          "served": 22,
+          "useful": 0,
+          "wrong": 22
+        },
+        "paraphrase": {
+          "abstained": 116,
+          "denominator": 120,
+          "served": 4,
+          "useful": 4,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 23,
+          "denominator": 30,
+          "served": 7,
+          "useful": 0,
+          "wrong": 7
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 20,
+          "denominator": 30,
+          "served": 10,
+          "useful": 0,
+          "wrong": 10
+        },
+        "all": {
+          "abstained": 314,
+          "denominator": 360,
+          "served": 46,
+          "useful": 4,
+          "wrong": 42
+        },
+        "direction_word_order": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 138,
+          "denominator": 180,
+          "served": 42,
+          "useful": 0,
+          "wrong": 42
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 116,
+          "denominator": 120,
+          "served": 4,
+          "useful": 4,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 23,
+          "denominator": 30,
+          "served": 7,
+          "useful": 0,
+          "wrong": 7
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 20,
+          "denominator": 30,
+          "served": 10,
+          "useful": 0,
+          "wrong": 10
+        },
+        "all": {
+          "abstained": 280,
+          "denominator": 360,
+          "served": 80,
+          "useful": 4,
+          "wrong": 76
+        },
+        "direction_word_order": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "entity_id": {
+          "abstained": 28,
+          "denominator": 30,
+          "served": 2,
+          "useful": 0,
+          "wrong": 2
+        },
+        "near_miss": {
+          "abstained": 104,
+          "denominator": 180,
+          "served": 76,
+          "useful": 0,
+          "wrong": 76
+        },
+        "negation": {
+          "abstained": 20,
+          "denominator": 30,
+          "served": 10,
+          "useful": 0,
+          "wrong": 10
+        },
+        "number_date": {
+          "abstained": 8,
+          "denominator": 30,
+          "served": 22,
+          "useful": 0,
+          "wrong": 22
+        },
+        "paraphrase": {
+          "abstained": 116,
+          "denominator": 120,
+          "served": 4,
+          "useful": 4,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 23,
+          "denominator": 30,
+          "served": 7,
+          "useful": 0,
+          "wrong": 7
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 20,
+          "denominator": 30,
+          "served": 10,
+          "useful": 0,
+          "wrong": 10
+        },
+        "all": {
+          "abstained": 314,
+          "denominator": 360,
+          "served": 46,
+          "useful": 4,
+          "wrong": 42
+        },
+        "direction_word_order": {
+          "abstained": 5,
+          "denominator": 30,
+          "served": 25,
+          "useful": 0,
+          "wrong": 25
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 138,
+          "denominator": 180,
+          "served": 42,
+          "useful": 0,
+          "wrong": 42
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 116,
+          "denominator": 120,
+          "served": 4,
+          "useful": 4,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 23,
+          "denominator": 30,
+          "served": 7,
+          "useful": 0,
+          "wrong": 7
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.97
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 20
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 20
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 14
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 20
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 20
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 6
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 14
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 27,
+          "denominator": 30,
+          "served": 3,
+          "useful": 0,
+          "wrong": 3
+        },
+        "all": {
+          "abstained": 308,
+          "denominator": 360,
+          "served": 52,
+          "useful": 0,
+          "wrong": 52
+        },
+        "direction_word_order": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 128,
+          "denominator": 180,
+          "served": 52,
+          "useful": 0,
+          "wrong": 52
+        },
+        "negation": {
+          "abstained": 24,
+          "denominator": 30,
+          "served": 6,
+          "useful": 0,
+          "wrong": 6
+        },
+        "number_date": {
+          "abstained": 16,
+          "denominator": 30,
+          "served": 14,
+          "useful": 0,
+          "wrong": 14
+        },
+        "paraphrase": {
+          "abstained": 120,
+          "denominator": 120,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 25,
+          "denominator": 30,
+          "served": 5,
+          "useful": 0,
+          "wrong": 5
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 27,
+          "denominator": 30,
+          "served": 3,
+          "useful": 0,
+          "wrong": 3
+        },
+        "all": {
+          "abstained": 328,
+          "denominator": 360,
+          "served": 32,
+          "useful": 0,
+          "wrong": 32
+        },
+        "direction_word_order": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 148,
+          "denominator": 180,
+          "served": 32,
+          "useful": 0,
+          "wrong": 32
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 120,
+          "denominator": 120,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 25,
+          "denominator": 30,
+          "served": 5,
+          "useful": 0,
+          "wrong": 5
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 27,
+          "denominator": 30,
+          "served": 3,
+          "useful": 0,
+          "wrong": 3
+        },
+        "all": {
+          "abstained": 308,
+          "denominator": 360,
+          "served": 52,
+          "useful": 0,
+          "wrong": 52
+        },
+        "direction_word_order": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 128,
+          "denominator": 180,
+          "served": 52,
+          "useful": 0,
+          "wrong": 52
+        },
+        "negation": {
+          "abstained": 24,
+          "denominator": 30,
+          "served": 6,
+          "useful": 0,
+          "wrong": 6
+        },
+        "number_date": {
+          "abstained": 16,
+          "denominator": 30,
+          "served": 14,
+          "useful": 0,
+          "wrong": 14
+        },
+        "paraphrase": {
+          "abstained": 120,
+          "denominator": 120,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 25,
+          "denominator": 30,
+          "served": 5,
+          "useful": 0,
+          "wrong": 5
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 27,
+          "denominator": 30,
+          "served": 3,
+          "useful": 0,
+          "wrong": 3
+        },
+        "all": {
+          "abstained": 328,
+          "denominator": 360,
+          "served": 32,
+          "useful": 0,
+          "wrong": 32
+        },
+        "direction_word_order": {
+          "abstained": 6,
+          "denominator": 30,
+          "served": 24,
+          "useful": 0,
+          "wrong": 24
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 148,
+          "denominator": 180,
+          "served": 32,
+          "useful": 0,
+          "wrong": 32
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 120,
+          "denominator": 120,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 25,
+          "denominator": 30,
+          "served": 5,
+          "useful": 0,
+          "wrong": 5
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.98
+    },
+    {
+      "guard_effect": {
+        "lookup": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 3
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 3
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 3
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        },
+        "pair": {
+          "actor_permission": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "all": {
+            "denominator": 360,
+            "useful_lost": 0,
+            "wrong_removed": 3
+          },
+          "direction_word_order": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "entity_id": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "near_miss": {
+            "denominator": 180,
+            "useful_lost": 0,
+            "wrong_removed": 3
+          },
+          "negation": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "number_date": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 3
+          },
+          "paraphrase": {
+            "denominator": 120,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "scope_qualifier": {
+            "denominator": 30,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          },
+          "unrelated": {
+            "denominator": 60,
+            "useful_lost": 0,
+            "wrong_removed": 0
+          }
+        }
+      },
+      "lookup": {
+        "actor_permission": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "all": {
+          "abstained": 334,
+          "denominator": 360,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "direction_word_order": {
+          "abstained": 7,
+          "denominator": 30,
+          "served": 23,
+          "useful": 0,
+          "wrong": 23
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 154,
+          "denominator": 180,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 27,
+          "denominator": 30,
+          "served": 3,
+          "useful": 0,
+          "wrong": 3
+        },
+        "paraphrase": {
+          "abstained": 120,
+          "denominator": 120,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "lookup_guarded": {
+        "actor_permission": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "all": {
+          "abstained": 337,
+          "denominator": 360,
+          "served": 23,
+          "useful": 0,
+          "wrong": 23
+        },
+        "direction_word_order": {
+          "abstained": 7,
+          "denominator": 30,
+          "served": 23,
+          "useful": 0,
+          "wrong": 23
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 157,
+          "denominator": 180,
+          "served": 23,
+          "useful": 0,
+          "wrong": 23
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 120,
+          "denominator": 120,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair": {
+        "actor_permission": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "all": {
+          "abstained": 334,
+          "denominator": 360,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "direction_word_order": {
+          "abstained": 7,
+          "denominator": 30,
+          "served": 23,
+          "useful": 0,
+          "wrong": 23
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 154,
+          "denominator": 180,
+          "served": 26,
+          "useful": 0,
+          "wrong": 26
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 27,
+          "denominator": 30,
+          "served": 3,
+          "useful": 0,
+          "wrong": 3
+        },
+        "paraphrase": {
+          "abstained": 120,
+          "denominator": 120,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "pair_guarded": {
+        "actor_permission": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "all": {
+          "abstained": 337,
+          "denominator": 360,
+          "served": 23,
+          "useful": 0,
+          "wrong": 23
+        },
+        "direction_word_order": {
+          "abstained": 7,
+          "denominator": 30,
+          "served": 23,
+          "useful": 0,
+          "wrong": 23
+        },
+        "entity_id": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "near_miss": {
+          "abstained": 157,
+          "denominator": 180,
+          "served": 23,
+          "useful": 0,
+          "wrong": 23
+        },
+        "negation": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "number_date": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "paraphrase": {
+          "abstained": 120,
+          "denominator": 120,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "scope_qualifier": {
+          "abstained": 30,
+          "denominator": 30,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        },
+        "unrelated": {
+          "abstained": 60,
+          "denominator": 60,
+          "served": 0,
+          "useful": 0,
+          "wrong": 0
+        }
+      },
+      "threshold": 0.99
+    }
+  ]
+}
