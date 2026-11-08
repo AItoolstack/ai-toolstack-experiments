@@ -1,1 +1,13 @@
-null
+{
+  "family": "near-20",
+  "group": "direction_word_order",
+  "id": "near-20-4",
+  "lookup_correct": false,
+  "lookup_cosine": 0.9974304935342981,
+  "lookup_guard": true,
+  "pair_correct": false,
+  "pair_cosine": 0.9974304935342978,
+  "pair_guard": true,
+  "served_at_threshold": 0.8,
+  "winner": "source-near-20-4"
+}
