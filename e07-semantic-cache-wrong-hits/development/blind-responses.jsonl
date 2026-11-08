@@ -1,0 +1,72 @@
+{"id":"audit-000","label":"different","reason":"Distance unit versus water freezing temperature: metres versus 0 degrees Celsius."}
+{"id":"audit-001","label":"different","reason":"Motor and battery have opposite coverage under the stated motor-only warranty."}
+{"id":"audit-002","label":"different","reason":"The transfer source and destination are reversed."}
+{"id":"audit-003","label":"same","reason":"Both ask the number of triangle sides, with the answer three."}
+{"id":"audit-004","label":"different","reason":"The incident dates fall on opposite sides of the cover start; the later incident may also require other coverage conditions."}
+{"id":"audit-005","label":"same","reason":"Both request the train's departure platform, stated as platform 6."}
+{"id":"audit-006","label":"different","reason":"Domestic and overseas trips have opposite eligibility under domestic-only cover."}
+{"id":"audit-007","label":"different","reason":"Mean and median are different calculations, yielding five and three respectively."}
+{"id":"audit-008","label":"same","reason":"Both ask when the helpdesk starts accepting requests, stated as 08:00."}
+{"id":"audit-009","label":"same","reason":"Both ask which document must be presented to board, a boarding pass."}
+{"id":"audit-010","label":"same","reason":"Both ask backup frequency, stated as nightly."}
+{"id":"audit-011","label":"different","reason":"09:20 precedes departure while 09:40 follows it, changing whether arrival is early enough."}
+{"id":"audit-012","label":"different","reason":"The requested job filters select unsuccessful versus successful completion histories."}
+{"id":"audit-013","label":"different","reason":"The lead passenger is permitted to cancel; another passenger is excluded by the rule."}
+{"id":"audit-014","label":"different","reason":"Opening time and closing time are distinct requested facts, 08:00 and 18:00."}
+{"id":"audit-015","label":"different","reason":"One asks when support opens and the other when it closes."}
+{"id":"audit-016","label":"different","reason":"The squared inputs differ, yielding 441 versus 144."}
+{"id":"audit-017","label":"different","reason":"Portal maintenance timing and claim submission method require different answers."}
+{"id":"audit-018","label":"different","reason":"Excluded losses and covered losses are opposite requested categories."}
+{"id":"audit-019","label":"same","reason":"Both ask the worksheet's water freezing temperature, 0 degrees Celsius."}
+{"id":"audit-020","label":"different","reason":"The notification preferences are opt-in versus opt-out."}
+{"id":"audit-021","label":"different","reason":"Reversing the route changes the departure port from Westport to Eastport."}
+{"id":"audit-022","label":"different","reason":"Overseas trips are excluded while domestic trips are covered by the stated rule."}
+{"id":"audit-023","label":"different","reason":"The seat lookup targets distinct booking identifiers."}
+{"id":"audit-024","label":"different","reason":"The requested driver actions are to skip versus make the museum stop."}
+{"id":"audit-025","label":"different","reason":"Primes are 2 and 3; the non-prime member is 4."}
+{"id":"audit-026","label":"different","reason":"The password-reset target changes from the requester to a colleague, requiring different account and authorization handling."}
+{"id":"audit-027","label":"different","reason":"Refund duration and refund destination are distinct requested facts."}
+{"id":"audit-028","label":"different","reason":"The mean is five while the median is three."}
+{"id":"audit-029","label":"same","reason":"Both request the stated freezing temperature of water, 0 degrees Celsius."}
+{"id":"audit-030","label":"different","reason":"Successful jobs and jobs with no successful completion require different result sets."}
+{"id":"audit-031","label":"same","reason":"Both ask how many sides a triangle has; the answer is three."}
+{"id":"audit-032","label":"same","reason":"Both ask where to board the train assigned to platform 6."}
+{"id":"audit-033","label":"different","reason":"Covered and excluded bicycle losses are distinct categories."}
+{"id":"audit-034","label":"different","reason":"The incident dates are before versus after the cover start; later coverage still depends on unstated conditions."}
+{"id":"audit-035","label":"different","reason":"The material lookup concerns two different exhibit identifiers."}
+{"id":"audit-036","label":"different","reason":"The requested ordering relation reverses review and payment; the workflow itself is not supplied."}
+{"id":"audit-037","label":"different","reason":"The referee is the designated permitted actor while a spectator is excluded."}
+{"id":"audit-038","label":"different","reason":"Parcel location and parcel weight require different answers."}
+{"id":"audit-039","label":"different","reason":"The order-status lookup targets different order identifiers."}
+{"id":"audit-040","label":"different","reason":"Reversing dividend and divisor changes the result from 4 to 0.25."}
+{"id":"audit-041","label":"different","reason":"The question changes from the permitted referee to an excluded spectator."}
+{"id":"audit-042","label":"different","reason":"The copy source and destination are reversed."}
+{"id":"audit-043","label":"different","reason":"Closing time is 18:00 and opening time is 08:00."}
+{"id":"audit-044","label":"different","reason":"8 divided by 2 is 4; 2 divided by 8 is 0.25."}
+{"id":"audit-045","label":"different","reason":"Squaring 12 yields 144, while squaring 21 yields 441."}
+{"id":"audit-046","label":"different","reason":"The missing-document lookup targets distinct claim identifiers."}
+{"id":"audit-047","label":"different","reason":"Write and read permissions require different access grants."}
+{"id":"audit-048","label":"different","reason":"The cancellation permission applies to the lead passenger and excludes another passenger."}
+{"id":"audit-049","label":"different","reason":"Departure platform and departure time are distinct facts, platform 6 and noon."}
+{"id":"audit-050","label":"different","reason":"The incident dates are before versus after cover begins; later coverage also depends on unstated conditions."}
+{"id":"audit-051","label":"different","reason":"One asks the boarding platform and the other the departure time."}
+{"id":"audit-052","label":"different","reason":"The requested material belongs to different exhibit identifiers."}
+{"id":"audit-053","label":"different","reason":"The archive and staging directories exchange source and destination roles."}
+{"id":"audit-054","label":"different","reason":"Maintenance closure timing and claim submission method require different answers."}
+{"id":"audit-055","label":"different","reason":"Write access and read access are different requested permissions."}
+{"id":"audit-056","label":"different","reason":"The battery is excluded and the motor included by the stated warranty."}
+{"id":"audit-057","label":"different","reason":"The seat lookup concerns different booking identifiers."}
+{"id":"audit-058","label":"different","reason":"The requested log retention periods differ by a factor of ten, 70 versus 7 days."}
+{"id":"audit-059","label":"same","reason":"Both request the excess amount, stated as £200 in equivalent wording."}
+{"id":"audit-060","label":"different","reason":"The repairer is excluded from withdrawal authority while the policyholder is the permitted actor."}
+{"id":"audit-061","label":"same","reason":"Both ask for the policy excess amount of £200."}
+{"id":"audit-062","label":"different","reason":"The owner lookup targets distinct helpdesk ticket identifiers."}
+{"id":"audit-063","label":"different","reason":"Reversing wallet A and wallet B reverses the requested balance transfer."}
+{"id":"audit-064","label":"different","reason":"The policyholder has the stated withdrawal authority; the repairer does not."}
+{"id":"audit-065","label":"different","reason":"The missing-document lookup concerns distinct claim identifiers."}
+{"id":"audit-066","label":"different","reason":"Water freezing temperature and distance unit require different answers."}
+{"id":"audit-067","label":"different","reason":"Changing another customer's address requires authorization; changing one's own is permitted by the rule."}
+{"id":"audit-068","label":"different","reason":"The requested filters select successful jobs versus jobs with no successful completion."}
+{"id":"audit-069","label":"different","reason":"The questions ask refund duration versus refund destination."}
+{"id":"audit-070","label":"same","reason":"Both ask the parcel's current location, stated as the depot."}
+{"id":"audit-071","label":"different","reason":"The requested square changes from 21 squared to 12 squared, yielding 441 versus 144."}

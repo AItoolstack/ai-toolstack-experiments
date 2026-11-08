@@ -48,4 +48,10 @@ FULL-RESULTS.md and RESULTS.md will trace each claim to a file and field. Supply
 
 ## Changes after review
 
-8 November 2026. Initial design awaiting Tej's review. No audit or post-review amendments yet.
+8 November 2026. Tej approved proceeding after the 30-item milestone. Before any model measurements, expanded the candidate corpus to 360 pairs and completed the separate blind audit. All 72 judgements agree with the hidden key. See development/AUDIT.md and the original responses.
+
+8 November 2026. Corpus construction choices recorded before measurements. The 180 near-misses contain 30 question families, with the original and five contextual variants per family. The 120 paraphrases use ten fact families, two paraphrase distances and six contexts. The 60 unrelated pairs use those same ten topics with a different requested fact. Domain and declared template caps pass, but the variants are correlated and the phrasing diversity is limited. Add a family bootstrap sensitivity analysis alongside the required paired item bootstrap. It samples families within each group and carries the weights across models and arms.
+
+8 November 2026. Cache amendment before measurements. Several sources recur across the paraphrase and unrelated pairs. Deduplicate identical questions with identical answers, leaving 240 distinct sources. Add 760 generated distractors from twenty question frames across the five domains to reach 1,000 distinct stored questions. This supersedes the planned 640 independently authored distractors. Report the construction as a limitation. The acceptable-answer key is based on exact equality of the authored required answer text with each stored answer. This includes equivalent entries across contextual variants; complete semantic equivalence remains subject to review.
+
+8 November 2026. Runner uses single attempts and stops on request failure. Failures are recorded by input hash without provider response bodies. Resumption retries only missing embeddings. Exclude queries that previously failed from the single-attempt latency summary and report their count. The estimated budget uses total UTF-8 input bytes as a conservative token bound at the assumed current price, including a two-pass allowance.

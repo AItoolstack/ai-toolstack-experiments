@@ -55,7 +55,23 @@ def build():
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Verify the generated file matches its source.")
+    parser.add_argument("--full", action="store_true", help="Build or check the complete candidate cohort.")
     args = parser.parse_args()
+    if args.full:
+        from corpus import cache_entries, full_items, validate_full
+        rows = full_items()
+        validate_full(rows)
+        cache = cache_entries(rows)
+        for name, data in (("items.jsonl", rows), ("cache.jsonl", cache)):
+            content = "".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in data)
+            target = HERE / name
+            if args.check:
+                if not target.exists() or target.read_text(encoding="utf-8") != content:
+                    raise SystemExit(f"{name} differs from its authored inputs.")
+            else:
+                target.write_text(content, encoding="utf-8")
+        print("Validated 360 distinct pairs and 1,000 distinct stored questions.")
+        return
     content = "".join(json.dumps(item, ensure_ascii=False, sort_keys=True) + "\n" for item in build())
     target = HERE / "items_samples.jsonl"
     if args.check:
