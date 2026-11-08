@@ -1,0 +1,128 @@
+{
+  "status": "offline_fixture_only",
+  "warning": "Fixture scores exercise code paths and carry no embedding-model evidence.",
+  "input_sha256": "0e845b91db1e224b51cfb6227480471a3102449cecee999f81a84a5af808fd86",
+  "distinct_pairs": 30,
+  "rows": [
+    {
+      "id": "review-001",
+      "fixture_cosine": 0.875
+    },
+    {
+      "id": "review-002",
+      "fixture_cosine": 0.9166666666666666
+    },
+    {
+      "id": "review-003",
+      "fixture_cosine": 0.8333333333333334
+    },
+    {
+      "id": "review-004",
+      "fixture_cosine": 0.944911182523068
+    },
+    {
+      "id": "review-005",
+      "fixture_cosine": 0.875
+    },
+    {
+      "id": "review-006",
+      "fixture_cosine": 0.8944271909999159
+    },
+    {
+      "id": "review-007",
+      "fixture_cosine": 0.9574271077563381
+    },
+    {
+      "id": "review-008",
+      "fixture_cosine": 0.9258200997725514
+    },
+    {
+      "id": "review-009",
+      "fixture_cosine": 0.9607689228305227
+    },
+    {
+      "id": "review-010",
+      "fixture_cosine": 0.8215838362577491
+    },
+    {
+      "id": "review-011",
+      "fixture_cosine": 0.9526610232449336
+    },
+    {
+      "id": "review-012",
+      "fixture_cosine": 0.9565217391304348
+    },
+    {
+      "id": "review-013",
+      "fixture_cosine": 0.8571428571428571
+    },
+    {
+      "id": "review-014",
+      "fixture_cosine": 0.8
+    },
+    {
+      "id": "review-015",
+      "fixture_cosine": 0.95
+    },
+    {
+      "id": "review-016",
+      "fixture_cosine": 0.9309493362512627
+    },
+    {
+      "id": "review-017",
+      "fixture_cosine": 0.9014978717104176
+    },
+    {
+      "id": "review-018",
+      "fixture_cosine": 0.9285714285714286
+    },
+    {
+      "id": "review-019",
+      "fixture_cosine": 0.875
+    },
+    {
+      "id": "review-020",
+      "fixture_cosine": 0.9166666666666666
+    },
+    {
+      "id": "review-021",
+      "fixture_cosine": 1.0
+    },
+    {
+      "id": "review-022",
+      "fixture_cosine": 1.0
+    },
+    {
+      "id": "review-023",
+      "fixture_cosine": 1.0
+    },
+    {
+      "id": "review-024",
+      "fixture_cosine": 1.0
+    },
+    {
+      "id": "review-025",
+      "fixture_cosine": 1.0
+    },
+    {
+      "id": "review-026",
+      "fixture_cosine": 0.9503346192272183
+    },
+    {
+      "id": "review-027",
+      "fixture_cosine": 0.9574271077563381
+    },
+    {
+      "id": "review-028",
+      "fixture_cosine": 0.9309493362512627
+    },
+    {
+      "id": "review-029",
+      "fixture_cosine": 0.9266964086291873
+    },
+    {
+      "id": "review-030",
+      "fixture_cosine": 0.9405399431259603
+    }
+  ]
+}
