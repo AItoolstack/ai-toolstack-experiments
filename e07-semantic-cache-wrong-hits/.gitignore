@@ -1,0 +1,7 @@
+embeddings/
+results/
+analysis/
+.run.lock
+*.tmp
+.env
+development/full-fixture/

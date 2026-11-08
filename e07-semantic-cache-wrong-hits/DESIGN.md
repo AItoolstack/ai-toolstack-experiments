@@ -48,6 +48,8 @@ FULL-RESULTS.md and RESULTS.md will trace each claim to a file and field. Supply
 
 ## Changes after review
 
+8 November 2026. Before measurements, set the local CPU encoder to one PyTorch thread and record that setting in the model identity. This makes the latency setup explicit. The API timing includes network and provider latency.
+
 8 November 2026. Tej approved proceeding after the 30-item milestone. Before any model measurements, expanded the candidate corpus to 360 pairs and completed the separate blind audit. All 72 judgements agree with the hidden key. See development/AUDIT.md and the original responses.
 
 8 November 2026. Corpus construction choices recorded before measurements. The 180 near-misses contain 30 question families, with the original and five contextual variants per family. The 120 paraphrases use ten fact families, two paraphrase distances and six contexts. The 60 unrelated pairs use those same ten topics with a different requested fact. Domain and declared template caps pass, but the variants are correlated and the phrasing diversity is limited. Add a family bootstrap sensitivity analysis alongside the required paired item bootstrap. It samples families within each group and carries the weights across models and arms.

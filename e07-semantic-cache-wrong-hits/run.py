@@ -2,10 +2,10 @@
 import argparse
 import hashlib
 import json
-import math
 import re
 
 from build_items import HERE, validate
+from common import cosine
 
 
 def fixture_vector(text):
@@ -17,21 +17,17 @@ def fixture_vector(text):
     return vector
 
 
-def cosine(left, right):
-    if len(left) != len(right) or not left:
-        raise ValueError("Vector dimensions must match and be nonempty.")
-    if not all(math.isfinite(value) for value in left + right):
-        raise ValueError("Vectors must be finite.")
-    denominator = math.sqrt(sum(value * value for value in left) * sum(value * value for value in right))
-    if denominator == 0:
-        raise ValueError("Zero vectors cannot be scored.")
-    return max(-1.0, min(1.0, sum(a * b for a, b in zip(left, right)) / denominator))
-
-
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dry-run", action="store_true", help="Run offline fixture vectors.")
+    parser.add_argument("--full", action="store_true", help="Run the full corpus.")
+    parser.add_argument("--model", choices=("local", "api"), default="local")
+    parser.add_argument("--estimate", action="store_true")
     args = parser.parse_args()
+    if args.full or args.estimate:
+        from runner import execute
+        execute(args.model, args.dry_run, args.estimate)
+        return
     if not args.dry_run:
         parser.error("This review milestone supports --dry-run only. Real runs follow design approval.")
     source = HERE / "items_samples.jsonl"
