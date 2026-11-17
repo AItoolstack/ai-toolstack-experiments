@@ -1,8 +1,20 @@
 # How often does a semantic cache return the wrong answer?
 
+**Write-up:** [My cache found a 0.997 match. It answered the opposite request.](https://www.ai-toolstack.com/blog/semantic-cache-wrong-answer/) (from 18 Nov 2026). New to semantic caching? Start with [Semantic caching, explained](https://www.ai-toolstack.com/blog/semantic-caching-explained/).
+
+## Results (measured 8 Nov 2026)
+
+- 360 synthetic question pairs (120 rewordings, 180 near-misses, 60 unrelated) and a 1,000-entry cache, scored with OpenAI `text-embedding-3-small` (API) and `all-MiniLM-L6-v2` (local) at every cutoff from 0.80 to 0.99.
+- No cutoff met the error budget set before the run (at most 2 of 180 near-misses through), for either model.
+- At 0.99 every useful cache reply was gone and 8 wrong ones remained, all swapped directions.
+- A simple check on IDs, numbers, dates and negation removed those kinds of wrong matches without losing a useful one. Swapped roles, changed scope and a different person acting still got through.
+- Numbers: `analysis/FULL-RESULTS.md`, `analysis/local.json`, `analysis/api.json`, `analysis/uncertainty.json`. Labels were checked by a blind AI audit of 72 pairs (`development/AUDIT.md`), not by a person.
+
+The notes below are the working record from the design and run stages.
+
 E7's design milestone was approved on 8 November 2026. The full candidate corpus contains 360 synthetic pairs and a 1,000-entry cache. Read DESIGN.md for the protocol, construction choices and limitations. Fictional shop, insurance and travel rules apply only to these fixtures.
 
-The sample contains five pairs per failure type. The builder enforces domain and declared template caps, checks repeated numeric-slot wording, rejects duplicate questions and checks that answers differ. A human still needs to review semantic labels and template families.
+The sample contains five pairs per failure type. The builder enforces domain and declared template caps, checks repeated numeric-slot wording, rejects duplicate questions and checks that answers differ. The design was approved after a 30-item sample, and a blind AI audit checked 72 labels before the measured runs (see DESIGN.md and development/AUDIT.md).
 
 Run these commands in PowerShell with Python 3.10 or later. This milestone uses the standard library and needs no installation.
 
@@ -14,7 +26,7 @@ python run.py --dry-run
 python -m unittest -v
 ```
 
-The generated items_samples.jsonl is deterministic. The dry run overwrites development/dry-run.json with clearly labelled fixture cosine scores. These hashed word-count vectors exercise input validation and scoring. Experimental findings require the two real embedding models after review.
+The generated items_samples.jsonl is deterministic. The dry run overwrites development/dry-run.json with clearly labelled fixture cosine scores. These hashed word-count vectors exercise input validation and scoring. The measured results come from the two real embedding models, not from these fixture scores.
 
 The full cohort uses 30 near-miss families with six contextual variants each, ten fact families for paraphrases, and those ten topics for unrelated pairs. Its 760 distractors use twenty question frames. Domain and template caps pass, but contextual variants are correlated. Read both the item-bootstrap and family-bootstrap intervals before drawing conclusions. The independent AI audit agreed with all 72 sampled labels. It cannot certify all labels or all cache equivalences.
 
