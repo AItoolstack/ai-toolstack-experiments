@@ -1,0 +1,1 @@
+Question: can a party terminate without cause? Sent to the model, a 256-word chunk ending: giving not less than six months notice in writing may terminate this Agreement. Left in the previous chunk: Following expiry of the initial period described in Clause 15 above, DCL or SEV. Paragraph-aware chunks kept the clause whole.

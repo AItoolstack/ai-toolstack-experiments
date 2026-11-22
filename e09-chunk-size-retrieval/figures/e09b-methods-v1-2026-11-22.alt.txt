@@ -1,0 +1,1 @@
+Held-back test questions, out of 223, where the complete clause reached the model with 1,000 words passed: Starting point 173; Section headers added 172; Small-to-big 171; Contract words added 204; Small-to-big + words 205. Whole contract: 223, at a median of 7,706 words.

@@ -1,0 +1,1 @@
+Questions out of 334 where the complete clause reached the model, with 1,000 words passed: Fixed 64 words 214; Fixed 128 words 223; Fixed 128, 20% overlap 246; Fixed 256 words 229; Fixed 512 words 170; Fixed 1,024 words 172; Paragraphs, up to 256 words 254.

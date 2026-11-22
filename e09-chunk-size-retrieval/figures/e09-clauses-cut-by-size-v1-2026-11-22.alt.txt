@@ -1,0 +1,1 @@
+Questions out of 334 where no single chunk held the whole clause, before any search: Fixed 64 words 178; Fixed 128 words 99; Fixed 256 words 42; Fixed 512 words 16; Fixed 1,024 words 8; Paragraphs, up to 256 words 12.
