@@ -72,5 +72,24 @@ class Data(unittest.TestCase):
             self.assertGreaterEqual(covered, n, name)
 
 
+class Improve(unittest.TestCase):
+    def test_rrf_merges(self):
+        from pc_methods import rrf
+        self.assertEqual(rrf([0, 1, 2], [2, 0, 1])[0], 0)
+
+    def test_headings_inline_and_path(self):
+        from improve import header_for, headings
+        t = "10. Term and Termination.\n10.1 Renewal. This renews yearly.\nMore text"
+        h = headings(t)
+        self.assertEqual([x[1] for x in h], ["10 Term and Termination", "10 Term and Termination > 10.1 Renewal"])
+        self.assertEqual(header_for(h, len(t) - 3), "10 Term and Termination > 10.1 Renewal")
+
+    def test_split_is_20_40(self):
+        from improve import split_contracts
+        dev, test = split_contracts([f"c{i:02d}" for i in range(60)])
+        self.assertEqual((len(dev), len(test)), (20, 40))
+        self.assertFalse(dev & test)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,378 @@
+{
+ "dev_contracts": [
+  "c01",
+  "c03",
+  "c07",
+  "c10",
+  "c13",
+  "c15",
+  "c16",
+  "c19",
+  "c27",
+  "c29",
+  "c40",
+  "c41",
+  "c44",
+  "c47",
+  "c49",
+  "c50",
+  "c52",
+  "c55",
+  "c56",
+  "c58"
+ ],
+ "test_contracts": [
+  "c00",
+  "c02",
+  "c04",
+  "c05",
+  "c06",
+  "c08",
+  "c09",
+  "c11",
+  "c12",
+  "c14",
+  "c17",
+  "c18",
+  "c20",
+  "c21",
+  "c22",
+  "c23",
+  "c24",
+  "c25",
+  "c26",
+  "c28",
+  "c30",
+  "c31",
+  "c32",
+  "c33",
+  "c34",
+  "c35",
+  "c36",
+  "c37",
+  "c38",
+  "c39",
+  "c42",
+  "c43",
+  "c45",
+  "c46",
+  "c48",
+  "c51",
+  "c53",
+  "c54",
+  "c57",
+  "c59"
+ ],
+ "dev": {
+  "baseline": {
+   "1000": {
+    "found": 81,
+    "questions": 111,
+    "rate": 0.7297,
+    "ci95": [
+     0.646,
+     0.8053
+    ],
+    "median_words": 892
+   },
+   "2000": {
+    "found": 96,
+    "questions": 111,
+    "rate": 0.8649,
+    "ci95": [
+     0.7909,
+     0.9298
+    ],
+    "median_words": 1900
+   }
+  },
+  "headers": {
+   "1000": {
+    "found": 81,
+    "questions": 111,
+    "rate": 0.7297,
+    "ci95": [
+     0.6471,
+     0.8051
+    ],
+    "median_words": 886
+   },
+   "2000": {
+    "found": 95,
+    "questions": 111,
+    "rate": 0.8559,
+    "ci95": [
+     0.785,
+     0.9224
+    ],
+    "median_words": 1860
+   }
+  },
+  "expansion": {
+   "1000": {
+    "found": 104,
+    "questions": 111,
+    "rate": 0.9369,
+    "ci95": [
+     0.8818,
+     0.9829
+    ],
+    "median_words": 892
+   },
+   "2000": {
+    "found": 107,
+    "questions": 111,
+    "rate": 0.964,
+    "ci95": [
+     0.9083,
+     1.0
+    ],
+    "median_words": 1912
+   }
+  },
+  "small-to-big": {
+   "1000": {
+    "found": 77,
+    "questions": 111,
+    "rate": 0.6937,
+    "ci95": [
+     0.595,
+     0.7857
+    ],
+    "median_words": 901
+   },
+   "2000": {
+    "found": 90,
+    "questions": 111,
+    "rate": 0.8108,
+    "ci95": [
+     0.7281,
+     0.8947
+    ],
+    "median_words": 1901
+   }
+  },
+  "headers+expansion": {
+   "1000": {
+    "found": 104,
+    "questions": 111,
+    "rate": 0.9369,
+    "ci95": [
+     0.8774,
+     0.9818
+    ],
+    "median_words": 881
+   },
+   "2000": {
+    "found": 107,
+    "questions": 111,
+    "rate": 0.964,
+    "ci95": [
+     0.9091,
+     1.0
+    ],
+    "median_words": 1839
+   }
+  },
+  "small-to-big+expansion": {
+   "1000": {
+    "found": 103,
+    "questions": 111,
+    "rate": 0.9279,
+    "ci95": [
+     0.8646,
+     0.981
+    ],
+    "median_words": 908
+   },
+   "2000": {
+    "found": 106,
+    "questions": 111,
+    "rate": 0.955,
+    "ci95": [
+     0.9048,
+     0.9914
+    ],
+    "median_words": 1904
+   }
+  },
+  "whole contract": {
+   "1000": {
+    "found": 111,
+    "questions": 111,
+    "rate": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "median_words": 6614
+   },
+   "2000": {
+    "found": 111,
+    "questions": 111,
+    "rate": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "median_words": 6614
+   }
+  }
+ },
+ "test": {
+  "baseline": {
+   "1000": {
+    "found": 173,
+    "questions": 223,
+    "rate": 0.7758,
+    "ci95": [
+     0.7266,
+     0.824
+    ],
+    "median_words": 902
+   },
+   "2000": {
+    "found": 195,
+    "questions": 223,
+    "rate": 0.8744,
+    "ci95": [
+     0.8217,
+     0.9205
+    ],
+    "median_words": 1890
+   }
+  },
+  "headers": {
+   "1000": {
+    "found": 172,
+    "questions": 223,
+    "rate": 0.7713,
+    "ci95": [
+     0.7276,
+     0.8169
+    ],
+    "median_words": 884
+   },
+   "2000": {
+    "found": 193,
+    "questions": 223,
+    "rate": 0.8655,
+    "ci95": [
+     0.8148,
+     0.91
+    ],
+    "median_words": 1858
+   }
+  },
+  "expansion": {
+   "1000": {
+    "found": 204,
+    "questions": 223,
+    "rate": 0.9148,
+    "ci95": [
+     0.8739,
+     0.9478
+    ],
+    "median_words": 896
+   },
+   "2000": {
+    "found": 214,
+    "questions": 223,
+    "rate": 0.9596,
+    "ci95": [
+     0.9361,
+     0.9812
+    ],
+    "median_words": 1885
+   }
+  },
+  "small-to-big": {
+   "1000": {
+    "found": 171,
+    "questions": 223,
+    "rate": 0.7668,
+    "ci95": [
+     0.7252,
+     0.8085
+    ],
+    "median_words": 916
+   },
+   "2000": {
+    "found": 189,
+    "questions": 223,
+    "rate": 0.8475,
+    "ci95": [
+     0.8026,
+     0.8914
+    ],
+    "median_words": 1883
+   }
+  },
+  "headers+expansion": {
+   "1000": {
+    "found": 204,
+    "questions": 223,
+    "rate": 0.9148,
+    "ci95": [
+     0.8733,
+     0.9493
+    ],
+    "median_words": 885
+   },
+   "2000": {
+    "found": 214,
+    "questions": 223,
+    "rate": 0.9596,
+    "ci95": [
+     0.9348,
+     0.9816
+    ],
+    "median_words": 1854
+   }
+  },
+  "small-to-big+expansion": {
+   "1000": {
+    "found": 205,
+    "questions": 223,
+    "rate": 0.9193,
+    "ci95": [
+     0.8853,
+     0.9498
+    ],
+    "median_words": 893
+   },
+   "2000": {
+    "found": 210,
+    "questions": 223,
+    "rate": 0.9417,
+    "ci95": [
+     0.9124,
+     0.9683
+    ],
+    "median_words": 1889
+   }
+  },
+  "whole contract": {
+   "1000": {
+    "found": 223,
+    "questions": 223,
+    "rate": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "median_words": 7706
+   },
+   "2000": {
+    "found": 223,
+    "questions": 223,
+    "rate": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "median_words": 7706
+   }
+  }
+ }
+}
