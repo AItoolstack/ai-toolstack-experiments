@@ -1,0 +1,4 @@
+.env
+results/*/cache/
+__pycache__/
+*.tmp

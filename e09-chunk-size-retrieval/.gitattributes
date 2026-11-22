@@ -1,0 +1,3 @@
+# Keep data and result files byte-identical on Windows and Linux.
+* -text
+.gitattributes text eol=lf

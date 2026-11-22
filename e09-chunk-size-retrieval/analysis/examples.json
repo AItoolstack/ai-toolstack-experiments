@@ -1,0 +1,50 @@
+[
+ {
+  "item_id": "c08-02",
+  "category": "Renewal Term",
+  "question": "Does this agreement renew automatically, and for how long?",
+  "clause": "This agreement shall begin upon the date of its execution by MA and acceptance in writing by Company and shall remain in effect until the end of the current calendar year and shall be automatically renewed for successive one (1) year periods unless otherwise terminated according to the cancellation or termination provisions contained in paragraph 18 of this Agreement.",
+  "received_with_fixed_256": "This agreement shall begin upon the date of its execution by MA and acceptance in writing by Company and shall remain in effect until the end of the current calendar year and shall be automatically renewed for successive one (1) year",
+  "not_received": "periods unless otherwise terminated according to the cancellation or termination provisions contained in paragraph 18 of this Agreement."
+ },
+ {
+  "item_id": "c17-03",
+  "category": "Notice Period To Terminate Renewal",
+  "question": "How much notice is needed to stop this agreement from renewing?",
+  "clause": "The Agreement rests, for all that, cancellable at any time by any of the parties before the expiry date of the Agreement or any of itsrenewals, upon three months prior written notice.",
+  "received_with_fixed_256": "rests, for all that, cancellable at any time by any of the parties before the expiry date of the Agreement or any of itsrenewals, upon three months prior written notice.",
+  "not_received": "The Agreement"
+ },
+ {
+  "item_id": "c17-04",
+  "category": "Termination For Convenience",
+  "question": "Can a party terminate this agreement without cause, and with how much notice?",
+  "clause": "The Agreement rests, for all that, cancellable at any time by any of the parties before the expiry date of the Agreement or any of itsrenewals, upon three months prior written notice.",
+  "received_with_fixed_256": "rests, for all that, cancellable at any time by any of the parties before the expiry date of the Agreement or any of itsrenewals, upon three months prior written notice.",
+  "not_received": "The Agreement"
+ },
+ {
+  "item_id": "c28-02",
+  "category": "Renewal Term",
+  "question": "Does this agreement renew automatically, and for how long?",
+  "clause": "The initial term of this Agreement shall be for a period of five (5) years from the date first set forth above and shall thereafter automatically renew for additional two (2) year terms unless a party provides the other party with notice of non-renewal no less than 6 months prior to the expiration of the initial term or any renewal term unless earlier terminated as follows:",
+  "received_with_fixed_256": "The initial term of this Agreement shall be for a period of five (5) years from the date first set forth above and shall thereafter automatically renew for additional two (2) year terms unless a party provides the other party with notice of non-renewal no less than 6 months",
+  "not_received": "prior to the expiration of the initial term or any renewal term unless earlier terminated as follows:"
+ },
+ {
+  "item_id": "c28-03",
+  "category": "Notice Period To Terminate Renewal",
+  "question": "How much notice is needed to stop this agreement from renewing?",
+  "clause": "The initial term of this Agreement shall be for a period of five (5) years from the date first set forth above and shall thereafter automatically renew for additional two (2) year terms unless a party provides the other party with notice of non-renewal no less than 6 months prior to the expiration of the initial term or any renewal term unless earlier terminated as follows:",
+  "received_with_fixed_256": "prior to the expiration of the initial term or any renewal term unless earlier terminated as follows:",
+  "not_received": "The initial term of this Agreement shall be for a period of five (5) years from the date first set forth above and shall thereafter automatically renew for additional two (2) year terms unless a party provides the other party with notice of non-renewal no less than 6 months"
+ },
+ {
+  "item_id": "c43-04",
+  "category": "Termination For Convenience",
+  "question": "Can a party terminate this agreement without cause, and with how much notice?",
+  "clause": "Following expiry of the initial period described in Clause 15 above, DCL or SEV giving not less than six months notice in writing may terminate this Agreement.",
+  "received_with_fixed_256": "giving not less than six months notice in writing may terminate this Agreement.",
+  "not_received": "Following expiry of the initial period described in Clause 15 above, DCL or SEV"
+ }
+]

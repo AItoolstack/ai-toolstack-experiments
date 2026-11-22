@@ -1,0 +1,165 @@
+{
+ "fixed-64": {
+  "questions": 334,
+  "no_intact_answer": 178,
+  "chunks": 10074,
+  "no_intact_by_category": {
+   "Anti-Assignment": 21,
+   "Audit Rights": 19,
+   "Cap On Liability": 22,
+   "Change Of Control": 10,
+   "Expiration Date": 29,
+   "Governing Law": 33,
+   "Non-Compete": 7,
+   "Notice Period To Terminate Renewal": 12,
+   "Renewal Term": 19,
+   "Termination For Convenience": 6
+  }
+ },
+ "fixed-64-ov20": {
+  "questions": 334,
+  "no_intact_answer": 148,
+  "chunks": 12372,
+  "no_intact_by_category": {
+   "Anti-Assignment": 26,
+   "Audit Rights": 15,
+   "Cap On Liability": 20,
+   "Change Of Control": 8,
+   "Expiration Date": 26,
+   "Governing Law": 24,
+   "Non-Compete": 6,
+   "Notice Period To Terminate Renewal": 9,
+   "Renewal Term": 13,
+   "Termination For Convenience": 1
+  }
+ },
+ "fixed-128": {
+  "questions": 334,
+  "no_intact_answer": 99,
+  "chunks": 5052,
+  "no_intact_by_category": {
+   "Anti-Assignment": 12,
+   "Audit Rights": 9,
+   "Cap On Liability": 10,
+   "Change Of Control": 7,
+   "Expiration Date": 17,
+   "Governing Law": 16,
+   "Non-Compete": 5,
+   "Notice Period To Terminate Renewal": 7,
+   "Renewal Term": 12,
+   "Termination For Convenience": 4
+  }
+ },
+ "fixed-128-ov20": {
+  "questions": 334,
+  "no_intact_answer": 53,
+  "chunks": 6254,
+  "no_intact_by_category": {
+   "Anti-Assignment": 6,
+   "Audit Rights": 6,
+   "Cap On Liability": 8,
+   "Change Of Control": 5,
+   "Expiration Date": 7,
+   "Governing Law": 7,
+   "Non-Compete": 1,
+   "Notice Period To Terminate Renewal": 5,
+   "Renewal Term": 8
+  }
+ },
+ "fixed-256": {
+  "questions": 334,
+  "no_intact_answer": 42,
+  "chunks": 2544,
+  "no_intact_by_category": {
+   "Anti-Assignment": 7,
+   "Audit Rights": 3,
+   "Cap On Liability": 2,
+   "Change Of Control": 2,
+   "Expiration Date": 9,
+   "Governing Law": 6,
+   "Non-Compete": 2,
+   "Notice Period To Terminate Renewal": 3,
+   "Renewal Term": 6,
+   "Termination For Convenience": 2
+  }
+ },
+ "fixed-256-ov20": {
+  "questions": 334,
+  "no_intact_answer": 16,
+  "chunks": 3153,
+  "no_intact_by_category": {
+   "Anti-Assignment": 2,
+   "Audit Rights": 1,
+   "Cap On Liability": 2,
+   "Change Of Control": 2,
+   "Expiration Date": 3,
+   "Non-Compete": 1,
+   "Notice Period To Terminate Renewal": 2,
+   "Renewal Term": 3
+  }
+ },
+ "fixed-512": {
+  "questions": 334,
+  "no_intact_answer": 16,
+  "chunks": 1290,
+  "no_intact_by_category": {
+   "Anti-Assignment": 6,
+   "Audit Rights": 1,
+   "Cap On Liability": 1,
+   "Expiration Date": 2,
+   "Governing Law": 2,
+   "Non-Compete": 1,
+   "Renewal Term": 3
+  }
+ },
+ "fixed-512-ov20": {
+  "questions": 334,
+  "no_intact_answer": 0,
+  "chunks": 1579,
+  "no_intact_by_category": {}
+ },
+ "fixed-1024": {
+  "questions": 334,
+  "no_intact_answer": 8,
+  "chunks": 659,
+  "no_intact_by_category": {
+   "Anti-Assignment": 3,
+   "Cap On Liability": 1,
+   "Governing Law": 2,
+   "Renewal Term": 2
+  }
+ },
+ "fixed-1024-ov20": {
+  "questions": 334,
+  "no_intact_answer": 0,
+  "chunks": 798,
+  "no_intact_by_category": {}
+ },
+ "para-256": {
+  "questions": 334,
+  "no_intact_answer": 12,
+  "chunks": 3372,
+  "no_intact_by_category": {
+   "Audit Rights": 2,
+   "Cap On Liability": 2,
+   "Change Of Control": 1,
+   "Expiration Date": 1,
+   "Non-Compete": 1,
+   "Notice Period To Terminate Renewal": 2,
+   "Renewal Term": 2,
+   "Termination For Convenience": 1
+  }
+ },
+ "para-512": {
+  "questions": 334,
+  "no_intact_answer": 5,
+  "chunks": 1550,
+  "no_intact_by_category": {
+   "Audit Rights": 1,
+   "Cap On Liability": 1,
+   "Non-Compete": 1,
+   "Notice Period To Terminate Renewal": 1,
+   "Termination For Convenience": 1
+  }
+ }
+}

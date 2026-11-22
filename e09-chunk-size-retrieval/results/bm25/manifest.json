@@ -1,0 +1,7 @@
+{
+ "retriever": "bm25",
+ "k1": 1.5,
+ "b": 0.75,
+ "tokenizer": "lowercase [a-z0-9]+",
+ "rows": 4008
+}

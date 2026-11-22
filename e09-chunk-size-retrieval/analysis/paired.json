@@ -1,0 +1,114 @@
+{
+ "bm25": {
+  "fixed-64": {
+   "budget": 1000,
+   "only_para-256": 62,
+   "only_other": 22,
+   "net": 40,
+   "net_ci95_by_contract": [
+    21,
+    59
+   ]
+  },
+  "fixed-64-ov20": {
+   "budget": 1000,
+   "only_para-256": 66,
+   "only_other": 22,
+   "net": 44,
+   "net_ci95_by_contract": [
+    22,
+    65
+   ]
+  },
+  "fixed-128": {
+   "budget": 1000,
+   "only_para-256": 53,
+   "only_other": 22,
+   "net": 31,
+   "net_ci95_by_contract": [
+    13,
+    49
+   ]
+  },
+  "fixed-128-ov20": {
+   "budget": 1000,
+   "only_para-256": 29,
+   "only_other": 21,
+   "net": 8,
+   "net_ci95_by_contract": [
+    -8,
+    23
+   ]
+  },
+  "fixed-256": {
+   "budget": 1000,
+   "only_para-256": 40,
+   "only_other": 15,
+   "net": 25,
+   "net_ci95_by_contract": [
+    12,
+    38
+   ]
+  },
+  "fixed-256-ov20": {
+   "budget": 1000,
+   "only_para-256": 43,
+   "only_other": 10,
+   "net": 33,
+   "net_ci95_by_contract": [
+    19,
+    47
+   ]
+  },
+  "fixed-512": {
+   "budget": 1000,
+   "only_para-256": 99,
+   "only_other": 15,
+   "net": 84,
+   "net_ci95_by_contract": [
+    65,
+    102
+   ]
+  },
+  "fixed-512-ov20": {
+   "budget": 1000,
+   "only_para-256": 88,
+   "only_other": 12,
+   "net": 76,
+   "net_ci95_by_contract": [
+    58,
+    95
+   ]
+  },
+  "fixed-1024": {
+   "budget": 1000,
+   "only_para-256": 99,
+   "only_other": 17,
+   "net": 82,
+   "net_ci95_by_contract": [
+    62,
+    101
+   ]
+  },
+  "fixed-1024-ov20": {
+   "budget": 1000,
+   "only_para-256": 92,
+   "only_other": 17,
+   "net": 75,
+   "net_ci95_by_contract": [
+    55,
+    95
+   ]
+  },
+  "para-512": {
+   "budget": 1000,
+   "only_para-256": 51,
+   "only_other": 16,
+   "net": 35,
+   "net_ci95_by_contract": [
+    20,
+    51
+   ]
+  }
+ }
+}
